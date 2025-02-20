@@ -2,10 +2,865 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ad_astra"
-	group: "00B02FC8BB194427"
+	group: "2987039AB4197A8E"
+	icon: {
+		Count: 1
+		id: "ad_astra:tier_4_rocket"
+		tag: { }
+	}
 	id: "3DA7B5D8AEFF48B7"
-	order_index: 3
+	images: [
+		{
+			height: 2.0d
+			image: "ad_astra:textures/painting/earth.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			height: 2.0d
+			image: "ad_astra:textures/painting/mars.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -3.0d
+			y: 8.5d
+		}
+		{
+			height: 2.0d
+			image: "ad_astra:textures/painting/venus.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			height: 2.0d
+			image: "ad_astra:textures/painting/mercury.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			height: 2.0d
+			image: "ad_astra:textures/painting/glacio.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 5.5d
+			y: 4.0d
+		}
+	]
+	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to &dAd Astra&r!"
+				""
+				"This mod takes you on a journey to the stars, which means you get to make your own SPACE SHIP!!!"
+				""
+				"To get to space, you'll need something stronger than Iron to build your ship out of."
+				""
+				"If you want to get off the ground, you'll need a lot of &aSteel&r to get going! There are several ways to make this, like &eMekanism's Metalurgic Infuser&r to make steel dust or you can make it in the &eImmersive Engineering Alloy Kiln&r."
+			]
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "ad_astra:astrodux"
+				}
+			}
+			id: "12EB874DA384E2AE"
+			rewards: [{
+				id: "1AF56C1B352B48C6"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "ad_astra:astrodux"
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "18448E74FC7ACBC3"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			title: "&dTo The Stars!&r"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12EB874DA384E2AE"]
+			description: [
+				"This &aHammer&r is used to make &aPlates&r from Ingots! While it's great to use at the start you'll eventually want to make a &aCompressor&r to do this work for you. This will require power."
+				""
+				"You'll need plenty of &aIron&r and &aSteel Plates&r to craft a lot of items to get to space, so make sure to get it Automated!"
+			]
+			icon: "ad_astra:compressor"
+			id: "592996000FC2C537"
+			rewards: [{
+				id: "17D21953D870B541"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "5B657432865D1CDA"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7C398108CCAEE1EA"
+					item: "ad_astra:compressor"
+					type: "item"
+				}
+			]
+			title: "Making &aPlates&r"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["592996000FC2C537"]
+			description: [
+				"For us to begin making rockets, we'll need a &dNASA Workbench&r. This is the crafting bench for rockets!"
+				""
+				"The next step is to make the &aTier 1 Rocket&r using the Workbench. Once you have all the parts, place them in to craft!"
+			]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_1_rocket"
+				tag: { }
+			}
+			id: "72683523424A70A0"
+			rewards: [{
+				id: "36BEBD411342A212"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "4E96E20044A7D0D4"
+					item: "ad_astra:nasa_workbench"
+					type: "item"
+				}
+				{
+					id: "7CD2773693E74A94"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_1_rocket"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "&aMaking Our First&r &dRocket&r!"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["592996000FC2C537"]
+			description: [
+				"A Rocket needs something to Launch off of, so we'll need to make a &aLaunch Pad&r."
+				""
+				"To use it, place it down whereever you want to launch from with a clear view of the sky. Once you have a rocket you can place it down in the middle of the Launch Pad."
+			]
+			hide_dependency_lines: true
+			id: "6B5D738CFFFC5468"
+			rewards: [{
+				id: "3112D86042C35993"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			tasks: [{
+				id: "020FA0EC4F9028B4"
+				item: "ad_astra:launch_pad"
+				type: "item"
+			}]
+			title: "&eLaunching Into Space&r"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["592996000FC2C537"]
+			description: [
+				"If you're planning on going to space, you better believe that you need a new set of gear for the journey."
+				""
+				"You'll need to make a full &aSpace Suit&r for your first trip, which will be to the &bMoon&r. Come to find out, the Moon is kind of cold and lacks Oxygen. Without a suit you will very quickly find out why you needed a Space Suit."
+			]
+			hide_dependency_lines: true
+			id: "5099D9B6C7B67D34"
+			rewards: [{
+				id: "5768D301A6EF59C8"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "0000F248D4A79240"
+					item: {
+						Count: 1
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "646EAFA20D241CB4"
+					item: {
+						Count: 1
+						id: "ad_astra:space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "78BA4B2693FC514F"
+					item: {
+						Count: 1
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "25F95027D1B1E05F"
+					item: {
+						Count: 1
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&aSuiting Up&r"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["592996000FC2C537"]
+			description: [
+				"Fun Fact: You cannot breahe on th Moon without &bOxygen&r. Actually without &bOxygen&r you cannot breathe anywhere. Seeing how the Moon Lacks Oxygen, were going to need to take it with us."
+				""
+				"So we're going to make us some. Start by crafting an Oxygen Loader and giving it water and power. This will begin to convert the Water into &bOxygen&r for us to use."
+				""
+				"To collect it you can either place an Oxygen Tank, a empty bucket, or a Space Suit inside."
+				""
+				"&ePro Tip:&r It's always a great idea to have more than one &bOxygen&r Tank on hand. Just in case."
+			]
+			hide_dependency_lines: true
+			icon: "ad_astra:oxygen_loader"
+			id: "79AD761C1D5BFD3F"
+			rewards: [{
+				id: "35C5B87DDD56A577"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "67EDC903A752F8BB"
+					item: "ad_astra:oxygen_loader"
+					type: "item"
+				}
+				{
+					id: "64725A3EE84CABF4"
+					item: {
+						Count: 1
+						id: "ad_astra:gas_tank"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "&aPreparing Some &bOxygen&r"
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["592996000FC2C537"]
+			description: [
+				"Just like a car, you can't fuel a Rocket off of hopes and dreams. But how do we get fuel?"
+				""
+				"This first step is to find &3Oil&r in the Overworld. You can find some spouting out in the ocean, and you'll need to collect a good bit so we can refine it!"
+				""
+				"That's where the &aFuel Refinery&r comes in. It will accept any \"Crude\" Oil and convert it into fuel for the Rockets."
+				""
+				"I'd suggest stocking up, as each will cost &e3 Buckets of Fuel&r, meaning 6 for a round trip!"
+			]
+			hide_dependency_lines: true
+			icon: "ad_astra:fuel_refinery"
+			id: "4C0D6E4843C4AC34"
+			rewards: [
+				{
+					id: "2D6FC2780BEEB764"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "5D880FD165DEC353"
+					item: "ad_astra:fuel_bucket"
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "625461BABA299F2E"
+					item: "ad_astra:fuel_refinery"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "354D173A19BF9F11"
+					item: "ad_astra:fuel_bucket"
+					type: "item"
+				}
+			]
+			title: "&aFueling Up&r"
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"79AD761C1D5BFD3F"
+				"72683523424A70A0"
+				"6B5D738CFFFC5468"
+				"5099D9B6C7B67D34"
+				"4C0D6E4843C4AC34"
+			]
+			description: [
+				"It's now time to go to SPACE!"
+				""
+				"To do this, place down your &aLaunch Pad&r and stick the &aTier 1 Rocket&r right in the middle. You can sneak-right click on the Rocket to open the inventory, which you should fill it up with 3 Buckets of Fuel for trip there. You'll also need 3 to get back. &cMake sure you bring an extra Launch Pad&r with you as well, just in case you lose it when landing."
+				""
+				"Once you are ready to launch, hop in and hit space to blast off! When you get into orbit, you'll be greeted with the galaxy menu. Here you can select &dSolar System&r, then click on &2Earth,&r then select the &bMoon&r!"
+				""
+				"When you begin your descent onto the Moon's surface, make sure to &ahold Space to slow down&r! You can keep an eye on the left bar to see how far away you are from the surface, just make sure to not &4crash!&r"
+			]
+			hide_dependency_lines: true
+			id: "4B5D9185CF987A3B"
+			rewards: [{
+				id: "720AA54AFE03A6CE"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "circle"
+			tasks: [{
+				advancement: "ad_astra:moon"
+				criterion: ""
+				id: "229E4F4B263D8754"
+				title: "Land on the Moon!"
+				type: "advancement"
+			}]
+			title: "&aTo The &bMoon&r!"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4B5D9185CF987A3B"]
+			description: [
+				"Upon landing, you'll want to sneak-right click on the &aLander&r to grab the rocket and Launch Pad out. You won't be able to get back home without it."
+				""
+				"The Moon is pretty deserted, aside from a few new &2Villager&r mobs that might be interested in trading with you. You'll also be able to mne for some &cDesh&r, which you'll need for the Tier 2 Rocket and maybe even a super cool &aRover&r."
+			]
+			id: "70C658B7727D5011"
+			rewards: [{
+				id: "24506A30FB70BD70"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			tasks: [
+				{
+					count: 4L
+					id: "0F65B0A849DFAE8B"
+					item: { Count: 4, id: "ad_astra:raw_desh" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4EB37374AC2E9D46"
+					item: "ad_astra:desh_ingot"
+					type: "item"
+				}
+			]
+			title: "&cDesh"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["70C658B7727D5011"]
+			description: [
+				"You'll need a LOT of &cDesh&r to make the &aTier 2 Rocket&r."
+				""
+				"With this rocket, you can fly all the way to &cMars&r! Just remember to stock up on extra &bOxygen&r and &eFuel&r for your flight back."
+			]
+			id: "052927B07A65F26A"
+			rewards: [{
+				id: "675487B58B180FBB"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "40DF45348F6BD03B"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_2_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Tier 2 Rocket"
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["052927B07A65F26A"]
+			description: ["&cMars&r is considered a cold planet, but that doesn't mean you won't find some new lifeforms there. Make sure you are prepared!"]
+			icon: "ad_astra:mars_globe"
+			id: "4BB2E85ECEFADF32"
+			rewards: [{
+				id: "5563393E6E8DDF94"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			tasks: [{
+				advancement: "ad_astra:mars"
+				criterion: ""
+				id: "10CB61F0BF1744FE"
+				title: "Land on Mars!"
+				type: "advancement"
+			}]
+			title: "Visit Mars"
+			x: -3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4BB2E85ECEFADF32"]
+			description: [
+				"The next resource we'll be mining for is called &3Ostrum&r."
+				""
+				"Ostrum is used for several new machines, as well as a new Space Suit for us to survive on hotter planets!"
+			]
+			id: "6D1475F2B5116749"
+			rewards: [{
+				id: "2235B1AC1161AA70"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			tasks: [
+				{
+					count: 4L
+					id: "2F6350C297678F62"
+					item: "ad_astra:raw_ostrum"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "19DB5CC0BBCE4435"
+					item: "ad_astra:ostrum_ingot"
+					type: "item"
+				}
+			]
+			title: "Ostrum"
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4BB2E85ECEFADF32"]
+			description: [
+				"To survive on the hotter planets, we'll need a new Space Suit."
+				""
+				"When you combine &3Netherite&r and &3Ostrum&r, it creates a suit strong enough to protect you from extreme heat!"
+				""
+				"If we want to get to those hot planets, we need to make a &dTier 3 Rocket&r as well!"
+			]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_3_rocket"
+				tag: { }
+			}
+			id: "72A0B97FDA4E7B82"
+			rewards: [{
+				id: "7464699A0DD6ABA5"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			tasks: [
+				{
+					id: "05E6E8FD6A5742CF"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "142A0D4F96C1C7AC"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "13ADF12A513DDC57"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7C4E24913334CBC3"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "23E71B5D23E6D7E3"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_3_rocket"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "&cGearing Up For The Heat"
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["72A0B97FDA4E7B82"]
+			description: [
+				"We need to make a trip out to Venus!"
+				""
+				"&dCalorite&r is found on Venus, and is the strongest metal you can gather from the planets."
+				""
+				"With this, you can make the &5Tier 4 Rocket&r, as well as the &dJet Suit&r for us to survive in a different Solar System!"
+			]
+			icon: "ad_astra:venus_globe"
+			id: "37185E0FDBFEEFD3"
+			rewards: [{
+				id: "4456D88838FCA566"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			tasks: [{
+				advancement: "ad_astra:venus"
+				criterion: ""
+				id: "50F7BB99B8753F8D"
+				title: "Land on Venus!"
+				type: "advancement"
+			}]
+			title: "Visit Venus"
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["37185E0FDBFEEFD3"]
+			description: [
+				"This is the best Space Suit that you can make."
+				""
+				"It can be powered, allowing for Elytra-like flight! It also protects you from &aAcid Rain&r. :)"
+			]
+			icon: "ad_astra:venus_globe"
+			id: "40DD624FDC793BF8"
+			rewards: [{
+				id: "3175C5ECF739BE8F"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			tasks: [
+				{
+					id: "0C5C60D2FAD5C1B5"
+					item: {
+						Count: 1
+						id: "ad_astra:jet_suit_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4700F10017CFA50D"
+					item: {
+						Count: 1
+						id: "ad_astra:jet_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3F02789E6A4040FA"
+					item: {
+						Count: 1
+						id: "ad_astra:jet_suit_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D58B1F3EDEC2365"
+					item: {
+						Count: 1
+						id: "ad_astra:jet_suit_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Jet Suit"
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["37185E0FDBFEEFD3"]
+			description: ["The &dTier 4 Rocket&r is the highest tier Rocket that we can make. This will allow is to travel outside of our Solar System!"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_4_rocket"
+				tag: { }
+			}
+			id: "0C20B94C6EC10531"
+			rewards: [{
+				id: "3C4BE6A6215EC550"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "605F2DE11E78EEDF"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_4_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Tier 4 Rocket"
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"40DD624FDC793BF8"
+				"0C20B94C6EC10531"
+			]
+			description: ["This is the furthest our current technology can take us. &bGlacio&r is a cold planet, but has oxygen for us to breathe!"]
+			id: "1485836D3B1A7913"
+			rewards: [{
+				id: "0017DB089F022EB0"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "circle"
+			tasks: [{
+				advancement: "ad_astra:interstellar"
+				criterion: ""
+				id: "14601BCB4BEB4F7A"
+				title: "Land on Glacio"
+				type: "advancement"
+			}]
+			title: "Visit Glacio"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6D1475F2B5116749"]
+			description: [
+				"Needing 6 buckets of &aFuel&r every time we want to travel to other planets can add up quick."
+				""
+				"Using the &3Ostrum&r we've gathered we can create the &dCryo Freezer&r. When given power, the pachine will convert cold items like &bIce, Packed Ice, Blue Ice or Ice Shards&r into &dCryo Fuel&r."
+				""
+				"Instead of needing 3 buckets per launch, you will only need 1 of &dCryo Fuel&r. That means 2 for a round-trip."
+				""
+				"&eNote:&r THis also freezes ice around it when placed, giving you an infinite ice source!"
+			]
+			id: "5B10850C73D89F42"
+			rewards: [{
+				id: "391983E2205B1EEA"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "2CA2081E03D1B3F2"
+				item: "ad_astra:cryo_freezer"
+				type: "item"
+			}]
+			title: "&aEfficient Fuel"
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["72A0B97FDA4E7B82"]
+			description: ["A hot barren world with large lava plains."]
+			id: "71F1A7CD018678A0"
+			rewards: [{
+				id: "3B4B44211953EC79"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			tasks: [{
+				advancement: "ad_astra:mercury"
+				criterion: ""
+				id: "50C3E8987964B737"
+				title: "Land on Mercury!"
+				type: "advancement"
+			}]
+			title: "Visit Mecury"
+			x: 1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["70C658B7727D5011"]
+			description: [
+				"Once you've explored the Moon and gathered enough Desh, you will be able to create &dSpace Stations&r around planets!"
+				""
+				"These are prebuild structures that serve as a mini-base in the galaxy. Home away from home kinda thing."
+			]
+			icon: "ad_astra:space_painting"
+			id: "1EB12AE4EA2B6C00"
+			optional: true
+			rewards: [{
+				id: "6D3E9AD71B73FE4D"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			tasks: [
+				{
+					count: 32L
+					id: "792F8E9228B00AB5"
+					item: { Count: 32, id: "mekanism:ingot_steel" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "686FD31836483E72"
+					item: { Count: 32, id: "immersiveengineering:plate_iron" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "2045364BF383BC44"
+					item: "ad_astra:desh_plate"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "2B78C277760FD06B"
+					item: "ad_astra:desh_ingot"
+					type: "item"
+				}
+			]
+			title: "Space Stations"
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1EB12AE4EA2B6C00"]
+			description: [
+				"If you want to make a base outside of the Earth, you'll most likely need a way to get &bOxygen&r."
+				""
+				"The &dOxygen Distributor&r is a machine that distributes oxygen in a &asealed&r room. When given water and power it will automatically distribute oxygen into a sealed room."
+				""
+				"The &9Water Pump&r is used to pump water from an infinite water source below it into the Distributor."
+			]
+			icon: "ad_astra:space_painting"
+			id: "1BD7E3715D9A629F"
+			optional: true
+			rewards: [{
+				id: "6B8F5EB1DB18A136"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			tasks: [
+				{
+					count: 32L
+					id: "6EF4137F5162349F"
+					item: { Count: 32, id: "mekanism:ingot_steel" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1AF581E7853643FC"
+					item: { Count: 32, id: "immersiveengineering:plate_iron" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "481721F0830AC36F"
+					item: "ad_astra:desh_plate"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "5DD2BBBD4F74D3DB"
+					item: "ad_astra:desh_ingot"
+					type: "item"
+				}
+			]
+			title: "Oxygen for your Bases!"
+			x: -4.0d
+			y: 5.5d
+		}
+	]
 	title: "Ad Astra"
 }
