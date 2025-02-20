@@ -2,9 +2,9 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "flexible_weaponary"
-	group: "2987039AB4197A8E"
+	group: "747F44473FCC1116"
 	id: "050BA5E070703F08"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [ ]
 	title: "Flexible Weaponary"

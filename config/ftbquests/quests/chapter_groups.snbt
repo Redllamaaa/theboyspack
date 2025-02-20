@@ -1,9 +1,9 @@
 {
 	chapter_groups: [
+		{ id: "747F44473FCC1116", title: "Tools and Weapons" }
 		{ id: "56F07D841FF7D81A", title: "Logistics" }
-		{ id: "2987039AB4197A8E", title: "Exploration" }
 		{ id: "00B02FC8BB194427", title: "Technology" }
 		{ id: "645FFF2D461AD077", title: "Magical World" }
-		{ id: "4ABDA8087CE4AA75", title: "Other Worlds" }
+		{ id: "2987039AB4197A8E", title: "Exploration" }
 	]
 }

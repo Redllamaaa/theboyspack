@@ -91,6 +91,7 @@
 			tasks: [{
 				icon: "mekanism:raw_osmium"
 				id: "56BA1011DDE093D0"
+				item: "mekanism:raw_osmium"
 				type: "item"
 			}]
 			title: "&fWelcome To &dMekanism&f!"
