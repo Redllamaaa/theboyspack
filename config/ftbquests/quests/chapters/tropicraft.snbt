@@ -16,6 +16,7 @@
 				""
 				"Maybe you can even make something to drink?"
 			]
+			icon: "tropicraft:pineapple"
 			id: "3AE4D7016ABF05B3"
 			rewards: [{
 				id: "59E30D3011EBD106"
@@ -64,6 +65,7 @@
 				""
 				"You've earned it."
 			]
+			icon: "tropicraft:red_chair"
 			id: "0CAB7EA443F327C6"
 			rewards: [{
 				id: "02692E8D7C216C0D"
@@ -185,6 +187,7 @@
 			subtitle: "Why bother with quests? Just chill..."
 			tasks: [{
 				dimension: "tropicraft:tropics"
+				icon: "tropicraft:exploding_coconut"
 				id: "30AEE85335293E88"
 				type: "dimension"
 			}]
