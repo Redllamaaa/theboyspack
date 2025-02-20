@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "forge:plates/steel"
+    },
+    "T": {
+      "item": "ad_astra:gas_tank"
+    },
+    "|": {
+      "item": "forge:rods/steel"
+    }
+  },
+  "pattern": [
+    "## ",
+    "#T|",
+    "## "
+  ],
+  "result": {
+    "item": "ad_astra:steel_tank"
+  }
+}

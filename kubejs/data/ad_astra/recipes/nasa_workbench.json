@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "forge:rods/steel"
+    },
+    "B": {
+      "tag": "forge:storage_blocks/steel"
+    },
+    "C": {
+      "item": "minecraft:crafting_table"
+    },
+    "T": {
+      "item": "minecraft:redstone_torch"
+    },
+    "|": {
+      "tag": "forge:rods/iron"
+    }
+  },
+  "pattern": [
+    "|#|",
+    "TCT",
+    "#B#"
+  ],
+  "result": {
+    "item": "ad_astra:nasa_workbench"
+  }
+}

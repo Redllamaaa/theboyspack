@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "forge:plates/steel"
+    },
+    "|": {
+      "item": "forge:rods/steel"
+    }
+  },
+  "pattern": [
+    "|||",
+    "# #",
+    "|||"
+  ],
+  "result": {
+    "count": 4,
+    "item": "ad_astra:vent"
+  }
+}
