@@ -1,0 +1,62 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: "minecraft:apple"
+	id: "245D6C559F8EDCC5"
+	images: [
+		{
+			height: 4.0d
+			image: "theboyspack:textures/quests/pack_title.png"
+			rotation: 0.0d
+			width: 17.98d
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			alpha: 50
+			color: 526344
+			height: 2.5d
+			image: "ftbquests:textures/shapes/hexagon/shape.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: -1.5d
+			y: -1.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"This is a brand new modpack designed from the ground up."
+			""
+			"This took me a very long time to make and configure so we all have something to do at all times."
+			""
+			"You now have no excuse to ask me for something to do. You can find basic guides to most mods in this quest book."
+			""
+			"Thanks!"
+			""
+			"Redllamaaa"
+		]
+		icon: {
+			Count: 1
+			id: "ftbquests:custom_icon"
+			tag: {
+				Icon: "jei:textures/jei/atlas/gui/icons/info.png"
+			}
+		}
+		id: "426B16A286EF204F"
+		shape: "hexagon"
+		size: 2.0d
+		tasks: [{
+			id: "35039644FA5C8995"
+			title: "Welcome to &6TheBoysPack!&r"
+			type: "checkmark"
+		}]
+		title: "Welcome to &6TheBoysPack!&r"
+		x: -1.5d
+		y: -1.0d
+	}]
+	title: "Welcome"
+}

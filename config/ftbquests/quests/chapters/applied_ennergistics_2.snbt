@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "applied_ennergistics_2"
+	group: "56F07D841FF7D81A"
+	id: "479F86B4485045A0"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Applied Ennergistics 2"
+}

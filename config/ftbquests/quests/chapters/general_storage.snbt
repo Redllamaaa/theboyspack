@@ -1,0 +1,1229 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "general_storage"
+	group: "56F07D841FF7D81A"
+	icon: "minecraft:chest"
+	id: "43C97597CC6E313A"
+	images: [{
+		height: 1.5d
+		image: "sophisticatedstorage:block/gold_barrel_bottom"
+		rotation: 0.0d
+		width: 1.5d
+		x: 0.0d
+		y: -0.5d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["This chapter shows you some of the basic ways you can store your items!"]
+			icon: "minecraft:ender_chest"
+			id: "0AE8B09B37E57DB0"
+			optional: true
+			rewards: [{
+				id: "031206BFCCF8647B"
+				type: "xp"
+				xp: 5
+			}]
+			shape: "diamond"
+			size: 1.75d
+			tasks: [{
+				id: "039B1761B3797BCF"
+				title: "General Storage Options"
+				type: "checkmark"
+			}]
+			title: "&aGeneral Storage Options&r"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"Your inventory is going to get full pretty quick. &oIt is modded MC afterall.&r"
+				""
+				"The solution is to make a &2Sophisticated Backpack&r. These Backpacks provide a simple solution to your inventory problems! They can also be upgraded to hold even more items, and have tons of cool upgrades to help you in your adventures, like the &aCrafting Upgrade&r for a portable crafting table."
+				""
+				"You can place these in a curio slot as well for easy access using a keybind. These can also be placed down in the world by sneak-right clicking while it's in your main hand."
+			]
+			id: "567F6C6F864D0D9F"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "2A7BB0AB41A80EF7"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			title: "&2Sophisticated Backpacks&r"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["567F6C6F864D0D9F"]
+			description: ["Backpacks can also be dyed! This is useful for color-coding your backpacks, or if you just want to look really cool with a black backpack on."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				Count: 1
+				id: "sophisticatedbackpacks:backpack"
+				tag: {
+					borderColor: 1908001
+					clothColor: 1908001
+				}
+			}
+			id: "7876C27C16D1C1B8"
+			rewards: [{
+				id: "07D1875AFCC84D8F"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "70EDC1DAA2E92F4B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dyes"
+					}
+				}
+				match_nbt: true
+				title: "Dye"
+				type: "item"
+			}]
+			title: "Colourful Backpacks"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["567F6C6F864D0D9F"]
+			description: [
+				"You can increase the overall storage size of a backpack by upgrading it to the next tier!"
+				""
+				"From the basic backpack, you can upgrade to either &aCopper&r or &aIron&r. Upgrading to Copper first allows you to save iron, as you only need 4 Iron Ingots to upgrade from Copper."
+				""
+				"Each tier also allows for more &aUpgrade Slots&r!"
+			]
+			icon: "minecraft:copper_ingot"
+			id: "52CEBC52AD667CE7"
+			rewards: [{
+				id: "23A89C7B8EEAFB49"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "723C6D05F617D35C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:copper_backpack"
+								tag: {
+									contentsUuid: [I;
+										950440786
+										-1944500413
+										-1452543792
+										-1642399256
+									]
+									inventorySlots: 45
+									renderInfo: {
+										upgradeItems: [{
+											Count: 1b
+											id: "minecraft:air"
+										}]
+									}
+									upgradeSlots: 1
+								}
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:iron_backpack"
+								tag: {
+									contentsUuid: [I;
+										-661685002
+										-1461433263
+										-1580284530
+										2009025659
+									]
+									inventorySlots: 54
+									renderInfo: {
+										upgradeItems: [
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+										]
+									}
+									upgradeSlots: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:gold_backpack"
+								tag: {
+									contentsUuid: [I;
+										-1969552066
+										-1177992661
+										-1296430844
+										1387116510
+									]
+									inventorySlots: 81
+									renderInfo: {
+										upgradeItems: [
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+										]
+									}
+									upgradeSlots: 3
+								}
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:diamond_backpack"
+								tag: {
+									contentsUuid: [I;
+										820526197
+										1121405399
+										-2026646148
+										2000629397
+									]
+									inventorySlots: 108
+									renderInfo: {
+										upgradeItems: [
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+										]
+									}
+									upgradeSlots: 5
+								}
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:netherite_backpack"
+								tag: {
+									contentsUuid: [I;
+										-107289136
+										407719267
+										-1707557499
+										-339155779
+									]
+									inventorySlots: 120
+									renderInfo: {
+										upgradeItems: [
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+										]
+									}
+									upgradeSlots: 7
+								}
+							}
+						]
+					}
+				}
+				title: "Tier Upgrades"
+				type: "item"
+			}]
+			title: "Tier Upgrades"
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["567F6C6F864D0D9F"]
+			description: [
+				"To make any of the upgrades for your backpack, you'll first need to craft an &aUpgrade Base&r."
+				""
+				"There are a ton of useful upgrades you can make, like &aStack Upgrades&r to increase the slot stack limit for storing tons of items, or the &aFeeding Upgrade&r that can automatically feed you when you are hungry!"
+				""
+				"Make sure to check them all out!"
+			]
+			id: "51F2074E02BF447D"
+			rewards: [
+				{
+					id: "210C823FD4A237DE"
+					item: "sophisticatedbackpacks:upgrade_base"
+					type: "item"
+				}
+				{
+					id: "3B6E00465F60D435"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "0718A201A8E7A89B"
+				item: "sophisticatedbackpacks:upgrade_base"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["51F2074E02BF447D"]
+			description: [
+				"&aStack Upgrades&r multiply the stack size of each slot in a backpack. These are super useful for storing tons of the same types of items!"
+				""
+				"When combined with other upgrades like &aTank&r or &aBattery&r upgrades, these also increase the overall storage limit of those upgrades as well."
+			]
+			hide_dependency_lines: false
+			id: "26166F2A61BA78D3"
+			rewards: [{
+				id: "266483C47BFF0E27"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "09BA27366A2DC568"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:stack_upgrade_starter_tier"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:stack_upgrade_tier_1"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:stack_upgrade_tier_2"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:stack_upgrade_tier_3"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:stack_upgrade_tier_4"
+							}
+						]
+					}
+				}
+				title: "Stack Upgrades"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["51F2074E02BF447D"]
+			description: [
+				"&aStack Upgrades&r multiply the stack size of each slot in a backpack. These are super useful for storing tons of the same types of items!"
+				""
+				"When combined with other upgrades like &aTank&r or &aBattery&r upgrades, these also increase the overall storage limit of those upgrades as well."
+			]
+			hide_dependency_lines: false
+			id: "1120F14233050433"
+			rewards: [{
+				id: "537A8DE95607D758"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1B3CAFBB38FE5BA7"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:feeding_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:advanced_feeding_upgrade"
+							}
+						]
+					}
+				}
+				title: "Eating Upgrades"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["51F2074E02BF447D"]
+			description: [
+				"Making &aPickup&r and &aMagnet&r upgrades can allow the backpack to pick up items for you while out on your adventures. You can also set the backpack to only pick up certain items using the filter settings for the upgrade!"
+				""
+				"While this is great for mining adventures, you can also use the &aMagnet&r upgrades to automate farms by placing the backpack down in the world!"
+			]
+			hide_dependency_lines: false
+			id: "432250CF73DDF0D5"
+			rewards: [{
+				id: "33EFAFBF3537E31E"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "7868E4CA62B9F277"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:pickup_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:advanced_pickup_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:magnet_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:advanced_magnet_upgrade"
+							}
+						]
+					}
+				}
+				title: "Pick-Up Upgrades"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&aSophisticated Storage&r allows you to create and upgrade your chests, barrels, and more!"
+				""
+				"These Sophisticated Storages can hold even more items, hold fluids, or even automate certain tasks like smelting down ores."
+				""
+				"To start out, you can craft a Sophisticated Chest or Barrel by combining the vanilla item with a redstone torch. "
+				""
+				"If you've already placed down your storage in the world, you can craft the &aBasic Tier Upgrade&r and use it on the storage to upgrade it."
+			]
+			icon: {
+				Count: 1
+				id: "sophisticatedstorage:chest"
+				tag: {
+					woodType: "oak"
+				}
+			}
+			id: "27E048C4CA3B2EE4"
+			rewards: [
+				{
+					id: "1FA29D717734FD09"
+					item: "sophisticatedstorage:basic_tier_upgrade"
+					type: "item"
+				}
+				{
+					id: "07C4BD2DB87A82A6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0E42C634EE36E3D7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "sophisticatedstorage:base_tier_wooden_storage"
+						}
+					}
+					optional_task: true
+					title: "&aSophisticated Storages&r"
+					type: "item"
+				}
+				{
+					id: "62C023DA9EC60784"
+					item: "sophisticatedstorage:basic_tier_upgrade"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["27E048C4CA3B2EE4"]
+			description: [
+				"Just like Sophisticated Backpacks, you can upgrade your storage to the different metal tiers."
+				""
+				"This can be done by crafting the metal storage tier directly, or by making a &aBasic To Iron&r upgrade and using it on your storage in the world."
+				""
+				"Note: You can also upgrade to the higher tiers from the basic tier as well!"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: "sophisticatedstorage:basic_tier_upgrade"
+			id: "642A31365E146AB4"
+			rewards: [{
+				id: "1EEADDBB88788A43"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "0751A20DADB2AEED"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "sophisticatedstorage:basic_to_copper_tier_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:basic_to_gold_tier_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:basic_to_diamond_tier_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:basic_to_netherite_tier_upgrade"
+							}
+						]
+					}
+				}
+				match_nbt: true
+				title: "In World Upgrades"
+				type: "item"
+			}]
+			title: "Tier Upgrades"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["27E048C4CA3B2EE4"]
+			description: [
+				"For as long as I can remember, moving chests has been a headache. Not anymore!"
+				""
+				"&aPacking Tape&r allows you to pack up chests for you to easily move them. Use the packing tape on it first, then break it to get the chest as a single item. Once you've placed it down, the tape will disappear!"
+				""
+				"Note: Chests with &aStack Upgrades&r will need to be packed up first before moving."
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				Count: 1
+				id: "sophisticatedstorage:packing_tape"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2C0D7A904E611317"
+			rewards: [{
+				id: "60CB479303C51FB6"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "4B3232DA0261FC16"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:packing_tape"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Moving Chests"
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["27E048C4CA3B2EE4"]
+			description: ["To craft any of the upgrades, you'll need to make an &aUpgrade Base&r."]
+			id: "44B7D5BBC21CC354"
+			rewards: [
+				{
+					id: "66F478312413AAF0"
+					item: "sophisticatedstorage:upgrade_base"
+					type: "item"
+				}
+				{
+					id: "790C15819983D598"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "19CD753688009C91"
+				item: "sophisticatedstorage:upgrade_base"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["44B7D5BBC21CC354"]
+			description: [
+				"This is one of the essential upgrades for your chests!"
+				""
+				"The &aStack Upgrade&r increases the stack limit for each slot inside of the chest. These upgrades are also much cheaper than the &aSophisticated Backpack&r upgrades."
+			]
+			hide_dependency_lines: false
+			id: "259AD0B02B689B8C"
+			rewards: [{
+				id: "346C38DDED77330D"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "16B152A517F9EFB2"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "sophisticatedstorage:stack_upgrade_tier_1"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:stack_upgrade_tier_1_plus"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:stack_upgrade_tier_2"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:stack_upgrade_tier_3"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:stack_upgrade_tier_4"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:stack_upgrade_tier_5"
+							}
+						]
+					}
+				}
+				title: "Stack Upgrades"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["44B7D5BBC21CC354"]
+			description: [
+				"This is one of the essential upgrades for your chests!"
+				""
+				"The &aStack Upgrade&r increases the stack limit for each slot inside of the chest. These upgrades are also much cheaper than the &aSophisticated Backpack&r upgrades."
+			]
+			hide_dependency_lines: false
+			id: "0E6B5AF09C5C459E"
+			rewards: [{
+				id: "642BDE662ACD8A4A"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "666FAC7B2ACD27F9"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "sophisticatedstorage:stack_upgrade_tier_1"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:stack_upgrade_tier_1_plus"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:stack_upgrade_tier_2"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:stack_upgrade_tier_3"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:stack_upgrade_tier_4"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:stack_upgrade_tier_5"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["44B7D5BBC21CC354"]
+			description: [
+				"This is one of the essential upgrades for your chests!"
+				""
+				"The &aStack Upgrade&r increases the stack limit for each slot inside of the chest. These upgrades are also much cheaper than the &aSophisticated Backpack&r upgrades."
+			]
+			hide_dependency_lines: false
+			id: "50F4B5D976A95601"
+			rewards: [{
+				id: "2EF26C5FC7EC2420"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0DEB331AB6B1B19F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "sophisticatedstorage:void_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:advanced_void_upgrade"
+							}
+						]
+					}
+				}
+				title: "Void Upgrade"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&6Functional Drawers&r is a storage mod that aims to provide an easy solution to storing tons of items in a single block!"
+				""
+				"Drawers come in several varieties: Single Drawers, 1x2 Drawers, and 2x2 Drawers. While a 2x2 drawer can store 4 separate items, the total base storage amount is also divided by 4."
+				"{@pagebreak}"
+				"To place an item in, simply right click on the drawer with the item. Double-right clicking will deposit multiple stacks at a time."
+				""
+				"To remove items from a drawer, left clicking the drawer will remove 1 item at a time, while sneak-left clicking will pull a full stack at a time."
+			]
+			icon: "functionalstorage:oak_1"
+			id: "2E7873B4B9EDE169"
+			rewards: [{
+				id: "1619887E8BE2A56A"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Definitely Functional"
+			tasks: [{
+				id: "1A2EACF3A6D608D0"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "&aDrawers&r"
+				type: "item"
+			}]
+			title: "&aFunctional Drawers"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2E7873B4B9EDE169"]
+			description: [
+				"By default, drawers can only hold a base amount of items depending on their size. You can upgrade this with these upgrades! "
+				""
+				"For example, a standard Drawer that holds one type of item can hold up to around &a2,000 items&r for the base amount. Each upgrade multiplies the total storage amount, meaning the upgrades stack. Most drawers can hold 4 &aInventory Size Upgrades&r of any tier."
+				""
+				"Pro Tip: You can also place these inside of a &6Storage Controller&r to increase the linking range."
+			]
+			icon: "functionalstorage:netherite_upgrade"
+			id: "6A3F48389E8939FF"
+			rewards: [{
+				id: "2D52C2684646F4E4"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "40DD4CE9B083F72D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:copper_upgrade"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:gold_upgrade"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:diamond_upgrade"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:netherite_upgrade"
+							}
+						]
+					}
+				}
+				title: "Drawer Upgrades"
+				type: "item"
+			}]
+			title: "&aStorage Size Upgrades&f!"
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2E7873B4B9EDE169"]
+			description: [
+				"If you plan on using Drawers for storing the massive amount of items you'll get from farms or quarries, you'll need a backup plan &ojust in case your storage gets a little full&r."
+				""
+				"The &dVoid Upgrade&r is a utility upgrade that automatically voids items above the current stack limit. This is super useful for things like voiding excess cobblestone from quarries!"
+			]
+			icon: "functionalstorage:void_upgrade"
+			id: "07DA44F9303A2DA9"
+			rewards: [{
+				id: "5B7F0D2AF6653697"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5DABF5963B2471FF"
+				item: "functionalstorage:void_upgrade"
+				title: "Void Upgrade"
+				type: "item"
+			}]
+			title: "&dVoid Upgrade"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E7873B4B9EDE169"]
+			description: [
+				"&aCollector Upgrade&r - Adds an internal magnet to pick items up off the ground around it."
+				""
+				"&aPuller Upgrade&r - Allows the drawer to pull from adjacent inventories."
+				""
+				"&aPusher Upgrade&r - Allows the drawer to push to adjacent inventories."
+				""
+				"These can be configured by right clicking the upgrade while inside of the drawer."
+			]
+			icon: "functionalstorage:collector_upgrade"
+			id: "1CFE3E98E47A7C24"
+			optional: true
+			rewards: [{
+				id: "04ADDB1F9EF07F8C"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4966115A9A261ED9"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:collector_upgrade"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:pusher_upgrade"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:puller_upgrade"
+							}
+						]
+					}
+				}
+				title: "&aUtility Upgrades"
+				type: "item"
+			}]
+			title: "&aUtility Upgrades"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2E7873B4B9EDE169"]
+			description: [
+				"Instead of storing Iron Nuggets, Ingots, and Blocks in 3 separate drawers, you can store them all in a &aCompacting Drawer&r."
+				""
+				"These are special drawers that store and convert items directly into their compressed versions. This is useful for items like Iron or Gold to easily convert back and forth!"
+				""
+				"With &aSimple Compacting Drawers&r, you can store items that only use a base and block recipe. This is great for items like Redstone, Diamonds, and Emeralds!"
+			]
+			icon: "functionalstorage:compacting_drawer"
+			id: "3A79453541DCA476"
+			rewards: [{
+				id: "0CEDEA0C4E5DF998"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "21C55356DF8ADD5A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:simple_compacting_drawer"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:compacting_drawer"
+							}
+						]
+					}
+				}
+				title: "Compacting Drawers"
+				type: "item"
+			}]
+			title: "Compacting Drawers"
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2E7873B4B9EDE169"]
+			description: [
+				"Functional Storage can also handle storing fluids using &aFluid Drawers&r!"
+				""
+				"You can pump in fluids directly into the drawer to set it, or just by using a bucket of the fluid onto the drawer."
+			]
+			icon: "functionalstorage:fluid_1"
+			id: "13A92C76F2576958"
+			rewards: [{
+				id: "1C940B8580206756"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "38600E3E6776CA68"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:fluid_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:fluid_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:fluid_4"
+							}
+						]
+					}
+				}
+				title: "Fluid Drawers"
+				type: "item"
+			}]
+			title: "Compacting Drawers"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2E7873B4B9EDE169"]
+			description: [
+				"Don't like the look of Drawers? Make &aFramed Drawers&r instead!"
+				""
+				"These drawers can be crafted together with other items to change the look of the drawer to your liking. Each slot in the crafting table corresponds to a specific texture on the drawer."
+				""
+				"- 1st Slot: Outside Texture"
+				"- 2nd Slot: Inside Texture"
+				"- 3rd Slot: Framed Drawer"
+				"- 4th Slot: Divider Texture"
+			]
+			icon: "functionalstorage:framed_1"
+			id: "7B95C0F51CD98110"
+			rewards: [{
+				id: "47FDE28846D6FBA8"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "01FF341058E7984C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:framed_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_4"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:compacting_framed_drawer"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_simple_compacting_drawer"
+							}
+						]
+					}
+				}
+				title: "Framed Drawers"
+				type: "item"
+			}]
+			title: "Framed Drawers"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E7873B4B9EDE169"]
+			description: [
+				"When setting up automation, pushing and pulling items into Drawers can get complicated. That's where the Storage Tools come in!"
+				""
+				"The &6Configuration Tool&r is used to lock Drawers to only interact with certain items. This is super useful when you are constantly pulling or pushing items from Drawers!"
+				""
+				"Pro Tip: If you've connected Drawers to a &aStorage Controller&r, you can use the Configuration Tool on the Controller to lock all of the Drawers that are linked, all at once!"
+				"{@pagebreak}"
+				"You can also sneak-use the tool in the air to change modes. There are several modes that you can configure for drawers, like hiding the count amount or disabling the render of items on a Drawer to save FPS."
+			]
+			icon: "functionalstorage:configuration_tool"
+			id: "7A65F36EBEC18643"
+			rewards: [{
+				id: "16D06AEDFD6B7702"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "4D98232048905352"
+				item: "functionalstorage:configuration_tool"
+				title: "Configuration Tool"
+				type: "item"
+			}]
+			title: "Configuring Drawers"
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2E7873B4B9EDE169"]
+			description: [
+				"If you plan on creating a &aDrawer Wall&r, you'll need to make the &6Linking Tool&r!"
+				""
+				"The &6Linking Tool&r is used to link drawers to a &aStorage Controller&r, or to link separate &dEnder Drawers&r together. For more on how to use it, check the next page!"
+				"{@pagebreak}"
+				"By default, this tool is set to link a single drawer at a time. To do this, first sneak-use the tool on a Controller, then use the tool on the drawer you wish to add to the Controller's network."
+				""
+				"You'll also see the range that the Controller can reach when you hover over it with the tool in hand. This can be upgraded with Storage Upgrades!"
+				""
+				"While looking into the air, using the tool will switch between adding or removing drawers. If you sneak-use the tool in the air, it will switch between adding a single drawer at a time, or multiple!"
+			]
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "functionalstorage:linking_tool"
+				tag: { }
+			}
+			id: "5DF6386B98FB0207"
+			rewards: [{
+				id: "2DB0BD772F2E4DE2"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "4D0D1F521056D6B5"
+				item: {
+					Count: 1
+					id: "functionalstorage:linking_tool"
+					tag: { }
+				}
+				title: "Linking Tool"
+				type: "item"
+			}]
+			title: "Linking Tool"
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5DF6386B98FB0207"]
+			description: [
+				"&aStorage Controllers&r allow you to connect and interact with several drawers at once. These are amazing for automating items going in and out of your drawer system!"
+				""
+				"Once you've linked your drawers to the controller using the &6Linking Tool&r, you can double right click the controller to deposit all items from your inventory directly into the drawer network! This also means you can pipe in items into the controller as well."
+				""
+				"&aController Access Points&r can be used as extra controllers as long as it is linked to the main controller."
+			]
+			icon: "functionalstorage:storage_controller"
+			id: "1B2FB7391EC4E237"
+			rewards: [{
+				id: "104291F1C58B1EEE"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "7743BE40923FC293"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:storage_controller"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_storage_controller"
+							}
+						]
+					}
+				}
+				title: "Storage Controllers"
+				type: "item"
+			}]
+			title: "Storage Controllers"
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5DF6386B98FB0207"]
+			description: [
+				"Just like Ender Chests, &dEnder Drawers&r will store items that can be accessed across dimensions."
+				""
+				"To do this, you'll need 2 Ender Drawers linked together using the Linking Tool. On the first Ender Drawer, left click the Linking Tool onto the top of the Ender Drawer to grab the frequency of the drawer."
+				""
+				"Next, place down another Ender Drawer where you'd like to use it, and then sneak-use the Linking Tool to set the frequency of the drawer."
+			]
+			icon: "functionalstorage:ender_drawer"
+			id: "0FF53D69B491CD16"
+			optional: true
+			rewards: [{
+				id: "46B3FE6B537750DC"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "56A4FB3779C174DA"
+				item: "functionalstorage:ender_drawer"
+				type: "item"
+			}]
+			title: "&dEnder Drawers"
+			x: 0.5d
+			y: 5.0d
+		}
+	]
+	title: "General Storage"
+}

@@ -1,0 +1,51 @@
+{
+	icon: "mekanism:cardboard_box"
+	id: "6AD278380BF9C4F4"
+	loot_crate: {
+		color: 11184810
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		item_name: "Box of Mekanism Parts"
+		string_id: "mekanism_goodie_bag"
+	}
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 2, item: "mekanism:upgrade_speed", random_bonus: 4, weight: 50.0f }
+		{ count: 2, item: "mekanism:upgrade_energy", random_bonus: 4, weight: 50.0f }
+		{ count: 2, item: "mekanism:upgrade_gas", random_bonus: 2, weight: 20.0f }
+		{ item: "mekanism:basic_tier_installer", weight: 50.0f }
+		{ item: "mekanism:advanced_tier_installer", weight: 40.0f }
+		{ item: "mekanism:elite_tier_installer", weight: 30.0f }
+		{ item: "mekanism:ultimate_tier_installer", weight: 20.0f }
+		{ count: 2, item: "mekanism:basic_control_circuit", random_bonus: 2, weight: 100.0f }
+		{ item: "mekanism:advanced_control_circuit", random_bonus: 3, weight: 75.0f }
+		{ count: 2, item: "mekanism:alloy_infused", random_bonus: 2, weight: 100.0f }
+		{ count: 8, item: "mekanism:enriched_redstone", random_bonus: 8, weight: 50.0f }
+		{ count: 4, item: "mekanism:enriched_carbon", random_bonus: 4, weight: 50.0f }
+		{ item: "mekanism:block_osmium", random_bonus: 2, weight: 25.0f }
+		{ item: "immersiveengineering:storage_steel", random_bonus: 2, weight: 50.0f }
+		{ item: "mekanism:steel_casing", weight: 50.0f }
+		{ item: "mekanismgenerators:wind_generator", weight: 75.0f }
+		{ item: "mekanismgenerators:solar_generator", weight: 75.0f }
+		{ item: "mekanism:basic_energy_cube", weight: 50.0f }
+		{ item: "mekanism:advanced_energy_cube", weight: 40.0f }
+		{ item: "mekanism:elite_energy_cube", weight: 25.0f }
+		{ item: "mekanism:ultimate_energy_cube", weight: 10.0f }
+		{ count: 8, item: "mekanism:ultimate_universal_cable", weight: 25.0f }
+		{ count: 8, item: "mekanism:ultimate_pressurized_tube", weight: 25.0f }
+		{ count: 8, item: "mekanism:ultimate_mechanical_pipe", weight: 25.0f }
+		{ item: "mekanismgenerators:advanced_solar_generator", weight: 25.0f }
+		{ item: "mekanism:free_runners", weight: 10.0f }
+		{ item: "mekanism:jetpack", weight: 10.0f }
+		{ item: "mekanism:flamethrower", weight: 10.0f }
+		{ item: "mekanism:electric_bow", weight: 10.0f }
+		{ item: "mekanism:robit", weight: 20.0f }
+		{ count: 2, item: "mekanism:ingot_steel", random_bonus: 2, weight: 50.0f }
+	]
+	title: "&bMekanism Goodie Bag&r"
+	use_title: true
+}

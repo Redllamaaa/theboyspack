@@ -1,0 +1,1916 @@
+{
+	autofocus_id: "6D06B791EFF6E965"
+	default_hide_dependency_lines: false
+	default_min_width: 250
+	default_quest_shape: ""
+	filename: "immersive_engineering"
+	group: "00B02FC8BB194427"
+	icon: {
+		Count: 1
+		id: "immersiveengineering:hammer"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "0FC6D9571E0C2EDC"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&6Immersive Engineering&r (&6I.E&r) is a realism-inspired tech-mod with many fun and useful multiblocks."
+				""
+				"To get started, craft an &aEngineer's Hammer&r, which will be used throughout the mod for crafting recipes and activating multiblocks."
+				""
+				"The &aEngineer's Manual&r will be your best friend when showing you how to set up these multiblock machines."
+			]
+			id: "6D06B791EFF6E965"
+			rewards: [{
+				id: "16D54D4D6A940DEB"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [{
+				id: "66B2DCEEB623EFC6"
+				item: {
+					Count: 1
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&fWelcome to &6Immersive Engineering&f!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D06B791EFF6E965"]
+			description: [
+				"The &aAlloy Kiln&r is an early-game multiblock used to make alloys like: constantan, invar, electrum, and bronze."
+				""
+				"To build this, build a 2x2x2 cube out of &aKiln Bricks&r, then right click on a face with the &aEngineer's Hammer&r."
+			]
+			icon: "immersiveengineering:alloybrick"
+			id: "38E2176886386133"
+			optional: true
+			rewards: [{
+				id: "66AC57CB40D60196"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "immersiveengineering:block/multiblocks/alloy_smelter_on"
+						}
+					}
+					id: "1CE8A62210A2D217"
+					observe_type: 0
+					timer: 0L
+					to_observe: "immersiveengineering:alloy_smelter"
+					type: "observation"
+				}
+				{
+					count: 8L
+					id: "6E6A6AAFB5E9C9E5"
+					item: "immersiveengineering:alloybrick"
+					type: "item"
+				}
+			]
+			title: "&fAlloy Kiln"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6D06B791EFF6E965"]
+			description: [
+				"The &aCoke Oven&r is another early-game multiblock that converts regular coal into &3Coke Coal&r and &7Creosote Oil&r."
+				""
+				"&3Coke Coal&r is a more efficient fuel, while &aCreosote Oil&r will be used in many crafting recipes."
+				""
+				"To build this multiblock, make a 3x3x3 cube using &aCoke Bricks&r, then right click the middle block with the &bEngineer's Hammer&r to activate it."
+			]
+			icon: "immersiveengineering:cokebrick"
+			id: "0A2DB5AFC89E852F"
+			rewards: [
+				{
+					count: 4
+					id: "3C5F39D970D686A7"
+					item: "immersiveengineering:coal_coke"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "31EAD238A5E460FC"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "immersiveengineering:block/multiblocks/coke_oven_on"
+						}
+					}
+					id: "616ED86B19DC0FFB"
+					observe_type: 0
+					timer: 0L
+					to_observe: "immersiveengineering:coke_oven"
+					type: "observation"
+				}
+				{
+					count: 27L
+					id: "4B5889117A25E7CD"
+					item: "immersiveengineering:cokebrick"
+					type: "item"
+				}
+			]
+			title: "&fCoke Oven"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56367596C11E78A9"]
+			description: [
+				"&aSteel&r is one of the most used resources when creating &6I.E&r multiblock machines."
+				""
+				"You will need many different variant blocks made from &aSteel&r, so get ready to do some automation!"
+			]
+			id: "0806978F98A7A3E8"
+			rewards: [
+				{
+					count: 2
+					id: "2CE09021D3C6A04A"
+					item: "mekanism:ingot_steel"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "39E5710683A6F932"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [{
+				id: "2ECD29E9CB16DCFD"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0A2DB5AFC89E852F"]
+			description: [
+				"The &aBlast Furnace&r is one of the most important early-game multiblocks, as it is used to convert iron into &aSteel&r."
+				""
+				"This multiblock is a 3x3x3 cube made of &cBlast Bricks&r. Just like the other multiblocks, you can activate it by using your &bEngineer's Hammer&r on the center face."
+				""
+				"While it can also be powered by regular coal and charcoal, it's not as efficient as using &aCoke Coal&r."
+			]
+			icon: "immersiveengineering:blastbrick"
+			id: "56367596C11E78A9"
+			rewards: [{
+				id: "4C926BB078BCB5AE"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "immersiveengineering:block/multiblocks/blast_furnace_on"
+						}
+					}
+					id: "21E4AB2DCB81A632"
+					observe_type: 0
+					timer: 0L
+					to_observe: "immersiveengineering:blast_furnace"
+					type: "observation"
+				}
+				{
+					count: 27L
+					icon: "immersiveengineering:blastbrick"
+					id: "3CA443D22CC5432C"
+					item: "immersiveengineering:blastbrick"
+					type: "item"
+				}
+			]
+			title: "&fBlast Furnace"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0A2DB5AFC89E852F"]
+			description: [
+				"Using &3Creosote Oil&r, you can combine it with planks to create &aTreated Wood&r."
+				""
+				"&aTreated Wood&r is used to craft various &6I.E&r workstations, such as the &aEngineer's Workbench&r."
+			]
+			icon: "immersiveengineering:treated_wood_horizontal"
+			id: "63B7AC676FC1EE7F"
+			rewards: [
+				{
+					count: 8
+					id: "46202D7D34E1EBCF"
+					item: "immersiveengineering:treated_wood_horizontal"
+					random_bonus: 8
+					type: "item"
+				}
+				{
+					id: "3578F4FFF7E6A32A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "4515EE81221AAC7E"
+					item: "immersiveengineering:creosote_bucket"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5121CF58EBE23081"
+					item: "immersiveengineering:treated_wood_horizontal"
+					type: "item"
+				}
+			]
+			title: "&fTreated Wood Planks"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["63B7AC676FC1EE7F"]
+			description: [
+				"The &aEngineer's Workbench&r is the main crafting table for all of your engineering needs!"
+				""
+				"To make items using the &aEngineer's Workbench&r, you will need different types of &bBlueprints&r to craft different types of items."
+				""
+				"When you place a &bBlueprint&r on the top-left slot, it will show what recipes are available to craft on the right side of the workbench. You can then place in the items for the recipe, then pull the crafted item out."
+			]
+			id: "5E5BDCBF185E48E3"
+			rewards: [
+				{
+					count: 4
+					id: "7DD085D5E20311DF"
+					item: "immersiveengineering:sheetmetal_iron"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "2A45A72FA2C0FE2F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "482476F13EB6F774"
+				item: "immersiveengineering:workbench"
+				type: "item"
+			}]
+			title: "&fEngineer's Workbench"
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["207CE761F35EB902"]
+			description: [
+				"The &aGarden Cloche&r is a very sought-after machine that grows crops and automatically harvests and replants them in a controlled environment."
+				""
+				"Seeds require the correct soil to grow, and providing fertilizers will boost growth speed."
+				""
+				"The machines require water and power to function."
+			]
+			id: "498FEAF2BFD77D2E"
+			rewards: [
+				{
+					id: "285B3F7914DF91F3"
+					item: "immersiveengineering:cloche"
+					type: "item"
+				}
+				{
+					id: "32D698EDF3D1A4BF"
+					type: "xp"
+					xp: 25
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "0B08E51789FB857F"
+				item: "immersiveengineering:cloche"
+				type: "item"
+			}]
+			title: "&fGarden Cloche"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"660443512BB2E867"
+				"2E9C2F524BE5FC10"
+			]
+			description: [
+				"The &dArc Furnace&r is a massive machine used to quickly alloy metals and smelt ores."
+				""
+				"The &dArc Furnace&r can smelt batches of many items at once at the cost of larger amounts of power."
+				""
+				"The next pages break down the &dArc Furnace's&r interface and automation."
+				""
+				"Make sure to check out the &bEngineer's Manual&r to help you build the multiblock!"
+				"{@pagebreak}"
+				"&lInterface:"
+				""
+				"The top three slots are for &dGraphite Electrodes&r, which will degrade with use."
+				""
+				"The twelve left slots are for item inputs, with the temperature bars representing the smelting progress of each individual item."
+				""
+				"The button in the top left changes whether items are spread across the twelve slots or not."
+				""
+				"The four right slots are for additive materials that can be used for certain recipes."
+				"{@pagebreak}"
+				"&lAutomation:&r"
+				""
+				"Input and additives are inserted through the left and right hatches at the top of the structure."
+				""
+				"The bottom slot in the back will output slag, and the front one will output the main process."
+				""
+				"Energy can be inserted through the three connectors at the back."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "theboyspack:textures/quests/immersive/arc_furnace.png"
+				}
+			}
+			id: "4DABDC2484C732AC"
+			rewards: [
+				{
+					id: "421572E0B05210BA"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "51BFAD3A2EC20E9B"
+					item: {
+						Count: 1
+						id: "immersiveengineering:graphite_electrode"
+						tag: {
+							graphDmg: 0
+						}
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "theboyspack:textures/quests/immersive/arc_furnace.png"
+					}
+				}
+				id: "4A0037264C36EBE1"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:arc_furnace"
+				type: "observation"
+			}]
+			title: "&dArc Furnace"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2E9C2F524BE5FC10"
+				"5461C3C56F568B75"
+			]
+			description: [
+				"The &aMetal Press&r is a &bHeavy Machine&r multiblock that presses down items into a selected mold."
+				""
+				"When setting up the &aMetal Press&r, make sure that both conveyor belts are facing the same cardinal direction."
+				""
+				"The &aMetal Press&r receives power from the top, and items through the conveyor belts in the direction of movement."
+				""
+				"Make sure to check out the &bEngineer's Manual&r to help you build the multiblock!"
+			]
+			icon_scale: 1.5d
+			id: "7F6363864003FFC0"
+			rewards: [{
+				id: "2F185C9D89B8A332"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "theboyspack:textures/quests/immersive/metal_press.png"
+					}
+				}
+				id: "04A70E089DED1FFE"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:metal_press"
+				type: "observation"
+			}]
+			title: "&fMetal Press"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E5BDCBF185E48E3"]
+			description: [
+				"The &aCrafting Components &bBlueprint&r will be your most used &bBlueprint&r."
+				""
+				"This &bBlueprint&r allows you to craft the most common items used in creating more advanced machines."
+			]
+			icon: "immersiveengineering:light_bulb"
+			id: "207CE761F35EB902"
+			rewards: [
+				{
+					count: 2
+					id: "661B49A3864468F7"
+					item: "immersiveengineering:plate_nickel"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "13FC6C4D32853201"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [{
+				id: "289BF251D6D17679"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "components"
+					}
+				}
+				type: "item"
+			}]
+			title: "&fCrafting Components &bBlueprint"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5E5BDCBF185E48E3"]
+			description: [
+				"The &aMetal Press Molds &bBlueprint&r offers a variety of different molds that can also be used in other machines besides the &aMetal Press&r."
+				""
+				"For the purpose of progression, there are four main molds you would want: &aGear Mold&r, &aRod Mold&r, &aWire Mold&r, and &aPlate Mold&r."
+				""
+				"These all press ingots sent through the &aMetal Press&r into their respective items."
+				"{@pagebreak}"
+				"&aPacking Molds&r can be used to convert a variety of blocks to their 3x3, 2x2, or 1x1 crafting recipes."
+				""
+				"The &aBullet Casing Mold&r is used to craft bullet casings or pellets when used in a &aBottling Machine&r."
+			]
+			icon: "immersiveengineering:mold_plate"
+			id: "5461C3C56F568B75"
+			min_width: 300
+			rewards: [
+				{
+					id: "6DE4E840F44D658B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "37674780825B269A"
+					item: "immersiveengineering:plate_steel"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "32C38A70B16B6670"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "molds"
+					}
+				}
+				type: "item"
+			}]
+			title: "&fMetal Press Molds &bBlueprint"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E5BDCBF185E48E3"]
+			description: [
+				"Among the traders that &6I.E&r has, the &bMachinist&r can be made by placing down an &aEngineer's Crafting Table&r near a villager."
+				""
+				"Once at &dMaster&r rank, this villager will trade you the &aArc Furnace Electrode &bBlueprint&r."
+			]
+			hide_until_deps_visible: false
+			icon: {
+				Count: 1
+				id: "immersiveengineering:blueprint"
+				tag: {
+					blueprint: "electrode"
+				}
+			}
+			id: "4E48ACEA714B5976"
+			rewards: [
+				{
+					count: 4
+					id: "46BD38D0F5DFCA22"
+					item: "minecraft:emerald"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "77DF06B686A67DF7"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "3A490C81008F4DB1"
+					item: "immersiveengineering:craftingtable"
+					type: "item"
+				}
+				{
+					id: "6B420EA5EEB024D4"
+					item: {
+						Count: 1
+						id: "immersiveengineering:blueprint"
+						tag: {
+							blueprint: "electrode"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&fArc Furnace Electrode &bBlueprint"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"026A64F01C301119"
+				"4E48ACEA714B5976"
+				"7F6363864003FFC0"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The &dGraphite Electrode&r is mainly used as a fuel source for the &dArc Furnace&r, but it can also be used as deadly ammunition for the &dRailgun&r."
+				""
+				"&dGraphite Electrodes&r can also be crafted through the metal press, without needing the blueprint, but will only have half of their usual durability."
+			]
+			id: "660443512BB2E867"
+			rewards: [
+				{
+					count: 2
+					id: "15F68D409D9F903E"
+					item: "immersiveengineering:ingot_hop_graphite"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "3C2E0601D808B7A0"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [{
+				id: "13F359BFFC653BF8"
+				item: {
+					Count: 1
+					id: "immersiveengineering:graphite_electrode"
+					tag: {
+						graphDmg: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&dGraphite Electrode"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0806978F98A7A3E8"]
+			description: [
+				"The &2Improved Blast Furnace&r is a large multiblock machine that functions the same as the &aCrude Blast Furnace&r, but has some extra features:"
+				""
+				"- It can have up to two Preheaters, which can be powered with RF to improve processing speed."
+				""
+				"- It can be automated to retrieve items from the top, export steel from the front, and export slag from the back."
+				""
+				"To help build this multiblock, make sure to check out the &bEngineer's Manual&r!"
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "theboyspack:textures/quests/immersive/improved_blast_furnace.png"
+				}
+			}
+			id: "287D00E1CE70F334"
+			min_width: 300
+			optional: true
+			rewards: [{
+				id: "25E896FE486B1E7D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "theboyspack:textures/quests/immersive/improved_blast_furnace.png"
+						}
+					}
+					id: "3A3DB763BBBC3F31"
+					observe_type: 0
+					timer: 0L
+					to_observe: "immersiveengineering:advanced_blast_furnace"
+					type: "observation"
+				}
+				{
+					count: 27L
+					id: "092A08D0852BEEED"
+					item: "immersiveengineering:blastbrick_reinforced"
+					type: "item"
+				}
+				{
+					id: "32D1A8B6F787FB7C"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7D4133B030F0F7F3"
+					item: "immersiveengineering:blastfurnace_preheater"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "&fImproved Blast Furnace"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["436BFB9B69B6D4A7"]
+			description: [
+				"&aHOP Graphite Dust&r can be smelted down to make &3HOP Graphite Ingots&r."
+				""
+				"These ingots are used to make more advanced crafted items, like the &dHV Accumulator&r."
+			]
+			icon: "immersiveengineering:ingot_hop_graphite"
+			id: "026A64F01C301119"
+			rewards: [
+				{
+					count: 2
+					id: "3E669150A4B0A8BC"
+					item: "immersiveengineering:ingot_hop_graphite"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "4314B72E1952B9B4"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "5900C14766E14E67"
+					item: "immersiveengineering:dust_hop_graphite"
+					type: "item"
+				}
+				{
+					id: "212A73B92FEB412F"
+					item: "immersiveengineering:ingot_hop_graphite"
+					type: "item"
+				}
+			]
+			title: "&3HOP Graphite&r"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0806978F98A7A3E8"]
+			description: [
+				"&aEngineering Blocks&r are the core building blocks used to create most of the multiblock machines in the mod."
+				""
+				"Note: All machines will require at least one &aRedstone Engineering Block&r!"
+			]
+			hide_dependent_lines: true
+			icon: "immersiveengineering:light_engineering"
+			id: "2E9C2F524BE5FC10"
+			rewards: [
+				{
+					count: 16
+					id: "1DD5CD26A2F7525A"
+					item: "immersiveengineering:plate_iron"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "416ACCC704A941FD"
+					item: "immersiveengineering:plate_steel"
+					type: "item"
+				}
+				{
+					id: "5C6656745EF3BA41"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					icon: "immersiveengineering:heavy_engineering"
+					id: "45B01560F7029EE1"
+					type: "item"
+				}
+				{
+					id: "0C21BA09CCB23D14"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "5F2BDFEE1DB7B486"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+			]
+			title: "&fEngineering Blocks"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2E9C2F524BE5FC10"]
+			description: [
+				"The &aCrusher&r is a &bHeavy Machine&r primarily used as a way to break down ores and metals into &bdust&r."
+				""
+				"It can also be used to grind up enemies that are unfortunate enough to fall into it, outputting their relevant drops."
+				""
+				"Make sure to check out the &bEngineer's Manual&r to help you build the multiblock!"
+			]
+			id: "1461682BD1978BA8"
+			rewards: [{
+				id: "1B4A54796B39059A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "theboyspack:textures/quests/immersive/crusher.png"
+					}
+				}
+				id: "4750B6095A6DC2F2"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:crusher"
+				type: "observation"
+			}]
+			title: "&fCrusher"
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6D06B791EFF6E965"]
+			description: [
+				"Before having a &aMetal Press&r, you will need to craft plates by combining an ingot with an &aEngineer's Hammer&r in a crafting table."
+				""
+				"To craft wires, combine a plate with &aWire Cutters&r in the same way."
+			]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:wirecutter"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1EFED5AC265CDB0C"
+			rewards: [
+				{
+					count: 4
+					id: "0994B808224C971E"
+					item: "immersiveengineering:wire_copper"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "42D6F6B1FC8A5348"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "62448629F990F9B5"
+					item: {
+						Count: 1
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6470732FEDED2E3F"
+					item: "immersiveengineering:plate_iron"
+					type: "item"
+				}
+				{
+					id: "0F9AEFFC161E1DA3"
+					item: "immersiveengineering:wire_copper"
+					type: "item"
+				}
+			]
+			title: "&fMetal Plates \\&\\ Wires"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1EFED5AC265CDB0C"]
+			description: [
+				"&6I.E&r power is split into three categories: &aLow Voltage&r (&aLV&r), &cMedium Voltage&r (&cMV&r), and &dHigh Voltage&r (&dHV&r)."
+				""
+				"Each category of &bVoltage&r transfers a different amount of power and, as such, require different methods of transportation."
+				""
+				"In general, every power network needs three things: an input, an ouput, and a storage buffer (all machines have a built-in buffer)."
+				"{@pagebreak}"
+				"Power can be sent to and from a network via a connector using a &aWire Coil&r of the matching &bVoltage&r. You can extend the wires by connecting them to a &aWire Relay&r."
+				""
+				"&cWARNING&f: Exposed wires will shock entities that come into contact with them. &aLV&r and &cMV&r wires can be insulated to prevent damage, but &dHV Wires&r cannot."
+			]
+			icon: "immersiveengineering:wirecoil_copper"
+			id: "61D6B29594193438"
+			min_width: 300
+			rewards: [
+				{
+					count: 4
+					id: "0EBA8685ED2ED3E7"
+					item: "minecraft:copper_ingot"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "6543867FE8E6EC54"
+					type: "xp"
+					xp: 10
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "5132F424039D0AE2"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+				{
+					id: "7228C8855C15C9D7"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+				{
+					id: "3FA615F29BC7C66E"
+					item: "immersiveengineering:connector_lv_relay"
+					type: "item"
+				}
+			]
+			title: "&fImmersive Power"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["61D6B29594193438"]
+			description: [
+				"The &aThermoelectric Generator&r uses the temperature differential between the blocks on either side of it to generate &aLV&r power."
+				""
+				"This means that you need to place one cold block/fluid and one hot block/fluid on opposite sides of the block to generate power."
+				""
+				"You can check the &aEngineer's Manual&r or JEI for a list of compatible blocks."
+			]
+			id: "3CADD463CFC2FE32"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "4E2A6BB82482F957"
+					item: "immersiveengineering:wirecoil_copper_ins"
+					type: "item"
+				}
+				{
+					id: "04692047C40806B4"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "2539C101E2EF0E72"
+				item: "immersiveengineering:thermoelectric_generator"
+				type: "item"
+			}]
+			title: "&fThermoelectric Generator"
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["61D6B29594193438"]
+			description: [
+				"The &aKinetic Generator&r uses forces generated by &aWindmills&r ot &aWaterwheels&r to generate power."
+				""
+				"A &aWindmill&r needs to be placed at least four blocks above the ground and can be sped up by applying a &aWindmill Sail&r to each individual blade."
+				""
+				"&aWaterwheels&r provide constant power based on the amount of water flowing around the wheel. Up to three &aWaterwheels&r can be attached to the same shaft."
+			]
+			icon: "immersiveengineering:dynamo"
+			id: "648083DCC5BDF216"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "1744A60B6879DA94"
+					item: "immersiveengineering:watermill"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7CD094DA9C51BC77"
+					item: "immersiveengineering:wirecoil_copper_ins"
+					type: "item"
+				}
+				{
+					id: "45043F6C2CC66909"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "33A0FF0FCA8F6530"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+				{
+					id: "749AE704D9356661"
+					item: "immersiveengineering:windmill"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0C124ED388614B05"
+					item: "immersiveengineering:watermill"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"05A13861001BBF3C"
+				"2E9C2F524BE5FC10"
+			]
+			description: [
+				"The &aDiesel Generator&r generates &dHV&r power by consuming fuels like &2Diesel&r."
+				""
+				"Depending on the fuel used, certain fuels will burn for longer inside the generator, creating more power."
+				""
+				"For a full list of fuels check the &bEngineer's Manual&r or JEI."
+				""
+				"To learn more about building and using them, refer to the &aElectrical Grids&r section of the &bEngineer's Manual&r."
+			]
+			icon_scale: 1.25d
+			id: "4843F5564CA5810C"
+			optional: true
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "theboyspack:textures/quests/immersive/diesel_generator.png"
+					}
+				}
+				id: "6A92FEC0698047C1"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:diesel_generator"
+				type: "observation"
+			}]
+			title: "&fDiesel Generator"
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"05A13861001BBF3C"
+				"2E9C2F524BE5FC10"
+				"7C7C53CB012B14C5"
+			]
+			description: [
+				"The &aLightning Rod&r is a power generator that generates an enormous amount of HV power when struck by lightning."
+				""
+				"Stacking &aSteel Fences&r on the port on top of the &aLightning Rod&r increases the chances that it is hit during a thunderstorm."
+				""
+				"To learn more about them, check out the &aElectrical Grids&r section of the &bEngineer's Manual&r."
+			]
+			id: "29C1C4491D8B344E"
+			optional: true
+			rewards: [{
+				id: "0CED6E00EE3CC90D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "theboyspack:textures/quests/immersive/lightning_rod.png"
+					}
+				}
+				id: "0E8C4E7C9C329FA2"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:lightning_rod"
+				type: "observation"
+			}]
+			title: "&fLightning Rod"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["61D6B29594193438"]
+			description: [
+				"To transfer the next tier of voltage, you'll need &cMV Wires&r."
+				""
+				"If you plan on stepping down from MV to LV to connect to certain relays, you will need a &aTransformer&r for it to work."
+				""
+				"These can be placed on &2Posts&r as well, making them look great for decoration!"
+			]
+			icon: "immersiveengineering:wirecoil_electrum"
+			id: "7C19FA7515BC295F"
+			optional: true
+			rewards: [{
+				id: "2604B6C0072B1634"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					id: "1E25247AEA34210F"
+					item: "immersiveengineering:connector_mv"
+					type: "item"
+				}
+				{
+					id: "68FBB22972BA4F3B"
+					item: "immersiveengineering:wirecoil_electrum"
+					type: "item"
+				}
+				{
+					id: "7FFD0771E33F07ED"
+					item: "immersiveengineering:connector_mv_relay"
+					type: "item"
+				}
+				{
+					id: "1E82EFF3052D22D9"
+					item: "immersiveengineering:transformer"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "&cMV Wires"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7C19FA7515BC295F"]
+			description: [
+				"The final tier of voltage is &dHV&r."
+				""
+				"Just like going from MV to LV, you'll need a transformer to convert between the tiers."
+				""
+				"The &dHV Transformer&r can convert LV directly to HV."
+				""
+				"However, it cannot be placed on posts."
+			]
+			icon: "immersiveengineering:wirecoil_steel"
+			id: "05A13861001BBF3C"
+			optional: true
+			subtitle: "Do Not Touch!"
+			tasks: [
+				{
+					id: "5EA5B6CFB0F15B75"
+					item: "immersiveengineering:connector_hv"
+					type: "item"
+				}
+				{
+					id: "364AC550D3C0C892"
+					item: "immersiveengineering:wirecoil_steel"
+					type: "item"
+				}
+				{
+					id: "74E01BDF2D03BD85"
+					item: "immersiveengineering:connector_hv_relay"
+					type: "item"
+				}
+				{
+					id: "7C1069A1F1DE042B"
+					item: "immersiveengineering:transformer_hv"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["21E8659A60134C9B"]
+			description: [
+				"&aAccumulators&r are energy storage blocks for Immersive Engineering."
+				""
+				"These blocks increase in storage capacity at higher &bVoltage&r categories."
+			]
+			id: "7C7C53CB012B14C5"
+			rewards: [{
+				id: "47498881D719CB5D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B2AC5A9A28F14A9"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "immersiveengineering:capacitor_lv"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:capacitor_mv"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:capacitor_hv"
+							}
+						]
+					}
+				}
+				title: "Accumulators"
+				type: "item"
+			}]
+			title: "&fAccumulators"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6D06B791EFF6E965"]
+			description: [
+				"In &6I.E&r, items are generally moved around using various types of &aConveyor Belts&r."
+				""
+				"For fluid transportation, the &aFluid Pipe&r can be used between machines."
+				""
+				"Check the &eStorage \\&\\ Transport&r section in the &aEngineer's Manual&r for all of your options!"
+			]
+			icon: "immersiveengineering:conveyor_basic"
+			id: "65A18B0DA64B7A42"
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "1166B1F8A332D5E4"
+					item: "immersiveengineering:conveyor_basic"
+					random_bonus: 16
+					type: "item"
+				}
+				{
+					id: "203E861BED2068B6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "076F60EC1932D4E5"
+					item: "immersiveengineering:conveyor_basic"
+					type: "item"
+				}
+				{
+					id: "1AD15495EF638B21"
+					item: "immersiveengineering:fluid_pipe"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "&fLogistics"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E5BDCBF185E48E3"]
+			description: ["&aProjectile &bBlueprints&r can be used to create a wide assortment of bullets to use in the &aRevolver&r or &dRailgun&r."]
+			icon: "immersiveengineering:armor_piercing"
+			id: "234945ED1315945B"
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "1F8FA33702CF0888"
+					item: "immersiveengineering:empty_casing"
+					random_bonus: 16
+					type: "item"
+				}
+				{
+					id: "4A83A23FAFD016D9"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "gear"
+			subtitle: "Expand your arsenal"
+			tasks: [
+				{
+					id: "28FD4527EE38C2BA"
+					item: {
+						Count: 1
+						id: "immersiveengineering:blueprint"
+						tag: {
+							blueprint: "bullet"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6CE2BD53D5A189F0"
+					item: {
+						Count: 1
+						id: "immersiveengineering:blueprint"
+						tag: {
+							blueprint: "specialBullet"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "&fProjectiles &bBlueprints"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"580FC87308E6D5B9"
+				"207CE761F35EB902"
+			]
+			description: [
+				"The &cAdvanced Electronic Component&r is used to craft various late-game items and machines, most notably, the &dRailgun&r."
+				""
+				"To craft one, you'll need &cDuroplast Sheets&r from a &aBottling Machine&r."
+			]
+			id: "7BBE12078C2FC82E"
+			rewards: [
+				{
+					count: 4
+					id: "764DBBE5CA7C0C1E"
+					item: "immersiveengineering:plate_duroplast"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "2A6E5579548EEAB9"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [{
+				id: "0A94E28B68236430"
+				item: "immersiveengineering:component_electronic_adv"
+				type: "item"
+			}]
+			title: "&cAdvanced Electronic Component"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3CF48BB941321C47"]
+			description: ["Using a &bPlate Mold&r you can form &aDuroplast Sheet&r, a type of plastic used in many electronic and crafting components."]
+			id: "580FC87308E6D5B9"
+			tasks: [{
+				id: "5AA917F0D67D8A36"
+				item: "immersiveengineering:plate_duroplast"
+				type: "item"
+			}]
+			title: "&fDuroplast Sheet"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"3BD6FEDB8CFAC914"
+				"2E9C2F524BE5FC10"
+			]
+			description: [
+				"The &aBottling Machine&r is a &bHeavy Machine&r that fills containers, molds, and other items with fluids."
+				""
+				"To help build and learn more about the machine, make sure to check the &bEngineer's Manual&r!"
+			]
+			id: "3CF48BB941321C47"
+			rewards: [{
+				id: "536D7B4A09E5AAF8"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "theboyspack:textures/quests/immersive/bottling_machine.png"
+					}
+				}
+				id: "6CDF504643794087"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:bottling_machine"
+				type: "observation"
+			}]
+			title: "&fBottling Machine"
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"1036AB9D02AB96F1"
+				"2F933169CF164EC7"
+			]
+			description: ["Refining &aAcetaldehyde&r and &aCreosote Oil&r together produces &aPhenolic Resin&r, which is used in the creation of plastics."]
+			id: "3BD6FEDB8CFAC914"
+			rewards: [{
+				id: "45C5DD3245AE550F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3AA39FBE243CB170"
+				item: "immersiveengineering:phenolic_resin_bucket"
+				type: "item"
+			}]
+			title: "&fPhenolic Resin"
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2E9C2F524BE5FC10"]
+			description: [
+				"The &aRefinery&r processes fluids and catalysts to produce a new output."
+				""
+				"This &bHeavy Machine&r is used to make more advanced fluids, like &dAcetaldehyde&r."
+				""
+				"Make sure to check out the &bEngineer's Manual&r to help you build the multiblock!"
+			]
+			icon_scale: 1.1d
+			id: "1036AB9D02AB96F1"
+			rewards: [{
+				id: "27C593295630F89F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "theboyspack:textures/quests/immersive/refinery.png"
+					}
+				}
+				id: "77B96BEA9D8D8654"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:refinery"
+				type: "observation"
+			}]
+			title: "&fRefinery"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1036AB9D02AB96F1"
+				"3F4C25DF20877606"
+			]
+			description: [
+				"By refining &aEthanol&r and a silver plate in the &6Refinery&r, you can get &aAcetaldehyde&r."
+				""
+				"This is a key ingredient for making &aPhenolic Resin&r!"
+			]
+			id: "2F933169CF164EC7"
+			rewards: [{
+				id: "0D81CB67FF5CD0D7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5345CE0A9502C1CE"
+				item: "immersiveengineering:acetaldehyde_bucket"
+				type: "item"
+			}]
+			title: "&fAcetaldehyde"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1962F37154380EBF"]
+			description: [
+				"&aEthanol&r is a very useful resource that can be turned into &2Herbicide&r, &2Biodiesel&r, and &dAcetaldehyde&r."
+				""
+				"We'll need &dAcetaldehyde&r to make a type of plastic sheet for electronic components."
+			]
+			id: "3F4C25DF20877606"
+			rewards: [{
+				id: "4CC00CBC95652AE5"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "36B3F15841B7F400"
+				item: "immersiveengineering:ethanol_bucket"
+				type: "item"
+			}]
+			title: "&fEthanol"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2E9C2F524BE5FC10"]
+			description: [
+				"The &aFermenter&r is a &bHeavy Machine&r used to extract &aEthanol&r from fruits, grains, and vegetables."
+				""
+				"Make sure to check out the &bEngineer's Manual&r to help you build the multiblock!"
+			]
+			id: "1962F37154380EBF"
+			rewards: [{
+				id: "363C4C224B6C9F25"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "theboyspack:textures/quests/immersive/fermenter.png"
+					}
+				}
+				id: "5E824F724F133342"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:fermenter"
+				type: "observation"
+			}]
+			title: "&fFermenter"
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"7BBE12078C2FC82E"
+				"234945ED1315945B"
+				"7C7C53CB012B14C5"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"This marvel of engineering is capable of accelerating various projectiles, like Iron Rods, to very high speeds."
+				""
+				"To use the &dRailgun&r, have an accepted type of projectile in your inventory and hold-use the gun to charge it. Release to let it fire!"
+				""
+				"The &dRailgun&r deals different amounts of damage depending on the projectile shot by using a small amount of power."
+				""
+				"It is recommended to use it with an &aAccumulator Backpack&r!"
+				""
+				"It can also be modified in the &aEngineer's Workbench&r and customized with &bShaders&r."
+				"{@pagebreak}"
+				"List of Projectiles:"
+				""
+				"- Iron, Aluminum, or Steel Rods"
+				"- Graphite Electrodes"
+				"- Blaze Rods"
+				"- End Rods"
+				"- Ender Pearls"
+				"- Sawblades"
+				"- Tridents"
+			]
+			id: "37CA431C28D82E55"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "254DBE021FCBE4F1"
+					item: {
+						Count: 1
+						id: "immersiveengineering:sawblade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B127661A824888B"
+					type: "xp"
+					xp: 50
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "07ED361D6C3A1AEA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 3
+						}
+					}
+					id: "immersiveengineering:railgun"
+				}
+				type: "item"
+			}]
+			title: "&dRailgun"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"5E5BDCBF185E48E3"
+				"2E9C2F524BE5FC10"
+			]
+			description: [
+				"Tired of having manually craft all your componenets? Then the &aAutomated Engineer's Workbench&r is the right tool for you!"
+				""
+				"This multiblock has the same funcitionality as its non-automated version, but will automatically accept items and output the appropriate product based on the blueprint inside of the machine."
+				""
+				"This is considered &aHeavy Machinery&r, so make sure to check out the &bEngineer's Manual&r to learn how to build the multiblock!"
+			]
+			id: "1507B28963B38101"
+			optional: true
+			rewards: [{
+				id: "78583D03E785B0ED"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "theboyspack:textures/quests/immersive/auto_workbench.png"
+					}
+				}
+				id: "63631EC45A5E0BD0"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:auto_workbench"
+				type: "observation"
+			}]
+			title: "&fAutomated Engineer's Workbench"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6B04DF90E7F33C9D"
+				"2E9C2F524BE5FC10"
+			]
+			description: [
+				"The &aSqueezer&r presses &2Plant Oil&r out of seeds, or 8 &3Coke Dusts&r into &cHOP Graphite Dust&r."
+				""
+				"Make sure to check out the &bEngineer's Manual&r to help you build the multiblock!"
+			]
+			icon_scale: 1.25d
+			id: "436BFB9B69B6D4A7"
+			rewards: [{
+				id: "5F4F4363EAA9928D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "theboyspack:textures/quests/immersive/squeezer.png"
+					}
+				}
+				id: "3F7FE89F1DBD4A48"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:squeezer"
+				type: "observation"
+			}]
+			title: "&fIndustrial Squeezer"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1461682BD1978BA8"]
+			description: ["&aCoke Dust&r can be made by crushing &3Coke&r, which can be processed in a &aSqueezer&r to make &3Graphite Dust&r."]
+			id: "6B04DF90E7F33C9D"
+			rewards: [
+				{
+					count: 4
+					id: "34642DD49B9ECA13"
+					item: "immersiveengineering:dust_coke"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "3DE26C294FE3862E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6F6D13104BBA15D1"
+				item: "immersiveengineering:dust_coke"
+				type: "item"
+			}]
+			title: "&fCoke Dust"
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6D06B791EFF6E965"
+				"1F9E582F684EA247"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"&aRedstone Acid&r can be used inside &aAccumulators&r to store power, or to oxidise copper blocks."
+				""
+				"This can be crafted in a crafting table, or by using the &6Mixer&r."
+			]
+			hide_dependency_lines: true
+			id: "21E8659A60134C9B"
+			rewards: [
+				{
+					id: "7AD98854FCD9EB46"
+					item: "immersiveengineering:redstone_acid_bucket"
+					type: "item"
+				}
+				{
+					id: "595C3EAC8BD07949"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "5DDC10414B9D745B"
+				item: "immersiveengineering:redstone_acid_bucket"
+				type: "item"
+			}]
+			title: "&fBucket of Redstone Acid"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2E9C2F524BE5FC10"]
+			description: [
+				"The &aMixer&r is a &bHeavy Machine&r that dissolves and mixes solids into fluids."
+				""
+				"The most common uses are &aLiquid Concrete&r, &aRedstone Acid&r, or &dLiquid Potions&r."
+			]
+			id: "1F9E582F684EA247"
+			optional: true
+			rewards: [{
+				id: "5819293CBC40CDFD"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "theboyspack:textures/quests/immersive/mixer.png"
+					}
+				}
+				id: "6C1AB8986784E504"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:mixer"
+				type: "observation"
+			}]
+			title: "&fMixer"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"3CF48BB941321C47"
+				"1F9E582F684EA247"
+			]
+			description: [
+				"Using the &aMixer&r, &6I.E&r allows you create potions at a higher efficiency than normal, and without using any blaze rods."
+				""
+				"After the potion has been mixed, the &aBottling Machine&r can fill a glass bottle with its contents, turning it into a potion."
+			]
+			id: "3DA88A88662843AF"
+			optional: true
+			rewards: [{
+				id: "75D19428ED15758D"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "580FC1A9FFD21906"
+				title: "I have read and agreed to create the very best potion that has ever potioned"
+				type: "checkmark"
+			}]
+			title: "&dLiquid Potions"
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["234945ED1315945B"]
+			description: [
+				"The &aRevolver&r is a loud, 12-gauge gun that will attract nearby hostile mobs when shot."
+				""
+				"It can be loaded with different types of ammunition by sneak + right-clicking the weapon and placing cartridges into its slots."
+				""
+				"It can also be modified in the &aEngineer's Workbench&r."
+			]
+			id: "5878F6DB12C22339"
+			optional: true
+			rewards: [
+				{
+					count: 8
+					id: "7250F2D8D0A13CFC"
+					item: "immersiveengineering:buckshot"
+					type: "item"
+				}
+				{
+					id: "1CF814AEB65CF02B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "3FA65575583A43AD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 21
+						}
+					}
+					id: "immersiveengineering:revolver"
+				}
+				type: "item"
+			}]
+			title: "&fRevolver"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5878F6DB12C22339"
+				"37CA431C28D82E55"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Guns can be modded in the &aEngineer's Workbench&r."
+				""
+				"The &aPrecision Scope&r allows you to zoom in using the Middle Mouse Button."
+				""
+				"The &aAdvanced Heatsink&r is a &dRailgun&r-exclusive mod that greatly reduces its charge time."
+				"{@pagebreak}"
+				""
+				"The &aBayonet&r is a &aRevolver&r-exclusive mod that allows for melee damage as powerful as an iron sword."
+				""
+				"The &aExtended Magazine&r is a &aRevolver&r-exclusive mod that allows loading of six more cartridges into the &aRevolver&r"
+				""
+				"The &aAmplifying Electron Tubes&r is a &aRevolver&r-exclusive mod that stuns the target shot."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "jei:textures/jei/atlas/gui/icons/info.png"
+				}
+			}
+			id: "073BE902F972D190"
+			min_width: 300
+			optional: true
+			rewards: [{
+				id: "43A393CB573E93F3"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					id: "5AF5D5EBA8E1E158"
+					title: "Gun Modding"
+					type: "checkmark"
+				}
+				{
+					id: "32FEA3532A11D8B4"
+					item: "immersiveengineering:toolupgrade_railgun_scope"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7DF99E3EDA9A71CC"
+					item: "immersiveengineering:toolupgrade_railgun_capacitors"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4D7C1755FFA76D6A"
+					item: "immersiveengineering:toolupgrade_revolver_bayonet"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0017453E18327FCA"
+					item: "immersiveengineering:toolupgrade_revolver_magazine"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7DD0644AE8AE6C8C"
+					item: "immersiveengineering:toolupgrade_revolver_electro"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "&fGun Modding"
+			x: 2.0d
+			y: 6.0d
+		}
+	]
+	title: "Immersive Engineering"
+}

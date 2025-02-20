@@ -1,0 +1,1119 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "apotheosis"
+	group: "2987039AB4197A8E"
+	icon: {
+		Count: 1
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "theboyspack:textures/quests/apothlogo.png"
+		}
+	}
+	id: "28BA258282FC2889"
+	images: [
+		{
+			height: 1.5d
+			image: "biomeswevegone:block/blue_enchanted/bookshelf"
+			rotation: 45.0d
+			width: 1.5d
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			height: 1.25d
+			image: "apotheosis:blocks/reforging/table_top"
+			rotation: 0.0d
+			width: 1.25d
+			x: -8.5d
+			y: -1.0d
+		}
+		{
+			height: 1.25d
+			image: "apotheosis:blocks/augmenting/top"
+			rotation: 0.0d
+			width: 1.25d
+			x: -8.5d
+			y: -5.0d
+		}
+		{
+			alpha: 128
+			height: 2.5d
+			image: "apotheosis:blocks/seashelf"
+			rotation: 0.0d
+			width: 2.5d
+			x: 9.5d
+			y: -5.0d
+		}
+		{
+			alpha: 128
+			height: 2.5d
+			image: "apotheosis:blocks/hellshelf"
+			rotation: 0.0d
+			width: 2.5d
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "apotheosis:blocks/library/side2"
+			rotation: 0.0d
+			width: 2.0d
+			x: 12.5d
+			y: -3.0d
+		}
+		{
+			alpha: 128
+			height: 2.5d
+			image: "apotheosis:blocks/sight_side"
+			rotation: 0.0d
+			width: 2.5d
+			x: 12.5d
+			y: 1.0d
+		}
+		{
+			alpha: 128
+			height: 2.5d
+			image: "apotheosis:blocks/filtering_shelf/occupied"
+			rotation: 0.0d
+			width: 2.5d
+			x: 12.5d
+			y: -7.0d
+		}
+		{
+			alpha: 128
+			height: 2.5d
+			image: "apotheosis:blocks/blazing_hellshelf"
+			rotation: 0.0d
+			width: 2.5d
+			x: 15.5d
+			y: -1.0d
+		}
+		{
+			alpha: 128
+			height: 2.5d
+			image: "apotheosis:blocks/heart_seashelf"
+			rotation: 0.0d
+			width: 2.5d
+			x: 15.5d
+			y: -5.0d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "apotheosis:blocks/treasure_shelf_side"
+			rotation: 0.0d
+			width: 2.0d
+			x: 18.75d
+			y: -6.0d
+		}
+		{
+			alpha: 128
+			height: 2.5d
+			image: "apotheosis:blocks/soul_touched_deepshelf"
+			rotation: 0.0d
+			width: 2.5d
+			x: 22.0d
+			y: -1.0d
+		}
+		{
+			alpha: 128
+			height: 2.5d
+			image: "apotheosis:blocks/soul_touched_sculkshelf"
+			rotation: 0.0d
+			width: 2.5d
+			x: 24.5d
+			y: -1.0d
+		}
+		{
+			alpha: 128
+			height: 2.5d
+			image: "apotheosis:blocks/echoing_deepshelf"
+			rotation: 0.0d
+			width: 2.5d
+			x: 22.0d
+			y: -5.0d
+		}
+		{
+			alpha: 128
+			height: 2.5d
+			image: "apotheosis:blocks/echoing_sculkshelf"
+			rotation: 0.0d
+			width: 2.5d
+			x: 24.5d
+			y: -5.0d
+		}
+		{
+			alpha: 128
+			height: 2.4d
+			image: "apotheosis:blocks/endshelf"
+			rotation: 0.0d
+			width: 2.4d
+			x: 31.0d
+			y: -3.0d
+		}
+		{
+			alpha: 128
+			height: 2.4d
+			image: "apotheosis:blocks/draconic_endshelf"
+			rotation: 0.0d
+			width: 2.4d
+			x: 31.0d
+			y: -5.0d
+		}
+		{
+			alpha: 128
+			height: 2.4d
+			image: "apotheosis:blocks/pearl_endshelf"
+			rotation: 0.0d
+			width: 2.4d
+			x: 31.0d
+			y: -1.0d
+		}
+		{
+			height: 8.0d
+			image: "theboyspack:textures/quests/apothlogo.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			height: 1.0d
+			image: "apotheosis:items/gems/warlord"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			height: 1.0d
+			image: "apotheosis:items/gems/blood_lord"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "apotheosis:items/gems/endersurge"
+			rotation: 0.0d
+			width: 1.0d
+			x: -10.0d
+			y: -3.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&6Apotheosis&r overhauls exploration and combat by creating a more RPG-like experience."
+				""
+				"Items and mobs you can find in the world can have special &bAffixes&r on them, making them much stronger, and sometimes giving them special abilities to make things even more fun!"
+				""
+				"If you feel lost, you can always refer to the &aChronicle of Shadows&r, which is the guide book for the mod."
+			]
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:ancient"
+					}
+					gem: "apotheosis:the_nether/inferno"
+				}
+			}
+			id: "6CA55DBB8909C8BD"
+			rewards: [
+				{
+					id: "41988E66D232570C"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "apotheosis:apoth_chronicle"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "04D52D21CC1F811C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "2C0AFFFFD6703B4E"
+				title: "Welcome to &dApotheosis&r"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6CA55DBB8909C8BD"]
+			description: [
+				"Before we dive into &6Apotheosis&r, we need to cover what an &bAffix&r is!"
+				""
+				"An &bAffix&r is the driving force behind all &6Apotheosis&r gear. Each &bAffix&r is very similar to an enchantment, providing a bonus to the item it is attached to."
+				"{@pagebreak}"
+				"&bAffix&r items can be found when exploiring the world and their effects vary based on the item's rarity. They are more commonly dropped from &6Apotheosis&r boss monsters which can be found in underground caves or have a chance to randomly appear during the night."
+				""
+				"There are a few different types of &bAffixes&r, each affecting a specific part of the item such as: Stats, Effects, Durability, and &bGem Sockets&r, which will be covered in the &bGems&r section."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "quark:textures/attribute/attack_speed.png"
+				}
+			}
+			id: "077A1DD6EBD86B0E"
+			rewards: [{
+				id: "5549D439C94D37F0"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "10EAC2D451599E49"
+				title: "Understanding Affix Items"
+				type: "checkmark"
+			}]
+			title: "Understanding &aAffix&r items"
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["077A1DD6EBD86B0E"]
+			description: [
+				"To get started on getting your ultimate &6Apotheosis&r gear, you'll need to fight monsters and explore the world for &bGems&r!"
+				""
+				"&bGems&r are crystals that provide a powerful bonuses when applied to &bAffix&r items."
+				"{@pagebreak}"
+				"To apply a &bGem&r to an item, you must combine it with the item in a &aSmithing Table&r. The item must have an open &aGem Socket&r for this to work."
+				""
+				"Gems give different bonuses when slotted in different item types, and can be upgraded in the &aGem Cutting Table&r."
+				""
+				"&cUnique Gems&r can only be socketed once per item, while most other gems can be socketed multiple times for stacking bonuses."
+				""
+				"There are a variety of &6Apotheosis&r &bGems&r, which you can get by killing mobs and bosses."
+				"{@pagebreak}"
+				"&bGems&r can also be crushed by an anvil to create &aGem Dust&r."
+				""
+				"You can use &aGem Dust&r for a variety of things, but the first thing you'll want to make is a &aSalvaging Table&r!"
+			]
+			id: "47A3DE634D2C3C85"
+			rewards: [
+				{
+					id: "7909E2202CDCA85F"
+					item: "apotheosis:gem_dust"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "24A8DDD4B2E3F0B0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "6A9604AE9E3BBF83"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
+			title: "&aGems&r"
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["47A3DE634D2C3C85"]
+			description: [
+				"The &aGem Cutting Table&r is used to upgrade &bGems&r."
+				""
+				"Upgrading a &bGem&r costs &aGem Dust&r, rarity materials, and a second &bGem&r of the same rarity. The material and dust cost of upgrading a &bGem&r increases with its rarity."
+				""
+				"The exact upgrade costs will be shown in the table's interface."
+			]
+			id: "62A2F95EEFE4CD26"
+			rewards: [
+				{
+					id: "6322F0FFF35E1664"
+					item: "apotheosis:gem_dust"
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "33FC27A54BF6D868"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "08F53EA04BF4BAEF"
+				item: "apotheosis:gem_cutting_table"
+				type: "item"
+			}]
+			title: "&aGem Cutting Table"
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["47A3DE634D2C3C85"]
+			description: [
+				"Using the &aSimple Reforging Table&r, you can now reforge an item with brand new affixes."
+				""
+				"Reforging is not limited to items that already have &bAffixes&r, and can be performed with any valid item, any number of times."
+				""
+				"The &aSimple Reforging Table&r allows you to reforge items up to &9Rare&r rarity. You'll need to upgrade this table if you wish to reforge higher rarity items."
+				"{@pagebreak}"
+				"Reforging Tables have three input slots:"
+				""
+				"The center slot holds the item you wish to reforge, the top-left slot holds the rarity materials for the rarity you would like to reforge with, and the bottom-right slot holds &aSigils of Rebirth&r, which are used as fuel during reforging."
+				""
+				"There is a base cost of experience, sigils, and materials for reforges of each rarity, which can be doubled or tripled if choosing the other two options."
+			]
+			id: "1B9962D4196F6D56"
+			rewards: [
+				{
+					id: "42B7D0543C9C6292"
+					item: "apotheosis:gem_dust"
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "26C8113301C5B0B5"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "342299ACC3E87CFA"
+				item: "apotheosis:simple_reforging_table"
+				type: "item"
+			}]
+			title: "&aSimple Reforging Table"
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["47A3DE634D2C3C85"]
+			description: [
+				"The &aSalvaging Table&r is used to break down affix items into their corresponding rarity materials:"
+				""
+				"{\"text\": \"Common - Mysterious Scrap Metal\", \"color\": \"#7E7E7E\"}"
+				"{\"text\": \"Uncommon - Timeworn Fabric\", \"color\": \"#55FF55\"}"
+				"{\"text\": \"Rare - Luminous Crystal Shard\", \"color\": \"#5454FC\"}"
+				"{\"text\": \"Epic - Arcane Sands\", \"color\": \"#B900B9\"}"
+				"{\"text\": \"Mythic - Godforged Pearls\", \"color\":\"#EA6F14\"}"
+				""
+				"The &aSalvaging Table&r can be automated by sending items in from the top or sides, and extracting them from the bottom of the table. Don't lose any items!"
+			]
+			icon: "apotheosis:salvaging_table"
+			id: "2CDFBF12B1DD988B"
+			rewards: [
+				{
+					id: "00D33743664EB861"
+					item: "apotheosis:gem_dust"
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "6D5D8DEA06EDC77D"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "42DB6A04501CA960"
+					item: "apotheosis:salvaging_table"
+					type: "item"
+				}
+				{
+					id: "2D33F9A829B9DF50"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "apotheosis:common_material"
+								}
+								{
+									Count: 1b
+									id: "apotheosis:uncommon_material"
+								}
+								{
+									Count: 1b
+									id: "apotheosis:rare_material"
+								}
+								{
+									Count: 1b
+									id: "apotheosis:epic_material"
+								}
+								{
+									Count: 1b
+									id: "apotheosis:mythic_material"
+								}
+							]
+						}
+					}
+					title: "Salvaged Materials"
+					type: "item"
+				}
+			]
+			title: "The &aSalvaging Table"
+			x: -6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1B9962D4196F6D56"]
+			description: ["[\"The \", {\"text\": \"Reforging Table\", \"color\": \"#B900B9\"}, \" is an improved version of the \", {\"text\": \"Simple Reforging Table\", \"color\":\"#55FF55\"}, \", allowing you reforge items of all rarities including \", {\"text\": \"Mythic\", \"color\":\"#EA6F14\"}, \" items.\"]"]
+			icon: "apotheosis:reforging_table"
+			id: "1EB034657B29CEF5"
+			rewards: [{
+				id: "320640AE3A97E24D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "4DD6C9026DE97DA6"
+					item: "apotheosis:reforging_table"
+					type: "item"
+				}
+				{
+					id: "056B44A56FDF9120"
+					item: "apotheosis:sigil_of_rebirth"
+					type: "item"
+				}
+			]
+			title: "{\"text\": \"Reforging Table\", \"color\": \"#B900B9\"}"
+			x: -8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2CDFBF12B1DD988B"]
+			description: [
+				"[\"The \", {\"text\": \"Augmenting Table\", \"color\": \"#EA6F14\"}, \" is an end-game crafting station used to augment the individual \", {\"text\": \"Affixes\", \"color\": \"#55FFFF\"}, \" of an item.\"]"
+				""
+				"It has two different uses:"
+				""
+				"[\"Firstly, it can upgrade an existing \", {\"text\": \"Affix\", \"color\": \"#55FFFF\"}, \", costing two \", {\"text\": \"Sigils of Enhancement\", \"color\": \"#EA6F14\"}, \" to upgrade the \", {\"text\": \"Affix\", \"color\": \"#55FFFF\"}, \" by 25%. How much of a boost this provides varies per \", {\"text\": \"Affix\", \"color\": \"#55FFFF\"}, \".\"]"
+				"{@pagebreak}"
+				"[\"Secondly, it can reroll an \", {\"text\": \"Affix\", \"color\": \"#55FFFF\"}, \", costing one \", {\"text\": \"Sigil of Enhancement\", \"color\": \"#EA6F14\"}, \" to swap out a selected \", {\"text\": \"Affix\", \"color\": \"#55FFFF\"}, \" for another of the same type. The alternative options will be shown on the left.\"]"
+				""
+				"[\"The \", {\"text\": \"Augmenting Table\", \"color\": \"#EA6F14\"}, \" has two input slots. The upper slot holds the item you wish to \", {\"text\": \"Augment\", \"color\": \"#EA6F14\"}, \", which must be an \", {\"text\": \"Affix\", \"color\": \"#55FFFF\"}, \" item. The lower slot holds the \", {\"text\": \"Sigils of Enhancement\", \"color\": \"#EA6F14\"}, \" used for \", {\"text\": \"Augmenting\", \"color\": \"#EA6F14\"}, \".\"]"
+			]
+			icon: "apotheosis:augmenting_table"
+			id: "0BC19F34538B4A6F"
+			rewards: [{
+				id: "10EB216FA8CA388F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "1C0E7CB7A0D1B19D"
+					item: "apotheosis:augmenting_table"
+					type: "item"
+				}
+				{
+					id: "0D634BAE708FA519"
+					item: "apotheosis:sigil_of_enhancement"
+					type: "item"
+				}
+			]
+			title: "{\"text\":\"Augmenting Items\", \"color\":\"#EA6F14\"}"
+			x: -8.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["47A3DE634D2C3C85"]
+			description: ["&aSigils of Socketing&r are used to increase the amount of &bGem Sockets&r of an &bAffix&r item."]
+			hide_dependency_lines: true
+			id: "29E8AC9C858646B5"
+			optional: true
+			rewards: [
+				{
+					id: "60733A31CCAB9AE4"
+					item: "apotheosis:gem_dust"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "63DDDB6A5E050541"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "01718E530C302494"
+				item: "apotheosis:sigil_of_socketing"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["47A3DE634D2C3C85"]
+			description: [
+				"The &aSigil of Unnaming&r removes the Affix name of an item, reverting it to it's normal item name."
+				""
+				"For example: &dEndawn the Ogre Slayer's Windswept Burnt Shoes of the Spellwarden&r will be renamed to &dBurnt Shoes&r."
+			]
+			hide_dependency_lines: true
+			id: "4BF6F008EA1F36EF"
+			optional: true
+			rewards: [{
+				id: "19163A6F12029DA1"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "400A2B92EAEA9C76"
+				item: "apotheosis:sigil_of_unnaming"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["47A3DE634D2C3C85"]
+			description: ["The &aSigil of Withdrawal&r will remove all socketed &bGems&r on an item without damaging your item."]
+			hide_dependency_lines: true
+			id: "6F97E806110AC0FB"
+			optional: true
+			rewards: [
+				{
+					id: "689909B4C981824E"
+					item: "apotheosis:gem_dust"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "481C1C87F27D2BFC"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "1CA72608B9095DC7"
+				item: "apotheosis:sigil_of_withdrawal"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"&dApotheosis&r overhauls the vanilla enchanting system with three new values, allowing for high-level enchants with upgradable progression. You will want to manage these values as you progress through upgrading your enchanting setup:"
+				""
+				"&aEterna&r: The power of the enchanting table, capped based on the tier of your bookshelves. This stat determines the maximum level of enchants."
+				""
+				"&cQuanta&r: The chaos inherent when enchanting at higher power. This determines the randomness of enchants."
+				""
+				"&dArcana&r: The overall quality and quantity of the enchantments. This determines the rarity of enchants, as well as how many enchants are applied per use."
+			]
+			id: "1ADAF8CE946AA74C"
+			rewards: [{
+				id: "5CB5B1C21754229F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "0A3902EC86F52B44"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			title: "The Secrets of Enchanting"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1ADAF8CE946AA74C"]
+			description: ["One of the paths to Deepshelf infusion, focusing on &dArcana.&r"]
+			icon: "apotheosis:seashelf"
+			id: "08925C1A3342E3A1"
+			rewards: [{
+				id: "13213FBE48520397"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "729D60FEB961A504"
+				item: "apotheosis:seashelf"
+				type: "item"
+			}]
+			title: "The Path of &bWater"
+			x: 9.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1ADAF8CE946AA74C"]
+			description: ["One of the paths to Deepshelf infusion, focusing on &cQuanta.&r"]
+			icon: "apotheosis:hellshelf"
+			id: "14ABEB7D6615EBE7"
+			rewards: [{
+				id: "151F12A58B27E13C"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "30105134044B5B73"
+				item: "apotheosis:hellshelf"
+				type: "item"
+			}]
+			title: "The Path of &cFire"
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["08925C1A3342E3A1"]
+			description: [
+				"Infused with magical energy, your bookshelves unlock more possibilities."
+				""
+				"Note: for Seashelves, you will need &cQuanta,&r which is not provided by seashelves alone."
+				""
+				"Other items that give &cQuanta&r include &bzombie heads, skeleton skulls,&r and &bwither skeleton skulls&r."
+			]
+			id: "2E4C5BFF3219B1D2"
+			rewards: [{
+				id: "35E1A8859E0452BD"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "6BD99A7F61C473BF"
+				item: "apotheosis:infused_seashelf"
+				type: "item"
+			}]
+			title: "&bSeashelf Infusion"
+			x: 12.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["14ABEB7D6615EBE7"]
+			description: ["Infused with magical energy, your bookshelves unlock more possibilities."]
+			id: "2969598DB4FA3520"
+			rewards: [{
+				id: "71DE2FDE47024837"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "5E010A3500FEC66C"
+				item: "apotheosis:infused_hellshelf"
+				type: "item"
+			}]
+			title: "&cHellshelf Infusion"
+			x: 12.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2969598DB4FA3520"
+				"2E4C5BFF3219B1D2"
+			]
+			dependency_requirement: "one_completed"
+			description: ["The most useful item for any enchanting setup; it acts as a storage chest for enchantments, and allows you to pick and choose which "]
+			id: "0EAB7AF3EF1400D5"
+			rewards: [{
+				id: "6FACFC857C13F77B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "54AFF3AB9FA0D7A7"
+				item: "apotheosis:library"
+				type: "item"
+			}]
+			title: "&dEnchantment Library"
+			x: 12.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2969598DB4FA3520"]
+			description: ["&3Enchanting Clues&r give you more text on the enchanting table, letting you see more of what's going to be put onto your books and items before you click the button."]
+			id: "284AAF0C1ADDFE04"
+			rewards: [{
+				id: "334736B0BCCB0358"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "76DD8F5BA9AA5EFF"
+				item: "apotheosis:sightshelf"
+				type: "item"
+			}]
+			title: "&cSee What You're Doing!"
+			x: 12.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2E4C5BFF3219B1D2"]
+			description: ["Infused with magical energy, your bookshelves unlock more possibilities."]
+			id: "3BE0C17A1FD8FE9B"
+			rewards: [{
+				id: "3CCCD857FC97F460"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "1A3BC5E4BCCD0982"
+				item: "apotheosis:filtering_shelf"
+				type: "item"
+			}]
+			title: "&bFiltering Unwanted Enchants"
+			x: 12.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2969598DB4FA3520"]
+			description: [
+				"To upgrade your &cHellshelves&r, you have two options!"
+				""
+				"The cheaper option is to create &eGlowing Hellshelves&r. These provide less &aEterna&r and &9Arcana&r overall, as well as increasing your &cQuanta&r."
+				""
+				"If you are looking to add more &aEterna&r, creating a &cBlazing Hellshelf&r is also another option. These provide a nice &aEterna&r boost, but increases your &cQuanta&r by 10% and removes an &3Enchanting Clue&r."
+			]
+			id: "6F00661BA6B5C23E"
+			rewards: [{
+				id: "4300A5F6A2B6C64E"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "7CDE4B2074D415B2"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "apotheosis:blazing_hellshelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:glowing_hellshelf"
+							}
+						]
+					}
+				}
+				title: "Upgrade Options"
+				type: "item"
+			}]
+			title: "&cUpgraded Hellshelves"
+			x: 15.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2E4C5BFF3219B1D2"]
+			description: [
+				"With &aInfused Seashelves&r, you have 2 options to upgrade them further."
+				""
+				"The cheaper option is the &bCrystalline Seashelf&r, which comes with the drawback of increasing your overall &cQuanta&r."
+				""
+				"The &6Heart-Forged Seashelf&r is a little more expensive to craft, but provides more &aEterna&r, as well as a hefty boost to &9Arcana&r."
+			]
+			id: "4A8A90DF2D6B2715"
+			rewards: [{
+				id: "5AE63882BF674DE6"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "29495AB82A7C0946"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "apotheosis:crystal_seashelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:heart_seashelf"
+							}
+						]
+					}
+				}
+				title: "Upgrade Options"
+				type: "item"
+			}]
+			title: "&bUpgraded Seashelves"
+			x: 15.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"6F00661BA6B5C23E"
+				"4A8A90DF2D6B2715"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The next stage of enchanting, unlocking &aEterna&r levels above 60."
+				""
+				"You can meet the criteria for Deepshelf infusion with either Seashelves or Hellshelves."
+			]
+			id: "7DBDA3A609E2BB55"
+			rewards: [{
+				id: "5EDF10221F516FA5"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "73917D666C7E69F3"
+				item: "apotheosis:deepshelf"
+				type: "item"
+			}]
+			title: "&3Venturing Deeper"
+			x: 18.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7DBDA3A609E2BB55"]
+			description: ["&6Treasure Enchantments&r are special enchants that can only be found in loot, or from trading with villagers. That is, unless you have a &3Deepshelf of Arcane Treasures&r..."]
+			id: "3F3DA1EF123E0BE5"
+			rewards: [{
+				id: "75607329575A8327"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "494B6704FF60ED58"
+				item: "apotheosis:treasure_shelf"
+				type: "item"
+			}]
+			title: "&6Mending!"
+			x: 18.75d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7DBDA3A609E2BB55"]
+			dependency_requirement: "one_completed"
+			description: [""]
+			id: "5A1A7E790639D434"
+			rewards: [{
+				id: "3BE552295A391C26"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "The power of &cQuanta"
+			tasks: [{
+				id: "596187BB883C1EBA"
+				item: "apotheosis:soul_touched_deepshelf"
+				type: "item"
+			}]
+			title: "&3Soul-Touched Deepshelf"
+			x: 22.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5A1A7E790639D434"]
+			description: ["Combined with the magical energy of the Warden, &3Sculkshelves&r provide more power, and more insight."]
+			id: "0947DE9BB29BA423"
+			rewards: [{
+				id: "444CD173ABE976E3"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "499CD39DC214A24C"
+				item: "apotheosis:soul_touched_deepshelf"
+				type: "item"
+			}]
+			title: "&3Soul-Touched Sculkshelf"
+			x: 24.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7DBDA3A609E2BB55"]
+			dependency_requirement: "one_completed"
+			description: [""]
+			id: "7F89C051D1151E12"
+			rewards: [{
+				id: "72A93E221D9E3D6D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "The power of &dArcana"
+			tasks: [{
+				id: "0579164CEEAF8B72"
+				item: "apotheosis:echoing_deepshelf"
+				type: "item"
+			}]
+			title: "&3Echoing Deepshelf"
+			x: 22.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7F89C051D1151E12"]
+			dependency_requirement: "one_completed"
+			description: ["Combined with the magical energy of the Warden, &3Sculkshelves&r provide more power, and more insight."]
+			id: "2F3DDDC244505B9A"
+			rewards: [{
+				id: "7E9085D86B42E440"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "04D949E59D06F201"
+				item: "apotheosis:echoing_deepshelf"
+				type: "item"
+			}]
+			title: "&3Echoing Sculkshelf"
+			x: 24.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"2F3DDDC244505B9A"
+				"0947DE9BB29BA423"
+			]
+			description: [
+				"The final tier of bookshelves is locked behind the infusion of &dDragon's Breath&r."
+				""
+				"Be careful! You will need to precisely manage your &cQuanta&r levels, or the infusion will fail!"
+				""
+				"If you don't have enough &dArcana,&r you can use candles, which provide a small boost."
+			]
+			icon_scale: 1.25d
+			id: "3842162F0A6B45FC"
+			rewards: [{
+				id: "060843D16A4C422E"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "241E4E0DB5E8B38B"
+				item: "apotheosis:infused_breath"
+				type: "item"
+			}]
+			title: "&eAchieving Enlightenment"
+			x: 28.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3842162F0A6B45FC"]
+			description: [
+				"The base shelf for the final tier of enchanting."
+				""
+				"Besides being locked behind &dInfused Dragon's Breath&r, Endshelves are relatively cheap."
+			]
+			id: "264B2265A4F35817"
+			rewards: [{
+				id: "57887D0BACEC1701"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				id: "47EEEE3B92FBD388"
+				item: "apotheosis:endshelf"
+				type: "item"
+			}]
+			title: "&eEndshelf"
+			x: 31.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["264B2265A4F35817"]
+			description: [
+				"The centerpiece of a fully-completed enchanting setup. "
+				""
+				"Provides no additional stats, but will boost your &aEterna&r by 20, allowing you to hit a max of &6100&r."
+			]
+			id: "1B92BDA5C59B0993"
+			rewards: [{
+				id: "33E34F2988E9D9B9"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				id: "59309E2AC9BFAD06"
+				item: "apotheosis:draconic_endshelf"
+				type: "item"
+			}]
+			title: "&eLevel 100 Enchanting"
+			x: 31.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["264B2265A4F35817"]
+			description: ["These are the best general-purpose shelves, providing significant amounts of both &cQuanta&r and &dArcana.&r"]
+			id: "6582100C3C44AEDB"
+			rewards: [{
+				id: "19422E8D0437303D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				id: "3347841FC018BC8D"
+				item: "apotheosis:pearl_endshelf"
+				type: "item"
+			}]
+			title: "&ePearlescent Endshelf"
+			x: 31.0d
+			y: -1.0d
+		}
+	]
+	title: "Apotheosis"
+}

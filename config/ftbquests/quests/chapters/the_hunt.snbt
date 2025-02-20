@@ -1,0 +1,469 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_hunt"
+	group: "2987039AB4197A8E"
+	icon: {
+		Count: 1
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "minecraft:item/iron_sword"
+		}
+	}
+	id: "26E03167B626D990"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["In this Chapter, you'll find all of the &6challenges&r you can complete in the pack, whether through defeating bosses or collecting rare items!"]
+			id: "360F02738B8D4170"
+			rewards: [{
+				id: "0CBB51EA962757CA"
+				type: "xp"
+				xp: 5
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "79B73722377EB786"
+				title: "Welcome to The &dHunt&r!"
+				type: "checkmark"
+			}]
+			title: "Welcome to &dThe Hunt&r!"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			description: ["Surviving the first &l24 Hours&r can be hard, can you do it?"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "quark:textures/attribute/attack_damage.png"
+				}
+			}
+			id: "3B3E6E576F5627DC"
+			shape: "square"
+			subtitle: "Survive 24 Hours."
+			tasks: [{
+				id: "0E9F3DB1BC64B1DE"
+				stat: "minecraft:time_since_death"
+				title: "Survival of the Fittest"
+				type: "stat"
+				value: 1728000
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/hero_of_the_village.png"
+				}
+			}
+			id: "61A46A26F644CCC3"
+			shape: "square"
+			subtitle: "Defend A Village From A Raid"
+			tasks: [{
+				advancement: "minecraft:adventure/hero_of_the_village"
+				criterion: ""
+				id: "42F04D8A6E3CF2C2"
+				type: "advancement"
+			}]
+			title: "&dHero Of The Village&r"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:block/campfire_fire"
+				}
+			}
+			id: "44ACBCE419AD8ECA"
+			shape: "square"
+			subtitle: "Leave only the strongest to survive. Kill one of everything."
+			tasks: [{
+				advancement: "minecraft:adventure/kill_all_mobs"
+				criterion: ""
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "minecraft:block/campfire_fire"
+					}
+				}
+				id: "4A4E05D5343C8D08"
+				type: "advancement"
+			}]
+			title: "Kill everything."
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			id: "5FF9803197C6B7F1"
+			rewards: [{
+				id: "385653321119CC15"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "minecraft:zombie"
+				icon: {
+					Count: 1
+					id: "obtrophies:trophy"
+					tag: {
+						BlockEntityTag: {
+							VariantID: 0
+							entity: "minecraft:zombie"
+						}
+					}
+				}
+				id: "16D797C422D35694"
+				title: "Kill 50 &cZombies&r"
+				type: "kill"
+				value: 50L
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "352A2453E7AA21F8"
+			rewards: [{
+				id: "7E3CA140D01AD485"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "minecraft:creeper"
+				icon: {
+					Count: 1
+					id: "obtrophies:trophy"
+					tag: {
+						BlockEntityTag: {
+							VariantID: 0
+							entity: "minecraft:creeper"
+						}
+					}
+				}
+				id: "6148E89DF7EF3E47"
+				title: "Kill 50 &cCreepers&r"
+				type: "kill"
+				value: 50L
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			id: "634D021C7D4CA403"
+			rewards: [{
+				id: "4C14AF0B035AE42D"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "minecraft:spider"
+				icon: {
+					Count: 1
+					id: "obtrophies:trophy"
+					tag: {
+						BlockEntityTag: {
+							VariantID: 0
+							entity: "minecraft:spider"
+						}
+					}
+				}
+				id: "1EDA93989956177C"
+				title: "Kill 50 &cSpiders&r"
+				type: "kill"
+				value: 50L
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			description: [""]
+			icon: "minecraft:spectral_arrow"
+			id: "54B2F00D539B6E8C"
+			shape: "square"
+			subtitle: "Kill 2 Phantoms With A Single Piercing Arrow"
+			tasks: [{
+				advancement: "minecraft:adventure/two_birds_one_arrow"
+				criterion: ""
+				id: "481C2C01450A82B6"
+				type: "advancement"
+			}]
+			title: "Two Birds, &dOne Arrow&r"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			id: "42A70CA1BF1AD809"
+			rewards: [{
+				id: "0F6A550FDF08949B"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "minecraft:skeleton"
+				icon: {
+					Count: 1
+					id: "obtrophies:trophy"
+					tag: {
+						BlockEntityTag: {
+							VariantID: 0
+							entity: "minecraft:skeleton"
+						}
+					}
+				}
+				id: "23C072FBBABEAD45"
+				title: "Kill 50 &cSkeletons&r"
+				type: "kill"
+				value: 50L
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			id: "1DB1C87B8EEE16EA"
+			rewards: [{
+				id: "7A2A1FEA30E333D3"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "minecraft:slime"
+				icon: {
+					Count: 1
+					id: "obtrophies:trophy"
+					tag: {
+						BlockEntityTag: {
+							VariantID: 0
+							entity: "minecraft:slime"
+						}
+					}
+				}
+				id: "46084421BF46E1F1"
+				title: "Kill 50 &cSlimes&r"
+				type: "kill"
+				value: 50L
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			id: "02545339BB57B241"
+			rewards: [{
+				id: "5935117C20B7D383"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "minecraft:blaze"
+				icon: {
+					Count: 1
+					id: "obtrophies:trophy"
+					tag: {
+						BlockEntityTag: {
+							VariantID: 0
+							entity: "minecraft:blaze"
+						}
+					}
+				}
+				id: "55F725F64DF1932E"
+				title: "Kill 50 &cBlazes&r"
+				type: "kill"
+				value: 50L
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "0F2A3F6184E704A5"
+			rewards: [{
+				id: "3212186F91A556F5"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				icon: {
+					Count: 1
+					id: "obtrophies:trophy"
+					tag: {
+						BlockEntityTag: {
+							VariantID: 0
+							entity: "minecraft:wither_skeleton"
+						}
+					}
+				}
+				id: "5DD9779063E93F30"
+				title: "Kill 50 &cWither Skeletons&r"
+				type: "kill"
+				value: 50L
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			id: "23671A25C985E855"
+			rewards: [{
+				id: "2508E19ABB7ED6C4"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "minecraft:zombified_piglin"
+				icon: {
+					Count: 1
+					id: "obtrophies:trophy"
+					tag: {
+						BlockEntityTag: {
+							VariantID: 0
+							entity: "minecraft:zombified_piglin"
+						}
+					}
+				}
+				id: "7D34CA72033CA9A4"
+				title: "Kill 50 &cZombified Piglins&r"
+				type: "kill"
+				value: 50L
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			id: "55359A98342DE5A1"
+			rewards: [{
+				id: "056CD630D6BB2BE3"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "minecraft:enderman"
+				icon: {
+					Count: 1
+					id: "obtrophies:trophy"
+					tag: {
+						BlockEntityTag: {
+							VariantID: 0
+							entity: "minecraft:enderman"
+						}
+					}
+				}
+				id: "7762F22F2D409272"
+				title: "Kill 50 &cEnderman&r"
+				type: "kill"
+				value: 50L
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			id: "5E28AA0FD2CAE345"
+			rewards: [{
+				id: "3549D4BCC32A60D3"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "minecraft:shulker"
+				icon: {
+					Count: 1
+					id: "obtrophies:trophy"
+					tag: {
+						BlockEntityTag: {
+							VariantID: 0
+							entity: "minecraft:shulker"
+						}
+					}
+				}
+				id: "026A85CECF1F9E90"
+				title: "Kill 50 &cShulkers&r"
+				type: "kill"
+				value: 50L
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			icon_scale: 1.5d
+			id: "33A373CCCA691A9E"
+			size: 2.0d
+			tasks: [{
+				entity: "minecraft:warden"
+				icon: {
+					Count: 1
+					id: "obtrophies:trophy"
+					tag: {
+						BlockEntityTag: {
+							VariantID: 0
+							entity: "minecraft:warden"
+						}
+					}
+				}
+				id: "6DF258CEFFC9E0EB"
+				title: "Kill The &dWarden&r"
+				type: "kill"
+				value: 1L
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			icon_scale: 1.5d
+			id: "7179EEC844FB289E"
+			size: 2.0d
+			tasks: [{
+				entity: "minecraft:wither"
+				icon: {
+					Count: 1
+					id: "obtrophies:trophy"
+					tag: {
+						BlockEntityTag: {
+							VariantID: 0
+							entity: "minecraft:wither"
+						}
+					}
+				}
+				id: "3D4344005BE1A581"
+				title: "Kill The &dWither&r"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			icon_scale: 1.5d
+			id: "38F7B451A43001F0"
+			size: 2.0d
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				icon: "minecraft:dragon_head"
+				id: "4F06E6BC71CFA7D9"
+				title: "Kill The &dEnder Dragon&r"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+	]
+	title: "The Hunt"
+}

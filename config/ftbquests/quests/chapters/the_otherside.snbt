@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_otherside"
+	group: "4ABDA8087CE4AA75"
+	id: "2959CC4A0047CD53"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "The Otherside"
+}

@@ -1,0 +1,225 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "useful_items__tips"
+	group: ""
+	icon: {
+		Count: 1
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ftblibrary:icons/money_bag"
+		}
+	}
+	id: "384EF35CB8753C20"
+	images: [{
+		height: 2.0d
+		image: "ftbquests:tasks/input_only"
+		order: -1
+		rotation: 45.0d
+		width: 2.0d
+		x: 3.0d
+		y: 0.5d
+	}]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["In this chapter, you'll find plenty of useful items and tips you can use while working through this modpack."]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/gui/info_icon.png"
+				}
+			}
+			icon_scale: 2.0d
+			id: "0C754283F6A23635"
+			shape: "square"
+			tasks: [{
+				id: "4635C3F4F59D994F"
+				title: "Tips and Tricks"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			description: ["The &6Artifacts&r Mod adds 44 new and unique items, each with the ability to give you various unique abilities for you to use!"]
+			id: "536691F001A6C0B2"
+			rewards: [{
+				id: "6480F35F141CE422"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "1A129FF9B1F2AD06"
+				item: "artifacts:umbrella"
+				type: "item"
+			}]
+			title: "&6Artifacts&r"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Need to teleport to different parts of your base? Maybe to completely different bases? Keep an eye out for &dWaystones&r!"
+				""
+				"These can be found in villages and pretty much all over the map. You can break the ones you find and place them to use for yourself."
+				""
+				"Need to teleport to a waystone while out in the wild? Make a &dWarp Stone&r to access all of your waystones!"
+			]
+			icon: "waystones:waystone"
+			id: "063CE74B82DBFD3B"
+			rewards: [{
+				id: "0FAD54F79E955745"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "32B20A94F7198036"
+					item: "waystones:waystone"
+					type: "item"
+				}
+				{
+					id: "3870AE6EA87FF38C"
+					item: {
+						Count: 1
+						id: "waystones:warp_stone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&bGetting Around&r"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Out adventuring? Maybe you need a quick place to sleep?"
+				""
+				"Make a sleeping bag! the All new tool in exploring the world without dying to the night!"
+				""
+				"Sleeping in these bags will not reset your spawn-point."
+			]
+			icon: "comforts:sleeping_bag_red"
+			id: "71F3C793B14D0585"
+			rewards: [{
+				id: "6BD670FCA738040E"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "0084D02723083375"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(comforts:sleeping_bags)"
+					}
+				}
+				title: "Sleeping Bags"
+				type: "item"
+			}]
+			title: "&bSleeping Bags&r"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			description: [
+				"&6Just Enough Items (JEI)&r Adds a searchable item menu for all your modded recipe needs!"
+				""
+				"Pressing &a'A'&r on an item will place it into your favorites for easy access, this can be found on the left. You can then disable this by pressing &a'A'&r on the item again."
+				""
+				"&aRight Clicking&r on a recipe will show you everything that item makes or is used in."
+				"&aLeft Clicking&r on a recipe will show you how to make that item from the recipe."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "theboyspack:textures/quests/jei.png"
+				}
+			}
+			id: "21FA98EA55352E54"
+			rewards: [{
+				id: "5EB7068DE0C44C05"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "411A896DA44E40AC"
+				title: "Lootr"
+				type: "checkmark"
+			}]
+			title: "&6Just Enough Items&r"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"The &6Lootr&r Mod changes the findable chests around the world and makes them into Lootr chests."
+				""
+				"This makes it so every person who comes up to that chest will find there own set of loot inside!"
+				""
+				"No more finding looted structures around the world, unless you were already there."
+			]
+			icon: "lootr:trophy"
+			icon_scale: 1.5d
+			id: "72631A8E1F21442A"
+			rewards: [{
+				id: "65A74D3F28F0BA58"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "1329D09643010B8A"
+				title: "Lootr"
+				type: "checkmark"
+			}]
+			title: "&6Lootr&r"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Gives you a list of biomes you can search for and visit."
+				""
+				"Select a biome, then hit 'Search.' You'll see some info in the top left, and the compass will point in the direction of the biome."
+			]
+			icon: {
+				Count: 1
+				id: "naturescompass:naturescompass"
+				tag: { }
+			}
+			id: "54E4C45F4D40ABD3"
+			rewards: [{
+				id: "2C9C3960B4F45A05"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "52436A6390B72785"
+				item: {
+					Count: 1
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "&bNature's Compass&r"
+			x: 6.5d
+			y: 1.0d
+		}
+	]
+	title: "Useful Items \\&\\ Tips"
+}
