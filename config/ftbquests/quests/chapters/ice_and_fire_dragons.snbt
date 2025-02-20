@@ -3,9 +3,3016 @@
 	default_quest_shape: ""
 	filename: "ice_and_fire_dragons"
 	group: ""
-	id: "10282783586B886F"
+	icon: "iceandfire:dragon_skull_fire"
+	id: "53C5ABF9E0AA409B"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
-	title: "Ice and Fire: Dragons"
+	quests: [
+		{
+			dependencies: ["2CFA4190DF280F3F"]
+			id: "589F991D7DCB2D69"
+			rewards: [{
+				id: "31045F64A9A28788"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "6065DDF6F583F78C"
+				item: {
+					Count: 1
+					id: "iceandfire:bestiary"
+					tag: {
+						Pages: [I;0]
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0289B5163EDBE735"]
+			id: "43CB9B3DAD77683A"
+			rewards: [{
+				id: "378E4047813A231B"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Click on the scale to learn more!"
+			tasks: [{
+				id: "4ADC46F4B9A68D7C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:scales/fire_dragon"
+					}
+				}
+				title: "Slay any Fire dragon!"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0289B5163EDBE735"]
+			id: "35557AE2D124F340"
+			rewards: [{
+				id: "42B281BCE447248D"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Click on the scale to learn more!"
+			tasks: [{
+				id: "2C38EDA94738B25A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:scales/ice_dragon"
+					}
+				}
+				title: "Slay any Ice dragon!"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0289B5163EDBE735"]
+			id: "605894F90D1565D9"
+			rewards: [{
+				id: "6ADD49FD054F9DD4"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Click on the scale to learn more!"
+			tasks: [{
+				id: "1BC7DBCE2CFB50A0"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:scales/lightning_dragon"
+					}
+				}
+				title: "Slay any Lightning dragon!"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["43CB9B3DAD77683A"]
+			id: "40E40EAE5E9F826B"
+			rewards: [{
+				id: "3808F789AA6D96E8"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "21EAAB181975526E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonforge_fire_brick"
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["40E40EAE5E9F826B"]
+			id: "4E8A99E032F0A61D"
+			rewards: [{
+				id: "5D928C8C9F538DA7"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7D894C9A604C81A7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:fire_dragon_heart"
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4E8A99E032F0A61D"]
+			id: "1EE1729CD3AEBD42"
+			rewards: [{
+				id: "3AF4D74E5A6AC909"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "271D0655DFDC38C1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonforge_fire_core_disabled"
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1EE1729CD3AEBD42"]
+			id: "09882BA9CA9D8453"
+			tasks: [{
+				id: "5C404584B3F960AD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:fire_dragon_blood"
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["09882BA9CA9D8453"]
+			id: "5F7B4E456CD5AD52"
+			rewards: [{
+				id: "41AF7B8FB569E9DD"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "291119A0B85E5C9D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonsteel_fire_ingot"
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["35557AE2D124F340"]
+			id: "46F53F4EBEC22267"
+			rewards: [{
+				id: "3CFD10BD5CAEBB6E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "446E1539B246BB6D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonforge_ice_brick"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["46F53F4EBEC22267"]
+			id: "569F7C8844F12952"
+			rewards: [{
+				id: "5E310751F66E613A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6ACBBD5825CEC2CD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:ice_dragon_heart"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["569F7C8844F12952"]
+			id: "3E9CCB8DB588089C"
+			rewards: [{
+				id: "57916E387FA67E70"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "140B68DC0D47D547"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonforge_ice_core_disabled"
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3E9CCB8DB588089C"]
+			id: "596E4BBBE5ECB9C5"
+			tasks: [{
+				id: "7FBEC95AA1D594A6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:ice_dragon_blood"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["596E4BBBE5ECB9C5"]
+			id: "586BC8112DF3B5FA"
+			rewards: [{
+				id: "164D4BD2BB479AB4"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0A3BA92372E67F42"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonsteel_ice_ingot"
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["605894F90D1565D9"]
+			id: "6F3D29EC75E31974"
+			rewards: [{
+				id: "7D2C6BA3F246D6E0"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0EB40544BF88CACD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonforge_lightning_brick"
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6F3D29EC75E31974"]
+			id: "66764D2E1627DD07"
+			rewards: [{
+				id: "7EAB0DBAFF8E52BC"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "127992F6E81C4BB9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:lightning_dragon_heart"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["66764D2E1627DD07"]
+			id: "10A3EC802FAA1206"
+			rewards: [{
+				id: "5947D9CA7C0244C6"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1FD3F38D39B12233"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonforge_lightning_core_disabled"
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["10A3EC802FAA1206"]
+			id: "752042A08C0343CE"
+			tasks: [{
+				id: "6DD99A4A199CDD50"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:lightning_dragon_blood"
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["752042A08C0343CE"]
+			id: "2BFCFAF2EF10A54E"
+			rewards: [{
+				id: "3C3D98576767791A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0864576AC8371698"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonsteel_lightning_ingot"
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["09882BA9CA9D8453"]
+			description: ["Used to teleport a bound fire dragon to you."]
+			id: "42178C8AE0F6403F"
+			rewards: [{
+				id: "40FD725C507DE90A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "016600D915AF06DE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:summoning_crystal_fire"
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["596E4BBBE5ECB9C5"]
+			description: ["Used to teleport a bound ice dragon to you."]
+			id: "44D34FC0F25E3719"
+			rewards: [{
+				id: "3832705A9FAA435A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7DA3080F2B3E02F7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:summoning_crystal_ice"
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["752042A08C0343CE"]
+			description: ["Used to teleport a bound lightning dragon to you."]
+			id: "2A58AD42BCAFD8E2"
+			rewards: [{
+				id: "33FE237CD415A5F9"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5B23E6674FBB4682"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:summoning_crystal_lightning"
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["589F991D7DCB2D69"]
+			id: "0289B5163EDBE735"
+			rewards: [{
+				id: "0B50B737C829C639"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4921EEBF5FA54DA1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:lectern"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0289B5163EDBE735"]
+			id: "2561999DAEEF2DA3"
+			rewards: [{
+				id: "2426CA8DF8F08B82"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "51F27E1F49BDAFA9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:podium_dark_oak"
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "2CFA4190DF280F3F"
+			rewards: [{
+				id: "497EEF9CC0C1EF81"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3C11967FC34A982B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:manuscript"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0289B5163EDBE735"]
+			id: "49AD80E916672BBE"
+			rewards: [{
+				id: "2F26A22D29BE99B3"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "03DD66F1004D3C84"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonbone"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["09882BA9CA9D8453"]
+			description: ["Deals bonus damage to ice dragons."]
+			id: "2D16B44C7D383ED2"
+			rewards: [{
+				id: "52D384E690F476EE"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "46211E84A1A68344"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonbone_sword_fire"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["596E4BBBE5ECB9C5"]
+			description: ["Deals bonus damage to fire dragons."]
+			id: "668B64CA5C7C8280"
+			rewards: [{
+				id: "486FA55FF82DD449"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2412808E16ABCE1F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonbone_sword_ice"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["752042A08C0343CE"]
+			description: ["Deals bonus damage to both ice and fire dragons."]
+			id: "4374C6812B288DC4"
+			rewards: [{
+				id: "21F8A80AB5038E85"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "45E1BEE12E41FE41"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonbone_sword_lightning"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0289B5163EDBE735"]
+			id: "6981F829E387F126"
+			rewards: [{
+				id: "4B7D0EBE4E931E9D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "702F12FBB62E3915"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "iceandfire:dragon_skulls"
+					}
+				}
+				title: "Any #iceandfire:dragon_skulls"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5C42AD1E351785EA"]
+			id: "51C4C91587A70CBA"
+			rewards: [{
+				id: "0ED068F1E2AD50F5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "430714BC2E7F90D9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragon_stick"
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5C42AD1E351785EA"]
+			description: ["Calls your dragon back to you, useful if they fly away."]
+			id: "313CAD78364A3D66"
+			rewards: [{
+				id: "5B3E6B1923E3236D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1EF31CBDA907DC53"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragon_flute"
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["49AD80E916672BBE"]
+			description: ["A stronger trident that pierces multiple enemies."]
+			id: "452887E4D3CF63A4"
+			tasks: [{
+				id: "033E55E8144A4961"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:tide_trident"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5C42AD1E351785EA"]
+			description: ["Stores your dragon in this horn to carry them with you during your adventures."]
+			id: "6C82D3C21252DD57"
+			rewards: [{
+				id: "640AB978A0B9B4E8"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "67A693E3761346BA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragon_horn"
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			id: "55C1E6BBD60D4586"
+			rewards: [{
+				id: "490988B868E04BAB"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "04B97B8533F9A5C7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:pixie_dust"
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["55C1E6BBD60D4586"]
+			id: "5B954A9364237C12"
+			rewards: [{
+				id: "488E662050D9F556"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "20CD02A6C59D3256"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:pixie_jar_0"
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["55C1E6BBD60D4586"]
+			description: [
+				"Shoots projectiles that deal light damage to enemies."
+				""
+				"This weapon does not aggrovate neutral mobs."
+			]
+			id: "325E00CC4C5AB970"
+			rewards: [{
+				id: "12FDE1797B5E2140"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "05C44DFC0FC218AE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:pixie_wand"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			id: "4C794E3FD4687CA5"
+			rewards: [{
+				id: "0B70B026DBEAD458"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "594A82AFE8B5E0D9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:myrmex_jungle_chitin"
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 8.0d
+		}
+		{
+			id: "7A802CBAD47B9356"
+			rewards: [{
+				id: "38F781893D379518"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "3630BE9A1F28DDE1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:myrmex_desert_chitin"
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.5d
+		}
+		{
+			description: ["When held applies weakness to nearby hostile mobs."]
+			id: "4576D3B3A1577D84"
+			rewards: [{
+				id: "18C8F95FC0A4D08F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "27630217A1027FC1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:cyclops_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 11.0d
+		}
+		{
+			id: "556A07D30BC8D028"
+			rewards: [{
+				id: "510409A41114EEEF"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0AC4E22746A8E4A0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:deathworm_tounge"
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["556A07D30BC8D028"]
+			id: "30E37D1C695A053E"
+			rewards: [{
+				id: "363852520CC7DF47"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6B7B606F45BEB153"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:deathworm_egg"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			description: ["Rarely laid by chickens. Can be thrown like a chicken egg to spawn a tamed cockatrice!"]
+			id: "05A7E9B1299D7219"
+			rewards: [{
+				id: "33BE00BC5A683812"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2C76D7A98BDB4E6E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:rotten_egg"
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 10.0d
+		}
+		{
+			id: "3491C4CCEF1E4619"
+			rewards: [{
+				id: "2FC4098B4968D92A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3CCFEDCC39DC3992"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:troll_tusk"
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 11.0d
+		}
+		{
+			description: [
+				"A one-time use item that can turn any mob into stone (except the enderdragon)"
+				""
+				"You can break the stone statue by hitting with a pickaxe 10 times, a silk touch pickaxe allows you to obtain the statue itself."
+			]
+			id: "5F9AC0AB15154C7D"
+			rewards: [{
+				id: "1067151B3C866DF9"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2A8CB89E57A1253E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:gorgon_head"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			id: "0047A5D92B057234"
+			rewards: [{
+				id: "69278D08D191122C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7746B0AAC5A7CF68"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:siren_tear"
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 9.0d
+		}
+		{
+			id: "0ADD071E01154009"
+			rewards: [{
+				id: "05C55B7F1E23A0CD"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0F62115205D793EF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:hydra_fang"
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			id: "1B2BDBEA1BEF2D23"
+			rewards: [{
+				id: "0E3818FB56A1DD26"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7AFC4E589642968A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:sea_serpent_fang"
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["5C42AD1E351785EA"]
+			description: ["Speeds up the growth of your dragons."]
+			id: "1DCD8CFCE09D656F"
+			rewards: [{
+				id: "6A5515A6E272D809"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4EA299FFA71040B6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragon_meal"
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1DCD8CFCE09D656F"]
+			description: ["Stops the growth of your dragon. This is a permanant change to your dragon."]
+			id: "4451F4351231A711"
+			rewards: [{
+				id: "6698E812EF7DBCB0"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4DE62474F8989571"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:sickly_dragon_meal"
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			id: "5C42AD1E351785EA"
+			rewards: [{
+				id: "07E494B21C74E34D"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "Obtain a dragon egg"
+			tasks: [{
+				advancement: "iceandfire:iceandfire/dragon_egg"
+				criterion: ""
+				id: "05B29B48495316BC"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"Dropped by the Stymphalian Birds either from killing them or picking up some of the feathers they shoot out."
+				""
+				"They can be used to make a dagger, arrows, or a bundle of feathers."
+			]
+			id: "0DBDC4BAA4465307"
+			rewards: [{
+				id: "4B8424FE3EB3B1FF"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "557F6530028246D7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:stymphalian_bird_feather"
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7A802CBAD47B9356"]
+			id: "068274D8B4859A4D"
+			rewards: [{
+				id: "20CD35BA3B97EA9E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6883B98C384FEE5D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:myrmex_desert_swarm"
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["4C794E3FD4687CA5"]
+			id: "616FBE2E85C35B68"
+			rewards: [{
+				id: "532B2A967A226068"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1A20A57AB4E2797C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:myrmex_jungle_swarm"
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 9.0d
+		}
+		{
+			id: "53F95089CB6FF9CF"
+			rewards: [{
+				id: "7E0E910E0CD8A395"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6651C8310874C6FE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:amphithere_feather"
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["53F95089CB6FF9CF"]
+			description: ["Flings mobs high into the air like an iron golem's swing!"]
+			id: "0638813A7CD7CB60"
+			rewards: [{
+				id: "6C26F73EC8E7BB66"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "21747FDDD543995F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:amphithere_macuahuitl"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4C794E3FD4687CA5"]
+			id: "01189CB83DB9E541"
+			rewards: [{
+				id: "57A3028E6722B532"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "1FD42A20635DB0A0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:myrmex_jungle_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "499BD785BDD8518C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:myrmex_jungle_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "106B40DD9AD2F5DB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:myrmex_jungle_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6FA0F0C4C30673B8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:myrmex_jungle_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7A802CBAD47B9356"]
+			id: "3650F5B9FA248305"
+			rewards: [{
+				id: "6A59B5B22820B573"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "572AE292A1F1C7C6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:myrmex_desert_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D4D44E7C4576979"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:myrmex_desert_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4465BC2A11F7E82F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:myrmex_desert_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "612527EC4A213E08"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:myrmex_desert_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7A802CBAD47B9356"]
+			id: "0A467E459CE07970"
+			rewards: [{
+				id: "445DD890620A050B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "61115568CF7E91BD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:myrmex_desert_sword_venom"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7A802CBAD47B9356"]
+			id: "1DEDAE012978C313"
+			rewards: [{
+				id: "1B69D646ECC72F1E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1B312C01372F53C9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:myrmex_desert_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["4C794E3FD4687CA5"]
+			id: "786DB1AF99840E9D"
+			rewards: [{
+				id: "7C6BA0E6DDB1D51A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "41773344E422B050"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:myrmex_jungle_sword_venom"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4C794E3FD4687CA5"]
+			id: "34E88C7D2C8583B9"
+			rewards: [{
+				id: "216EE400EBEB113B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4F3F53FF73BC5E76"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:myrmex_jungle_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Dropped by ghosts and used to craft cursed chests and graveyard soil."
+				""
+				"It can also be used to make the Ectoplasm Orb, the key component to making stronger gate pearls."
+			]
+			id: "5474A3F78B629DB9"
+			rewards: [{
+				id: "6068EE2D60A31B5A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "33EAA179E3DA3CBB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:ectoplasm"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Rarely dropped by naturally spawning ghosts. (not cursed chest spawned ones)."
+				""
+				"It's main use is to craft the Phasmal Blade, but can also be used to upgrade Knightmetal into Phantom Knight Armor."
+			]
+			id: "1E4783908222E61C"
+			rewards: [{
+				id: "20777366BB503B52"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0A74D7E989DA4C88"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:ghost_ingot"
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1E4783908222E61C"]
+			description: ["When attacking from a distance it launches swords that phase through walls."]
+			id: "6E1A96AF0E1B0F18"
+			rewards: [{
+				id: "50746182DFC885E5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7B568A53CC48F830"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:ghost_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5F7B4E456CD5AD52"]
+			description: ["Burns enemies and knocks them back further away."]
+			id: "13F3473F3041F8BE"
+			tasks: [{
+				id: "020DE6BFBCDEE1BB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonsteel_fire_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["2BFCFAF2EF10A54E"]
+			description: ["Comes with the Thundering enchantment and some area of effect damage."]
+			id: "6F46536FE6DBE744"
+			tasks: [{
+				id: "718978BC9E6B3ED3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonsteel_lightning_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["586BC8112DF3B5FA"]
+			description: ["Heavily slows enemies on hit."]
+			id: "14B446040569CF12"
+			tasks: [{
+				id: "00182983DB052CC2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonsteel_ice_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["5F7B4E456CD5AD52"]
+			id: "44117F70E9596B2B"
+			tasks: [{
+				id: "4B58AD6B87C3A55D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonsteel_fire_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2BFCFAF2EF10A54E"]
+			id: "27B5323C5BB49F13"
+			tasks: [{
+				id: "3430B16A8D907830"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonsteel_lightning_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["586BC8112DF3B5FA"]
+			id: "403F6D4DD0791D26"
+			tasks: [{
+				id: "62CADCDBAA9522FA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dragonsteel_ice_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["5F7B4E456CD5AD52"]
+			id: "27158F9244EA2788"
+			rewards: [{
+				id: "266210A08D6F88D5"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "0B8163CC79D96BCB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonsteel_fire_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "65242A14D90B4D9E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonsteel_fire_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1FC7AD59AAE50DCE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonsteel_fire_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7C3C724BB0741D1B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonsteel_fire_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["586BC8112DF3B5FA"]
+			id: "62638BBF2AB81B65"
+			rewards: [{
+				id: "6337A6B3AC7A1B40"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "6764550E33A8BB89"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonsteel_ice_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "252EC188505FE5C7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonsteel_ice_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "40F9EF8BC3A1245D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonsteel_ice_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "27422083033750AF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonsteel_ice_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2BFCFAF2EF10A54E"]
+			id: "59FAEE03C6A088F6"
+			rewards: [{
+				id: "1ED02C34DF5830C4"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "7EB0842665A94EBA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonsteel_lightning_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D3097834AE87724"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonsteel_lightning_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4F478F9039A9518A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonsteel_lightning_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4F8D9AF90928043D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonsteel_lightning_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -12.0d
+		}
+		{
+			description: ["Gives you Regeneration when in the hotbar."]
+			id: "77444F5105A251CC"
+			rewards: [{
+				id: "7A0F5C91E9ED1145"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "49336133B2F9E1AE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:hydra_heart"
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			id: "0E4019386C4B8CFE"
+			rewards: [
+				{
+					id: "26E769C4AF00777D"
+					type: "custom"
+				}
+				{
+					id: "1792FAF62E1B3D31"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "0179BB6FDD971B2D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ftbquests:lootcrate"
+						tag: {
+							rpgloot.randomize: 0b
+							type: "materials_random"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "778B3D9BF2973AEB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ftbquests:lootcrate"
+						tag: {
+							rpgloot.randomize: 0b
+							type: "materials_monsters"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "5EC5EB9F59AFFD5A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "radrecipes:dragonscale_helmets"
+						}
+					}
+					title: "Any Dragon Scale Helmet"
+					type: "item"
+				}
+				{
+					id: "76DA77A8BBF13A58"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "radrecipes:dragonscale_chestplates"
+						}
+					}
+					title: "Any Dragon Scale Chestplate"
+					type: "item"
+				}
+				{
+					id: "299B06BC8A9C8C52"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "radrecipes:dragonscale_leggings"
+						}
+					}
+					title: "Any Dragon Scale Leggings"
+					type: "item"
+				}
+				{
+					id: "57EA31480520C9E3"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "radrecipes:dragonscale_boots"
+						}
+					}
+					title: "Any Dragon Scale Boots"
+					type: "item"
+				}
+			]
+			title: "Dragon Scale Armor"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			id: "7D9F47D76734EA0B"
+			rewards: [
+				{
+					id: "6A31BF604C1F8394"
+					type: "custom"
+				}
+				{
+					id: "613C63506A585813"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "090904CA1BFFD61F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ftbquests:lootcrate"
+						tag: {
+							rpgloot.randomize: 0b
+							type: "materials_random"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "37DA0D6391DF481E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ftbquests:lootcrate"
+						tag: {
+							rpgloot.randomize: 0b
+							type: "materials_monsters"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "645C2796B665742B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "radrecipes:tide_guardian_helmets"
+						}
+					}
+					title: "Any Tide Guardian Helmet"
+					type: "item"
+				}
+				{
+					id: "22FB16863940F599"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "radrecipes:tide_guardian_chestplates"
+						}
+					}
+					title: "Any Tide Guardian Chestplate"
+					type: "item"
+				}
+				{
+					id: "1C3A166979166A03"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "radrecipes:tide_guardian_leggings"
+						}
+					}
+					title: "Any Tide Guardian Leggings"
+					type: "item"
+				}
+				{
+					id: "56791C8B6A205CA2"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "radrecipes:tide_guardian_boots"
+						}
+					}
+					title: "Any Tide Guardian Boots"
+					type: "item"
+				}
+			]
+			title: "Tide Guardian Armor"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			id: "461694134C5F7AB4"
+			rewards: [{
+				id: "6766469018E01645"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "29F16D654661F2B2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:forest_troll_leather_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49737A81D8AB597B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:forest_troll_leather_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2BA77261AF789ED1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:forest_troll_leather_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0E9E5845A420FA19"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:forest_troll_leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 9.0d
+		}
+		{
+			id: "0E881D23151E6A38"
+			rewards: [{
+				id: "38B393293BF2C8E0"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "396E753ADDFCFACC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:frost_troll_leather_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7A350EAA0A611F33"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:frost_troll_leather_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0D0F251C19963B05"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:frost_troll_leather_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "00A7DF71795A55D9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:frost_troll_leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			id: "077A073A83843265"
+			rewards: [{
+				id: "578DBC8140F73623"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "63A9E3B7319AB2C2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:mountain_troll_leather_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E08362F797FBA69"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:mountain_troll_leather_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "306FC42A00B9FB61"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:mountain_troll_leather_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7E3FA37AB39383B3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:mountain_troll_leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			id: "2FA74B751A466994"
+			rewards: [{
+				id: "029457FEDA0E920E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3CB84413F32FDB55"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:deathworm_chitin_yellow"
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.0d
+		}
+		{
+			id: "3C69793758816639"
+			rewards: [{
+				id: "5590778D7EF9D76C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0D714BBE2908402B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:deathworm_chitin_white"
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.0d
+		}
+		{
+			id: "3E7A578EDADACEAA"
+			rewards: [{
+				id: "1F7A5E097D5C5C1A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "291E0F94BC74C6F0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:deathworm_chitin_red"
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			id: "0D1A2A3B6AAAACF8"
+			rewards: [{
+				id: "024A0852DA32ED01"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "799A78A95F1E1E3D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:hippogryph_talon"
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["5F7B4E456CD5AD52"]
+			description: [
+				"Dragon Armors can be used to protect your dragon from attacks."
+				""
+				"Thanks to the unique enchantments mod they can be enchanted with protection through an anvil."
+			]
+			id: "79222FD515377830"
+			rewards: [{
+				auto: "invisible"
+				id: "0A3C8BCBE94E2928"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					id: "0F06D7E462C3DA96"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_fire_head"
+					}
+					type: "item"
+				}
+				{
+					id: "28FA607B9BB8E9A4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_fire_neck"
+					}
+					type: "item"
+				}
+				{
+					id: "4A904035CB0B06DC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_fire_body"
+					}
+					type: "item"
+				}
+				{
+					id: "140BF893D4219CDF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_fire_tail"
+					}
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["586BC8112DF3B5FA"]
+			description: [
+				"Dragon Armors can be used to protect your dragon from attacks."
+				""
+				"Thanks to the unique enchantments mod they can be enchanted with protection through an anvil."
+			]
+			id: "47FBF871DC42B9F0"
+			tasks: [
+				{
+					id: "2BB50C61CFDCF7EC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_ice_head"
+					}
+					type: "item"
+				}
+				{
+					id: "4C060598F506EC3B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_ice_neck"
+					}
+					type: "item"
+				}
+				{
+					id: "71A8630E47EE6B7F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_ice_body"
+					}
+					type: "item"
+				}
+				{
+					id: "336AD3AD826B45AF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_ice_tail"
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["2BFCFAF2EF10A54E"]
+			description: [
+				"Dragon Armors can be used to protect your dragon from attacks."
+				""
+				"Thanks to the unique enchantments mod they can be enchanted with protection through an anvil."
+			]
+			id: "7004E82094588EBB"
+			tasks: [
+				{
+					id: "1D967B92490E8439"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_lightning_head"
+					}
+					type: "item"
+				}
+				{
+					id: "6A3131582A002322"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_lightning_neck"
+					}
+					type: "item"
+				}
+				{
+					id: "6F3E32777167185B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_lightning_body"
+					}
+					type: "item"
+				}
+				{
+					id: "00F497242271FAF8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_lightning_tail"
+					}
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -10.0d
+		}
+		{
+			id: "1F464E151EBF2088"
+			subtitle: "Discover the mausoleum lock"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dreadwood_planks_lock"
+				}
+				id: "692B6D5D0FA5B40D"
+				observe_type: 0
+				timer: 20L
+				title: "A Peculiar Lock"
+				to_observe: "iceandfire:dreadwood_planks_lock"
+				type: "observation"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1F464E151EBF2088"]
+			description: ["Good luck finding this... Dread Liches don't come by very often"]
+			id: "0215C0DA01B8935B"
+			rewards: [{
+				id: "10E98584F5829D59"
+				type: "xp"
+				xp: 69
+			}]
+			subtitle: "The Rarest Key"
+			tasks: [{
+				id: "1075CD3B67FBCC0A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:dread_key"
+				}
+				type: "item"
+			}]
+			title: "A Near Impossible Key"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"A cockatrice can be found in Savanna-like biomes. You can tame them by hatching a rotten egg or staring at one in the wild for 50 seconds."
+				""
+				"However the cockatrice's glare will hurt you with a wither effect."
+				""
+				"Luckily the taming progress stays when you look away so you can recover health between taming attempts."
+			]
+			id: "54761D5F9843BF91"
+			rewards: [{
+				id: "173CC5632BF3F26B"
+				type: "xp"
+				xp: 12
+			}]
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "iceandfire:cockatrice"
+					}
+				}
+				id: "587B9980523F4CA2"
+				observe_type: 5
+				timer: 600L
+				title: "Stare at a Cockatrice"
+				to_observe: "iceandfire:cockatrice"
+				type: "observation"
+			}]
+			x: -1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0DBDC4BAA4465307"]
+			description: [
+				"Shoots 8 feathers in all directions when used."
+				""
+				"Some of the feathers can be picked back up."
+			]
+			id: "04B14007299FC09B"
+			rewards: [{
+				count: 2
+				id: "0C3362D6DF18BA15"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:stymphalian_feather_bundle"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B39B712FD1F9D74"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:stymphalian_feather_bundle"
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0DBDC4BAA4465307"]
+			description: ["A fast dagger with 3 Attack Speed. Boosts your Smithing Xp when held in the offhand."]
+			id: "5D715FBCE0F2D6DC"
+			tasks: [{
+				id: "4BC5D4685ED6B945"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:stymphalian_bird_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["0DBDC4BAA4465307"]
+			description: ["Deals 50% more damage than the normal arrow and is less hindered by gravity. Useful for long range attacks, and great for getting the sniper duel and bullseye achievements."]
+			id: "425F7CE940B05FD5"
+			rewards: [{
+				count: 4
+				id: "632A054A7B81F3C3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:stymphalian_arrow"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D865AB19B0DEA16"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "iceandfire:stymphalian_arrow"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 11.0d
+		}
+	]
+	subtitle: ["In your own homeland! Can you believe it?"]
+	title: "Dragons!"
 }
