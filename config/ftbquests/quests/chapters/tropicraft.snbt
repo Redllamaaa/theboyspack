@@ -1,0 +1,197 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tropicraft"
+	group: "2987039AB4197A8E"
+	icon: "tropicraft:pineapple"
+	id: "30C25546C53275B2"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Sometimes you can find &apineapples&r and coconuts growing on beaches."
+				""
+				"Chop them up with your sword and get yourself some lovely snacks."
+				""
+				"Maybe you can even make something to drink?"
+			]
+			id: "3AE4D7016ABF05B3"
+			rewards: [{
+				id: "59E30D3011EBD106"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "57A67C5FE1A54261"
+					item: "tropicraft:bamboo_mug"
+					type: "item"
+				}
+				{
+					icon: "tropicraft:pineapple"
+					id: "414DB563C4A09A4E"
+					observe_type: 0
+					timer: 0L
+					title: "Pineapple"
+					to_observe: "tropicraft:pineapple"
+					type: "observation"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "tropicraft:block/coconut"
+						}
+					}
+					id: "3A6A33420D0B0B9D"
+					observe_type: 0
+					timer: 0L
+					title: "Coconut"
+					to_observe: "tropicraft:coconut"
+					type: "observation"
+				}
+			]
+			title: "Island Delights"
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3AE4D7016ABF05B3"]
+			description: [
+				"Make yourself a drink, Get a chair sit down and watch the sunset."
+				""
+				"You've earned it."
+			]
+			id: "0CAB7EA443F327C6"
+			rewards: [{
+				id: "02692E8D7C216C0D"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "Don't get caught in the main"
+			tasks: [
+				{
+					id: "353FD4A0BAE4F44C"
+					item: "tropicraft:pina_colada"
+					type: "item"
+				}
+				{
+					id: "554708F58F42F8D9"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "tropicraft:white_chair"
+								}
+								{
+									Count: 1b
+									id: "tropicraft:orange_chair"
+								}
+								{
+									Count: 1b
+									id: "tropicraft:magenta_chair"
+								}
+								{
+									Count: 1b
+									id: "tropicraft:light_blue_chair"
+								}
+								{
+									Count: 1b
+									id: "tropicraft:yellow_chair"
+								}
+								{
+									Count: 1b
+									id: "tropicraft:lime_chair"
+								}
+								{
+									Count: 1b
+									id: "tropicraft:pink_chair"
+								}
+								{
+									Count: 1b
+									id: "tropicraft:gray_chair"
+								}
+								{
+									Count: 1b
+									id: "tropicraft:light_gray_chair"
+								}
+								{
+									Count: 1b
+									id: "tropicraft:cyan_chair"
+								}
+								{
+									Count: 1b
+									id: "tropicraft:purple_chair"
+								}
+								{
+									Count: 1b
+									id: "tropicraft:blue_chair"
+								}
+								{
+									Count: 1b
+									id: "tropicraft:brown_chair"
+								}
+								{
+									Count: 1b
+									id: "tropicraft:green_chair"
+								}
+								{
+									Count: 1b
+									id: "tropicraft:red_chair"
+								}
+								{
+									Count: 1b
+									id: "tropicraft:black_chair"
+								}
+							]
+						}
+					}
+					title: "Coloured Chairs"
+					type: "item"
+				}
+			]
+			title: "Take a break"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0CAB7EA443F327C6"]
+			description: ["The method to leave this dimension is the same way you got in, a portal will NOT Spawn."]
+			id: "380A3D1D9DBD8123"
+			rewards: [
+				{
+					id: "2C17B7FB8E32F2BD"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "1C4EB8C70BA9C907"
+					item: "tropicraft:pina_colada"
+					type: "item"
+				}
+				{
+					id: "2D8437551F2E25EA"
+					item: "tropicraft:starfish"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "Why bother with quests? Just chill..."
+			tasks: [{
+				dimension: "tropicraft:tropics"
+				id: "30AEE85335293E88"
+				type: "dimension"
+			}]
+			title: "Visit the Tropics"
+			x: 0.5d
+			y: 0.5d
+		}
+	]
+	title: "Tropicraft"
+}
