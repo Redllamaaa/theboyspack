@@ -79,4 +79,4 @@ ServerEvents.tags('item', immersiveengineering => {
 })
 
 
-console.info('[KubeJS] Immersive Engineering recipes loaded.')
+console.info('[KubeJS] Immersive Engineering kubejs loaded.')

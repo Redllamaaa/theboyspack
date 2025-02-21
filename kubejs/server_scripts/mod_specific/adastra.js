@@ -25,4 +25,4 @@ ServerEvents.tags('item', adastra => {
 })
 
 
-console.info('[KubeJS] Ad Astra recipes loaded.')
+console.info('[KubeJS] Ad Astra kubejs loaded.')

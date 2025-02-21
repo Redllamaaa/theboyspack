@@ -12,4 +12,4 @@ ServerEvents.recipes(mekanism => {
   })
 
 
-  console.info('[KubeJS] Mekanism recipes loaded.')
+console.info('[KubeJS] Mekanism kubejs loaded.')
