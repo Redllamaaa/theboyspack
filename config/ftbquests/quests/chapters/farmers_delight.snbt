@@ -1,0 +1,2466 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "farmers_delight"
+	group: "3940CC69F51E3832"
+	id: "2FD69DECAF91B148"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["With this book you will be able to make food specifically from in your inventory."]
+			id: "0000000000000FF0"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "0000000000000FF1"
+				item: "cookingforblockheads:crafting_book"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["0000000000000FF0"]
+			description: ["This cooking table is the first step in having a entire functioning and linked kitchen. It will be where you craft your food. "]
+			id: "0000000000000FF2"
+			shape: "rsquare"
+			tasks: [{
+				id: "0000000000000FF3"
+				item: "cookingforblockheads:cooking_table"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["0000000000000FF2"]
+			description: ["By having a sink linked into your kitchen (touching other counter blocks and equipment) you will have water supplied freely to all your recipes."]
+			id: "0000000000000FF4"
+			shape: "rsquare"
+			tasks: [{
+				id: "0000000000000FF5"
+				item: "cookingforblockheads:sink"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["0000000000000FF4"]
+			description: ["The oven will allow you to cook any food needed in your recipes, when connected in your kitchen. Without upgrades the oven will require a fuel source to cook food."]
+			id: "0000000000000FF6"
+			shape: "rsquare"
+			tasks: [{
+				id: "0000000000000FF7"
+				item: "cookingforblockheads:oven"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0000000000000FF2"]
+			description: ["The toaster will convert bread to toast for any recipe needing it."]
+			id: "0000000000000FF8"
+			tasks: [{
+				id: "0000000000000FF9"
+				item: "cookingforblockheads:toaster"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0000000000000FFC"]
+			description: [
+				"Provides a constant supply of milk for recipes without manually having to be filled. "
+				""
+				"May want to drop an anvil on a cow over a milk jar to see if one actually fits."
+			]
+			id: "0000000000000FFA"
+			tasks: [{
+				id: "0000000000000FFB"
+				item: "cookingforblockheads:cow_jar"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			description: ["Holds milk to be used in recipes. Must be filled with milk manually."]
+			id: "0000000000000FFC"
+			tasks: [{
+				id: "0000000000000FFD"
+				item: "cookingforblockheads:milk_jar"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0000000000000FF2"]
+			description: [
+				"The fridge is a decorative storage block that will allow you to store ingredients for recipes."
+				"Can be double stacked to expand storage space."
+			]
+			id: "0000000000000FFE"
+			tasks: [{
+				id: "0000000000000FFF"
+				item: "cookingforblockheads:fridge"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0000000000000FF2"]
+			description: ["Holds tools that will be able to be used in recipes in attached kitchens."]
+			id: "0000000000001000"
+			tasks: [{
+				id: "0000000000001001"
+				item: "cookingforblockheads:tool_rack"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0000000000000FF2"]
+			description: ["Holds and displays spices to be used in the kitchen."]
+			id: "0000000000001002"
+			tasks: [{
+				id: "0000000000001003"
+				item: "cookingforblockheads:spice_rack"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0000000000000FF4"]
+			description: ["Stores and displays fruit for recipes that can be used by the kitchen."]
+			id: "0000000000001004"
+			tasks: [{
+				id: "0000000000001005"
+				item: "cookingforblockheads:fruit_basket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0000000000000FFE"]
+			description: ["A fridge upgrade that will provide all the snow and ice you need for recipes. "]
+			id: "0000000000001006"
+			tasks: [{
+				id: "0000000000001007"
+				item: "cookingforblockheads:ice_unit"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0000000000000FFE"]
+			description: ["A fridge upgrade that saves the last item in a slot so that item spaces are saved from being replaced."]
+			id: "0000000000001008"
+			tasks: [{
+				id: "0000000000001009"
+				item: "cookingforblockheads:preservation_chamber"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 9.5d
+		}
+		{
+			description: [
+				"A hanging kitchen cabinet to decorate your kitchen and provide some extra storage."
+				""
+				"Can be dyed to change their color."
+			]
+			id: "000000000000100C"
+			tasks: [{
+				id: "000000000000100D"
+				item: "cookingforblockheads:cabinet"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.5d
+		}
+		{
+			description: [
+				"A simple hanging cabinet corner to help around bends while maintaining connection."
+				""
+				"Can be dyed to change their color."
+			]
+			id: "000000000000100E"
+			tasks: [{
+				id: "000000000000100F"
+				item: "cookingforblockheads:hanging_corner"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Kitchen counter allows you to connect multiple pieces of kitchen equipment together as well as provide some storage for ingredients."
+				""
+				"Can be dyed to change their color."
+			]
+			id: "0000000000001010"
+			tasks: [{
+				id: "0000000000001011"
+				item: "cookingforblockheads:counter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.5d
+		}
+		{
+			description: [
+				"A simple corner to help counters around bends, maintaining their connection."
+				""
+				"Can be dyed to change their color."
+			]
+			id: "0000000000001012"
+			tasks: [{
+				id: "0000000000001013"
+				item: "cookingforblockheads:corner"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.5d
+		}
+		{
+			description: ["The \"classic\" kitchen flooring. Can be converted to a number of other colors, check the recipes in JEI. "]
+			id: "0000000000001014"
+			tasks: [{
+				id: "0000000000001015"
+				item: "cookingforblockheads:white_kitchen_floor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 11.5d
+		}
+		{
+			description: [
+				"Feel no need to complete a lot of these quests as they do not provide useful rewards, but are here to give you ideas on what to cook to keep your diet diverse."
+				""
+				"May this be your veritable recipe book."
+			]
+			icon: {
+				Count: 1
+				id: "farmersdelight:skillet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "000000000000107A"
+			shape: "octagon"
+			size: 2.5d
+			subtitle: "*You may need to zoom out quite a bit to see all the quests*"
+			tasks: [{
+				id: "000000000000107B"
+				title: "Recipe Time"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 15.0d
+		}
+		{
+			id: "00000000000013B7"
+			tasks: [{
+				id: "00000000000013B8"
+				item: "simplefarming:beef_and_broccoli"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 26.5d
+		}
+		{
+			id: "00000000000013B9"
+			tasks: [{
+				id: "00000000000013BA"
+				item: "simplefarming:beef_curry"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 14.0d
+		}
+		{
+			id: "00000000000013BB"
+			tasks: [{
+				id: "00000000000013BC"
+				item: "simplefarming:italian_beef"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 26.5d
+		}
+		{
+			id: "00000000000013BD"
+			tasks: [{
+				id: "00000000000013BE"
+				item: "simplefarming:salad"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 12.5d
+		}
+		{
+			id: "00000000000013BF"
+			tasks: [{
+				id: "00000000000013C0"
+				item: "simplefarming:corn_salad"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 15.5d
+		}
+		{
+			id: "00000000000013C1"
+			tasks: [{
+				id: "00000000000013C2"
+				item: "simplefarming:caesar_salad"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 14.0d
+		}
+		{
+			id: "00000000000013C3"
+			tasks: [{
+				id: "00000000000013C4"
+				item: "simplefarming:cheeseburger"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 28.0d
+		}
+		{
+			id: "00000000000013C5"
+			tasks: [{
+				id: "00000000000013C6"
+				item: "simplefarming:chicken_noodle_soup"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.5d
+		}
+		{
+			id: "00000000000013C7"
+			tasks: [{
+				id: "00000000000013C8"
+				item: "simplefarming:chicken_curry"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 11.0d
+		}
+		{
+			id: "00000000000013C9"
+			tasks: [{
+				id: "00000000000013CA"
+				item: "simplefarming:chicken_parmesan"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 15.5d
+		}
+		{
+			id: "00000000000013CB"
+			tasks: [{
+				id: "00000000000013CC"
+				item: "simplefarming:blt"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 23.5d
+		}
+		{
+			id: "00000000000013CD"
+			tasks: [{
+				id: "00000000000013CE"
+				item: "simplefarming:chili"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 12.5d
+		}
+		{
+			id: "00000000000013CF"
+			tasks: [{
+				id: "00000000000013D0"
+				item: "simplefarming:egg_sandwich"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 26.5d
+		}
+		{
+			id: "00000000000013D1"
+			tasks: [{
+				id: "00000000000013D2"
+				item: "simplefarming:eggplant_parmesan"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 12.5d
+		}
+		{
+			id: "00000000000013D3"
+			tasks: [{
+				id: "00000000000013D4"
+				item: "simplefarming:fish_and_chips"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 14.0d
+		}
+		{
+			id: "00000000000013D5"
+			tasks: [{
+				id: "00000000000013D6"
+				item: "simplefarming:fish_sandwich"
+				type: "item"
+			}]
+			x: -18.0d
+			y: 22.0d
+		}
+		{
+			id: "00000000000013D7"
+			tasks: [{
+				id: "00000000000013D8"
+				item: "simplefarming:fried_rice"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 25.0d
+		}
+		{
+			id: "00000000000013D9"
+			tasks: [{
+				id: "00000000000013DA"
+				item: "simplefarming:hamburger"
+				type: "item"
+			}]
+			x: -18.0d
+			y: 26.5d
+		}
+		{
+			id: "00000000000013DB"
+			tasks: [{
+				id: "00000000000013DC"
+				item: "simplefarming:hotdog"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 25.0d
+		}
+		{
+			id: "00000000000013DD"
+			tasks: [{
+				id: "00000000000013DE"
+				item: "simplefarming:lasagna"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 14.0d
+		}
+		{
+			id: "00000000000013DF"
+			tasks: [{
+				id: "00000000000013E0"
+				item: "simplefarming:mutton_curry"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 15.5d
+		}
+		{
+			id: "00000000000013E1"
+			tasks: [{
+				id: "00000000000013E2"
+				item: "simplefarming:pad_thai"
+				type: "item"
+			}]
+			x: -18.0d
+			y: 23.5d
+		}
+		{
+			id: "00000000000013E3"
+			tasks: [{
+				id: "00000000000013E4"
+				item: "simplefarming:pasta"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 12.5d
+		}
+		{
+			id: "00000000000013E7"
+			tasks: [{
+				id: "00000000000013E8"
+				item: "simplefarming:pork_curry"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 9.5d
+		}
+		{
+			id: "00000000000013E9"
+			tasks: [{
+				id: "00000000000013EA"
+				item: "simplefarming:pulled_pork_sandwich"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 25.0d
+		}
+		{
+			id: "00000000000013EB"
+			tasks: [{
+				id: "00000000000013EC"
+				item: "simplefarming:sandwich"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 23.5d
+		}
+		{
+			id: "00000000000013ED"
+			tasks: [{
+				id: "00000000000013EE"
+				item: "simplefarming:sausage_barley_soup"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			id: "00000000000013EF"
+			tasks: [{
+				id: "00000000000013F0"
+				item: "simplefarming:spaghetti"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 15.5d
+		}
+		{
+			id: "00000000000013F1"
+			tasks: [{
+				id: "00000000000013F2"
+				item: "simplefarming:spinach_mushroom_quiche"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 23.5d
+		}
+		{
+			id: "00000000000013F3"
+			tasks: [{
+				id: "00000000000013F4"
+				item: "simplefarming:spinach_quinoa_quiche"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 22.0d
+		}
+		{
+			id: "00000000000013F5"
+			tasks: [{
+				id: "00000000000013F6"
+				item: "simplefarming:squash_casserole"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 11.0d
+		}
+		{
+			id: "00000000000013F7"
+			tasks: [{
+				id: "00000000000013F8"
+				item: "simplefarming:squash_soup"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 15.5d
+		}
+		{
+			id: "00000000000013F9"
+			tasks: [{
+				id: "00000000000013FA"
+				item: "simplefarming:stuffed_corn_zucchini"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 15.5d
+		}
+		{
+			id: "00000000000013FB"
+			tasks: [{
+				id: "00000000000013FC"
+				item: "simplefarming:trail_mix"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 24.0d
+		}
+		{
+			id: "00000000000013FD"
+			tasks: [{
+				id: "00000000000013FE"
+				item: "simplefarming:turnip_beetroot_gratin"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 9.5d
+		}
+		{
+			id: "00000000000013FF"
+			tasks: [{
+				id: "0000000000001400"
+				item: "simplefarming:vegetable_curry"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 12.5d
+		}
+		{
+			id: "0000000000001401"
+			tasks: [{
+				id: "0000000000001402"
+				item: "simplefarming:veggie_burger"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 28.0d
+		}
+		{
+			dependencies: [
+				"00000000000013F3"
+				"00000000000013F1"
+				"00000000000013FB"
+				"00000000000013BF"
+				"00000000000013C1"
+				"00000000000013BD"
+				"00000000000013C5"
+				"00000000000013ED"
+				"00000000000013F7"
+				"00000000000013F9"
+				"00000000000013D3"
+				"00000000000013CD"
+				"00000000000013F5"
+				"00000000000013FD"
+			]
+			description: ["You have a straight up cafe menu with these things!"]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			icon: "simplefarming:spinach_quinoa_quiche"
+			id: "22A371ED8FFC7FFF"
+			optional: true
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "30990B9237EB72DE"
+				type: "checkmark"
+			}]
+			title: "Soup, Salad, and Casserole"
+			x: 10.75d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"00000000000013E1"
+				"00000000000013D7"
+				"00000000000013B7"
+				"00000000000013EF"
+				"00000000000013E3"
+				"00000000000013D1"
+				"00000000000013DD"
+				"00000000000013C9"
+				"00000000000013DF"
+				"00000000000013B9"
+				"00000000000013FF"
+				"00000000000013E7"
+				"00000000000013C7"
+			]
+			description: ["Some meals from all over the world!"]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			icon: "simplefarming:chicken_curry"
+			id: "2B31C2CFA31CBE7F"
+			optional: true
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "584A90EC2B78BE57"
+				type: "checkmark"
+			}]
+			title: "All Around the World"
+			x: -15.75d
+			y: 11.0d
+		}
+		{
+			id: "32D6083223BDCD90"
+			size: 1.5d
+			tasks: [{
+				id: "2F29C6C3020F6B0A"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 29.5d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			hide_dependency_lines: true
+			id: "0ABFF67C8B76BE22"
+			tasks: [{
+				id: "33983829F5397FF6"
+				item: "farmersdelight:vegetable_noodles"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			hide_dependency_lines: true
+			id: "52E3B3D4F0915EEE"
+			tasks: [{
+				id: "0F6E9F9670CC0CEF"
+				item: "farmersdelight:ratatouille"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			hide_dependency_lines: true
+			id: "107EBB12815A4B23"
+			tasks: [{
+				id: "2BFC8F0FA8F7EECD"
+				item: "farmersdelight:squid_ink_pasta"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["32D6083223BDCD90"]
+			description: [
+				"The Stove is a direct upgrade to the Campfire's cooking features, and a suitable heat source for the Cooking Pot."
+				""
+				"To add items to its grill, simply right-click the Stove when it has no objects blocking its top face. Stoves detect campfire recipes to cook, meaning they usually also take 30 seconds to fully prepare items. Stoves cannot be automated through item transferring blocks (e.g. Hoppers), but require no fuel to cook items, much like a Campfire."
+				""
+				"Stoves can hold six (6) items on its grill, and will gently pop cooked outputs above its surface, instead of throwing them around."
+				""
+				"Stoves can be put out using shovels or buckets of water, and reignited with Flint and Steel."
+			]
+			id: "19A4385584636C45"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6424A97C1667029E"
+				item: "farmersdelight:stove"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			id: "0F72242F67FB23EA"
+			tasks: [{
+				id: "63166586FF2EB727"
+				item: "farmersdelight:cabbage_rolls"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["19A4385584636C45"]
+			description: [
+				"The Cooking Pot is a workstation where you can both prepare and store a large amount of meals. When placed above any suitable heat source (campfire, open flames, lava, a stove etc.), it will start bubbling, indicating it's ready to cook."
+				""
+				"You can put up to six ingredients inside a pot. If they match, the pot will start cooking them up into a meal. Most meals need a container to be served on, such as Bowls; the result slot will tell you which one to use. Simply add the container on the corresponding slot, or right-click the pot with it, to take a serving!"
+				""
+				"Meals tend to be quite large, so they don't stack up as high in your inventory. If you're not going to eat them all right away, you can just mine the whole pot and take it with you! Cooking Pots can hold 64 servings of any meal with a container, regardless of their maximum stack limit."
+			]
+			id: "18F8DADD01FEC9C2"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "0023DC50F9911E64"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["619A52669514E850"]
+			id: "0D2CCDC7E72BE396"
+			tasks: [{
+				id: "0E1904B128889DB2"
+				item: "farmersdelight:shepherds_pie_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 20.5d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			description: ["When consumed, it will remove a single random negative effect from the player, keeping positive ones untouched. This provides a simple use for Cocoa Beans in difficult, risky trips."]
+			id: "55AF1779E7AE28A7"
+			tasks: [{
+				id: "1AD4A3D0C7E69859"
+				item: "farmersdelight:hot_cocoa"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["604569BC4764E258"]
+			description: ["This combination allows your mount to be a lot more agile during travels. Since mounts eat a large volume of feed, the item does not need to be contained in a Bowl, saving some inventory space."]
+			id: "31E7C56ABBA6A7B2"
+			tasks: [{
+				id: "234786C946748E53"
+				item: "farmersdelight:horse_feed"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["19A4385584636C45"]
+			description: [
+				"Knives are scavenging tools: they allow you to obtain a few more resources from both fauna and flora."
+				""
+				"They are also used to cut certain foods on the cutting board."
+			]
+			id: "2FEC85DD348C7C1C"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "372026CF74458EAB"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "farmersdelight:tools/knives"
+					}
+				}
+				title: "Any #farmersdelight:tools/knives"
+				type: "item"
+			}]
+			title: "Knives"
+			x: 2.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["2FEC85DD348C7C1C"]
+			id: "42E37B71FCF59BAD"
+			tasks: [{
+				id: "0D901A641F7D3407"
+				item: "farmersdelight:cake_slice"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 24.5d
+		}
+		{
+			dependencies: ["2FEC85DD348C7C1C"]
+			id: "2DA15FAD0E755A26"
+			tasks: [{
+				id: "5B012B73CE682726"
+				item: "farmersdelight:chocolate_pie_slice"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["604569BC4764E258"]
+			description: ["This combination allows wolves to catch up a lot more easily with you or nimble opponents, as well as last longer in battle."]
+			id: "3693C3F67BD59401"
+			tasks: [{
+				id: "7C797806CAA4F4F8"
+				item: "farmersdelight:dog_food"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 23.5d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			id: "604569BC4764E258"
+			tasks: [{
+				id: "567B754D8FE1DD06"
+				title: "Pet Foods"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			description: [
+				"Feasts are not edible directly as an item; they must be placed down as a block first. When placed, players can use (right-click) them with Bowls to serve themselves with a consumable portion."
+				""
+				"The existing feasts in Farmer's Delight provide 4 servings in total. Plated feasts will also leave behind leftovers in the form of a dirty plate; right-clicking or mining it will retrieve the original Bowl, and any bones or food scraps left behind."
+			]
+			id: "619A52669514E850"
+			subtitle: "Feasts are very large meals, which can be placed as a block to provide multiple servings to players."
+			tasks: [{
+				id: "251874AE085FBC47"
+				title: "Feasts"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["619A52669514E850"]
+			id: "7B635770381DDE91"
+			tasks: [{
+				id: "7327769944FE4209"
+				item: "farmersdelight:stuffed_pumpkin_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["619A52669514E850"]
+			id: "41751B25A229932D"
+			tasks: [{
+				id: "5F9316E69617978D"
+				item: "farmersdelight:honey_glazed_ham_block"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["619A52669514E850"]
+			id: "0F27533115C5827C"
+			tasks: [{
+				id: "380E7230888F381C"
+				item: "farmersdelight:roast_chicken_block"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 23.5d
+		}
+		{
+			id: "54B41A4C99E43EA8"
+			tasks: [{
+				id: "77A0F22C56AB0F52"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:apple_pie"
+				}
+				type: "item"
+			}]
+			x: -15.0d
+			y: 31.0d
+		}
+		{
+			id: "79409352388AE94F"
+			tasks: [{
+				id: "4322757A80E56345"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:apricot_pie"
+				}
+				type: "item"
+			}]
+			x: -16.5d
+			y: 32.5d
+		}
+		{
+			id: "072B5E664C5AD2C4"
+			tasks: [{
+				id: "7753BE4DD47F702B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:baked_sweet_potato"
+				}
+				type: "item"
+			}]
+			x: -16.5d
+			y: 18.5d
+		}
+		{
+			id: "39F32347B584D4B5"
+			tasks: [{
+				id: "0F0236DA340963EB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:carrot_soup"
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 18.5d
+		}
+		{
+			id: "01C957BCE6E793AD"
+			tasks: [{
+				id: "72FABF1EF8B65BAF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:candy_cane"
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 24.0d
+		}
+		{
+			id: "0D99CAA135DB8470"
+			tasks: [{
+				id: "4111C4C7A2E6A8E7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:baked_yam"
+				}
+				type: "item"
+			}]
+			x: -13.5d
+			y: 18.5d
+		}
+		{
+			id: "050F040D0A3F9990"
+			tasks: [{
+				id: "6CA00291CAF97956"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:barley_bread"
+				}
+				type: "item"
+			}]
+			x: -13.5d
+			y: 14.0d
+		}
+		{
+			id: "3F26A8C19B7718B5"
+			tasks: [{
+				id: "645D609C25274421"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:banana_bread"
+				}
+				type: "item"
+			}]
+			x: -18.0d
+			y: 25.0d
+		}
+		{
+			id: "4F609B748D56F091"
+			tasks: [{
+				id: "382EBF225C96E0B1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:candy"
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 24.0d
+		}
+		{
+			id: "31A57F82F70289F3"
+			tasks: [{
+				id: "598E3CC1106C02D1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:broccoli_cheese_soup"
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 17.0d
+		}
+		{
+			id: "2541357FE56BE410"
+			tasks: [{
+				id: "36D28EBAC388064A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:blueberry_pie"
+				}
+				type: "item"
+			}]
+			x: -18.0d
+			y: 31.0d
+		}
+		{
+			id: "6F687C34400A863B"
+			tasks: [{
+				id: "0E4F1246F4FC975E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:blackberry_pie"
+				}
+				type: "item"
+			}]
+			x: -16.5d
+			y: 31.0d
+		}
+		{
+			id: "18CEF921E4E8140F"
+			tasks: [{
+				id: "3775FA7A043084FE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:borscht"
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 18.5d
+		}
+		{
+			id: "5EB023AE339F29EA"
+			tasks: [{
+				id: "3E5A689E62EADACF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:chocolate"
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 25.5d
+		}
+		{
+			id: "7731D6DE42EA50F3"
+			tasks: [{
+				id: "7383BA7B34FF616D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:cherry_pie"
+				}
+				type: "item"
+			}]
+			x: -18.0d
+			y: 32.5d
+		}
+		{
+			id: "48FCDE7EE87CD5E0"
+			tasks: [{
+				id: "6E44C5C0DE5C6B89"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:jaffa_cake"
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 27.0d
+		}
+		{
+			id: "243BA83A15C681F7"
+			tasks: [{
+				id: "3838567EE0976ABE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:ice_cream_sundae"
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 27.0d
+		}
+		{
+			id: "349CAADF477023AB"
+			tasks: [{
+				id: "5008DDA0599E264A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:golden_habanero"
+				}
+				type: "item"
+			}]
+			x: -15.0d
+			y: 18.5d
+		}
+		{
+			id: "4427C8DD4E3B7E3B"
+			tasks: [{
+				id: "1A9E871DA8D4745B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:fruit_salad"
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 25.5d
+		}
+		{
+			id: "7C9BEB415E9E0C04"
+			tasks: [{
+				id: "4912EDA35FE50459"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:cucumber_soup"
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 17.0d
+		}
+		{
+			id: "5987E4780A16B113"
+			tasks: [{
+				id: "14017BCAB392CD39"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:cornbread"
+				}
+				type: "item"
+			}]
+			x: -15.0d
+			y: 22.0d
+		}
+		{
+			id: "050E141673D73CB9"
+			tasks: [{
+				id: "0DDF815F1C7DA6CE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:strawberry_pie"
+				}
+				type: "item"
+			}]
+			x: -16.5d
+			y: 34.0d
+		}
+		{
+			id: "2C941B16B7591F67"
+			tasks: [{
+				id: "26EF634FD9E210EB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:pancakes"
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 28.5d
+		}
+		{
+			id: "21CB8D4B957F8ABE"
+			tasks: [{
+				id: "4475E903C0040DF2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:onion_soup"
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 17.0d
+		}
+		{
+			id: "395B356BA9B8D5FD"
+			tasks: [{
+				id: "6C76527C9E3C4A60"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:olive_tomato_salad"
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 17.0d
+		}
+		{
+			id: "6D83714307A806DE"
+			tasks: [{
+				id: "4F78BE580A0998E9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:oat_bread"
+				}
+				type: "item"
+			}]
+			x: -16.5d
+			y: 22.0d
+		}
+		{
+			id: "24281696D537B387"
+			tasks: [{
+				id: "5CE00815B5A1FF6D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:mushroom_barley"
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 14.0d
+		}
+		{
+			id: "1E10C0D99E06B5C8"
+			tasks: [{
+				id: "2638E590488A64E1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:marshmallow"
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 25.5d
+		}
+		{
+			id: "0658A88B7D736F19"
+			tasks: [{
+				id: "698AA6D3EDB34C34"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:mac_and_cheese"
+				}
+				type: "item"
+			}]
+			x: -16.5d
+			y: 17.0d
+		}
+		{
+			id: "6D2DE14EB2051FB7"
+			tasks: [{
+				id: "18C98E73F1FE3CC3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:pizza"
+				}
+				type: "item"
+			}]
+			x: -15.0d
+			y: 17.0d
+		}
+		{
+			id: "27E2ECE5E9D6658D"
+			tasks: [{
+				id: "3FE26364578746CA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:pear_pie"
+				}
+				type: "item"
+			}]
+			x: -15.0d
+			y: 34.0d
+		}
+		{
+			id: "51CA3856F871D1B0"
+			tasks: [{
+				id: "57A7B95282D97C25"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:peanut_butter_pie"
+				}
+				type: "item"
+			}]
+			x: -15.0d
+			y: 32.5d
+		}
+		{
+			id: "0F870DD425DFF7ED"
+			tasks: [{
+				id: "342C2C0895C85B24"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:peanut_butter_cookie"
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 27.0d
+		}
+		{
+			id: "146DAEBC4D8AD86D"
+			tasks: [{
+				id: "153A30FA9AE71EC1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:pbj"
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 28.5d
+		}
+		{
+			id: "678CD4793D2BA3EF"
+			tasks: [{
+				id: "18A2D7226D7FD472"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:plum_pie"
+				}
+				type: "item"
+			}]
+			x: -18.0d
+			y: 34.0d
+		}
+		{
+			id: "4483EE27938460A1"
+			tasks: [{
+				id: "15E1C33F4FF2803A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:popcorn"
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 28.5d
+		}
+		{
+			id: "6B04024711D4D83F"
+			tasks: [{
+				id: "57C438B6774241DF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:sushi"
+				}
+				type: "item"
+			}]
+			x: -13.5d
+			y: 17.0d
+		}
+		{
+			id: "51FB4E213418A620"
+			tasks: [{
+				id: "04CC7D88FDE1411C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:vegetable_medley"
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 18.5d
+		}
+		{
+			id: "5C7BFEDA139EEE2A"
+			tasks: [{
+				id: "28486A230862AD23"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:raspberry_pie"
+				}
+				type: "item"
+			}]
+			x: -13.5d
+			y: 34.0d
+		}
+		{
+			id: "4B6F5583F2A8D75A"
+			tasks: [{
+				id: "12A288CD367ACD33"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:raisins"
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 27.0d
+		}
+		{
+			id: "58A3F1C12109C2CD"
+			tasks: [{
+				id: "5CC716F60AEC6DC3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:radish_soup"
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 18.5d
+		}
+		{
+			id: "258012F596A22703"
+			tasks: [{
+				id: "158DC43996DAFDCD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:quinoa_salad"
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 9.5d
+		}
+		{
+			id: "60CB2DC710998BD1"
+			tasks: [{
+				id: "6F1A524D91500B5E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:pumpkin_soup"
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 15.5d
+		}
+		{
+			id: "222B435FEAC0455B"
+			tasks: [{
+				id: "763D7412F053EF81"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:potato_knish"
+				}
+				type: "item"
+			}]
+			x: -16.5d
+			y: 9.5d
+		}
+		{
+			id: "7036F5D047A24BE6"
+			tasks: [{
+				id: "1D1F2547E77974DB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:tofu"
+				}
+				type: "item"
+			}]
+			x: -18.0d
+			y: 18.5d
+		}
+		{
+			icon: "simplefarming:strawberry_pie"
+			id: "7B4567B19E7932E0"
+			optional: true
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "1F4F5FE91F864A05"
+				type: "checkmark"
+			}]
+			title: "Cakes and Pies"
+			x: -15.75d
+			y: 29.5d
+		}
+		{
+			id: "51966AB793757903"
+			tasks: [{
+				id: "38F73D477240FF5D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:chocolate_pie"
+				}
+				type: "item"
+			}]
+			x: -13.5d
+			y: 31.0d
+		}
+		{
+			id: "3DDAFFAABDD6DC30"
+			tasks: [{
+				id: "53D1B049BBCCC59C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:apple_pie"
+				}
+				type: "item"
+			}]
+			x: -13.5d
+			y: 32.5d
+		}
+		{
+			icon: "supplementaries:candy"
+			id: "48E60CAF8132889F"
+			optional: true
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "0DB6AE2CC4AA6108"
+				type: "checkmark"
+			}]
+			title: "Sweets n` Snacks"
+			x: 10.75d
+			y: 22.5d
+		}
+		{
+			id: "4BC889F892EA77BB"
+			tasks: [{
+				id: "6587466B817D1126"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:melon_popsicle"
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 24.0d
+		}
+		{
+			id: "487C85DE86835C37"
+			tasks: [{
+				id: "13C7900C408ECEA6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:mixed_salad"
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 11.0d
+		}
+		{
+			id: "1D6F954F8B07908B"
+			tasks: [{
+				id: "5249746DF274DE99"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:nether_salad"
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			hide_dependency_lines: true
+			id: "3B606D7BE16FE689"
+			tasks: [{
+				id: "619FF57A9A931A30"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:dumplings"
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 19.0d
+		}
+		{
+			id: "22D1F316494B26B1"
+			tasks: [{
+				id: "2030D03E9D171B15"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:egg_sandwich"
+				}
+				type: "item"
+			}]
+			x: -18.0d
+			y: 12.5d
+		}
+		{
+			id: "653C52D47ECB8DF0"
+			tasks: [{
+				id: "728420445B586C64"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:chicken_sandwich"
+				}
+				type: "item"
+			}]
+			x: -18.0d
+			y: 14.0d
+		}
+		{
+			id: "66F1A8DD67EEF04D"
+			tasks: [{
+				id: "28E300ED87960229"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:hamburger"
+				}
+				type: "item"
+			}]
+			x: -18.0d
+			y: 11.0d
+		}
+		{
+			id: "256D2A71D4843973"
+			tasks: [{
+				id: "17A4F61901B11897"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:bacon_sandwich"
+				}
+				type: "item"
+			}]
+			x: -18.0d
+			y: 15.5d
+		}
+		{
+			id: "7307DFD39B47ED9E"
+			tasks: [{
+				id: "0658C5A9C59E6485"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:mutton_wrap"
+				}
+				type: "item"
+			}]
+			x: -18.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			hide_dependency_lines: true
+			id: "6DB1449D13DC57A8"
+			tasks: [{
+				id: "77A418CF6CF310E1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:noodle_soup"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			hide_dependency_lines: true
+			id: "1DC25494C555FB0E"
+			tasks: [{
+				id: "3AD777222689FD7A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:beef_stew"
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			hide_dependency_lines: true
+			id: "4C77D6544A5EBFBE"
+			tasks: [{
+				id: "7472676B4AB71200"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:chicken_soup"
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			hide_dependency_lines: true
+			id: "7173698E4CE426AB"
+			tasks: [{
+				id: "60B495F7684C5C51"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:vegetable_soup"
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			hide_dependency_lines: true
+			id: "1ED1C240CC210408"
+			tasks: [{
+				id: "5565583163A9339D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:fish_stew"
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: 20.5d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			hide_dependency_lines: true
+			id: "14F51B259CC408A7"
+			tasks: [{
+				id: "0EA853F7A7C7EDCA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:fried_rice"
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			hide_dependency_lines: true
+			id: "4D3AC909C682604C"
+			tasks: [{
+				id: "5CAD063A123F2DA0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:pumpkin_soup"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			hide_dependency_lines: true
+			id: "0FD7F97C8F8F0842"
+			tasks: [{
+				id: "0300531A08154C6B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:baked_cod_stew"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			hide_dependency_lines: true
+			id: "433ECD17C3BBF31B"
+			tasks: [{
+				id: "7DCB04C40CB259FD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:pasta_with_mutton_chop"
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["18F8DADD01FEC9C2"]
+			hide_dependency_lines: true
+			id: "652363EEE2F4B147"
+			tasks: [{
+				id: "026532AB9C563D3A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "farmersdelight:pasta_with_meatballs"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["2FEC85DD348C7C1C"]
+			id: "0BD65BC691CD367A"
+			tasks: [{
+				id: "09FD10D68527BF2A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:cheese_slice"
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 26.0d
+		}
+		{
+			id: "2DF5BF280D3577A7"
+			tasks: [{
+				id: "1C4DE6CC1853E8E0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "simplefarming:chocolate_cake"
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 25.5d
+		}
+		{
+			description: [
+				"- Any animals you slay using a Knife are guaranteed to drop secondary items, such as Leather and Feathers;"
+				""
+				"- Grassy plants (grass, wheat, rice etc) cut with a Knife will occasionally yield Straw, a firm and useful fiber;"
+				""
+				"- They act as a modest melee weapon: swings faster than a sword for lesser damage;"
+				""
+				"- Later on, they are also useful for cutting and portioning ingredients when preparing meals."
+			]
+			id: "2FCBCF4EB414860B"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Knives are scavenging tools: they allow you to obtain a few more resources from both fauna and flora."
+			tasks: [{
+				id: "57D9B20147B137E4"
+				item: {
+					Count: 1
+					id: "farmersdelight:flint_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["2FCBCF4EB414860B"]
+			id: "7B1978E9C04B8D89"
+			shape: "rsquare"
+			tasks: [{
+				id: "160D9F4FCAAEE666"
+				item: {
+					Count: 1
+					id: "farmersdelight:iron_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["7B1978E9C04B8D89"]
+			id: "0579F4F2B0089470"
+			shape: "rsquare"
+			tasks: [{
+				id: "6D07C0C85977CFB4"
+				item: {
+					Count: 1
+					id: "farmersdelight:golden_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["0579F4F2B0089470"]
+			id: "45B44E95DCD20BFE"
+			shape: "rsquare"
+			tasks: [{
+				id: "3C411CC5AB953141"
+				item: {
+					Count: 1
+					id: "farmersdelight:diamond_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["45B44E95DCD20BFE"]
+			id: "61BFA1BFC89CEC5C"
+			shape: "rsquare"
+			tasks: [{
+				id: "04818DD7E817429B"
+				item: {
+					Count: 1
+					id: "farmersdelight:netherite_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["2FCBCF4EB414860B"]
+			description: ["Using a Knife on grassy plants will yield Straw, a useful building and composting material. Early on, it's best used to craft some Ropes."]
+			id: "2EC43B36FA256B42"
+			shape: "rsquare"
+			tasks: [{
+				id: "25C3A7CD5283FBDE"
+				item: "farmersdelight:straw"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["2EC43B36FA256B42"]
+			id: "286DFBED688303DD"
+			shape: "rsquare"
+			subtitle: "Can be used as a replacement for Leather"
+			tasks: [{
+				id: "661A4043B70067B6"
+				item: "farmersdelight:canvas"
+				type: "item"
+			}]
+			x: -6.75d
+			y: 27.5d
+		}
+		{
+			dependencies: ["286DFBED688303DD"]
+			description: [
+				"Baskets can be placed facing any of the six cardinal directions, and will even work upside down. Items colliding with its open face will be captured and stored in its inventory."
+				""
+				"It has the same inventory size as a Chest or Barrel, but lacks the ability to actively transfer items between blocks, such as extracting from, or inserting into, adjacent inventories. Other item-transferring blocks can interact with a Basket normally."
+			]
+			id: "273B00747186F04D"
+			shape: "rsquare"
+			subtitle: "Container block that can capture dropped items through its open side, like a Hopper."
+			tasks: [{
+				id: "499B7EA103100832"
+				item: "farmersdelight:basket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 27.5d
+		}
+		{
+			dependencies: ["2EC43B36FA256B42"]
+			description: [
+				"Ropes are essentially reverse scaffolding: the can be continuously deployed downward from the same spot, and can be climbed without collision. This allows players to safely descend or ascend high altitudes, such as ravines or mountains."
+				""
+				"When placing Rope, you can use more ropes against the first one to deploy them downward. This will continuously extend a column of rope down to the bottom-most Y-level possible, allowing for easy and controllable descents into chasms, ravines or from high locations."
+				""
+				"To suppress rope deployment, simply sneak while placing it. If there's no space underneath to deploy, it will also place normally."
+			]
+			id: "7B1AB93BB52A06D8"
+			shape: "rsquare"
+			tasks: [{
+				id: "6D53B3DEAF58A82D"
+				item: "farmersdelight:rope"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["2EC43B36FA256B42"]
+			description: [
+				"Rich Soil is an enhanced type of dirt, more fertile and durable to the elements."
+				""
+				"Rich Soil cannot be directly crafted. To make it, you must craft Organic Compost and place it into the world, letting it decompose over time."
+				""
+				"Organic Compost will decompose more easily under sunlight and moisture from nearby water, but doesn't actually hydrate like farmland. It can also be gently accelerated by placing activators next to it, in a 3x3x3 area centered on itself."
+				""
+				"Currently, the following blocks behave as activators for Organic Compost:"
+				"- Brown and Red Mushrooms, and their Colonies;"
+				"- Podzol and Mycelium;"
+				"- Other blocks of Organic Compost;"
+				"- Rich Soil, normal or tilled."
+			]
+			id: "122E4581C596C105"
+			shape: "rsquare"
+			tasks: [{
+				id: "042EE5E77E60AEB1"
+				item: "farmersdelight:organic_compost"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 29.0d
+		}
+		{
+			dependencies: ["122E4581C596C105"]
+			description: [
+				"When any growable plant is placed on Rich Soil, its growth will be randomly boosted, similar to the usage of Bone Meal."
+				"Rich Soil can be tilled into Rich Farmland through the use of hoes. Rich Farmland is immune to mob trampling and won't unravel to Melons or Pumpkins, but requires hydration in order to boost crops."
+				""
+				"Mushrooms planted on Rich Soil under sufficient darkness will eventually form a Mushroom Colony. Such colonies will grow from 2 to 5 mushroom caps over time, dropping them when harvested."
+			]
+			id: "36331113C7B60B46"
+			shape: "rsquare"
+			subtitle: "Enhanced type of dirt, more fertile and durable to the elements."
+			tasks: [{
+				id: "029354E26220F9D6"
+				item: "farmersdelight:rich_soil"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 29.0d
+		}
+		{
+			dependencies: ["2EC43B36FA256B42"]
+			description: [
+				"Ropes are essentially reverse scaffolding: the can be continuously deployed downward from the same spot, and can be climbed without collision. This allows players to safely descend or ascend high altitudes, such as ravines or mountains."
+				""
+				"When placing Rope, you can use more ropes against the first one to deploy them downward. This will continuously extend a column of rope down to the bottom-most Y-level possible, allowing for easy and controllable descents into chasms, ravines or from high locations."
+				""
+				"To suppress rope deployment, simply sneak while placing it. If there's no space underneath to deploy, it will also place normally."
+			]
+			id: "7C225F883D877D7B"
+			shape: "rsquare"
+			tasks: [{
+				id: "4397C427C2865654"
+				item: "farmersdelight:rope"
+				type: "item"
+			}]
+			x: -6.75d
+			y: 30.0d
+		}
+	]
+	title: "Farmer's Delight"
+}
