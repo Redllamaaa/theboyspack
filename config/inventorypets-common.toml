@@ -65,7 +65,7 @@
 	#All players must be in bed for Bed Pet sleep ability (default:false)
 	allPlayersMustBeInBed = false
 	#Disable all holiday pets (default:false)
-	disableHolidayPets = false
+	disableHolidayPets = true
 	#Disable the April Fool pet and messages (default:false)
 	disableAprilFoolHoliday = false
 	#Allow April Fool all year round (default:false)
@@ -95,7 +95,7 @@
 	spongeAbsorbBlockRadius = 8
 	#Illuminati cooldown duration in minutes (default: 1)
 	#Range: 1 ~ 10
-	illuminatiCooldown = 1
+	illuminatiCooldown = 10
 	#Illuminati invisibility duration in minutes (default: 1)
 	#Range: 1 ~ 3
 	illuminatiInvisibleDuration = 1
