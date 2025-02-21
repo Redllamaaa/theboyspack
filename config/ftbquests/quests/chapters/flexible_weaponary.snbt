@@ -1106,6 +1106,7 @@
 				"&3Pebbles&r can be created using a &bStone Anvil&r and a &aHammer&r!"
 			]
 			hide_dependency_lines: true
+			icon: "silentgear:slingshot_blueprint"
 			id: "02CF6F576702CFA5"
 			rewards: [
 				{
