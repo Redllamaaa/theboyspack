@@ -4,8 +4,1899 @@
 	filename: "flexible_weaponary"
 	group: "747F44473FCC1116"
 	id: "050BA5E070703F08"
+	images: [
+		{
+			height: 1.25d
+			image: "silentgear:block/metal_alloyer_front"
+			rotation: 0.0d
+			width: 1.25d
+			x: -22.0d
+			y: -1.0d
+		}
+		{
+			height: 1.25d
+			image: "silentgear:block/salvager"
+			rotation: 0.0d
+			width: 1.25d
+			x: -22.0d
+			y: -2.0d
+		}
+		{
+			height: 1.25d
+			image: "silentgear:block/starlight_charger"
+			rotation: 0.0d
+			width: 1.25d
+			x: -26.0d
+			y: -1.5d
+		}
+		{
+			height: 1.0d
+			image: "silentgear:item/blueprint_katana"
+			rotation: 0.0d
+			width: 1.0d
+			x: -17.5d
+			y: -6.5d
+		}
+		{
+			height: 1.0d
+			image: "silentgear:item/blueprint_spear"
+			rotation: 0.0d
+			width: 1.0d
+			x: -21.5d
+			y: -6.5d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"&aSilent Gear&r is a mod centered around creating custom tools and armor for every step of your playthrough."
+				""
+				"To get started, you'll need to create the framework for making your own tools and armor."
+				""
+				"This can be done with either &2Template Boards&r or &bBlueprint Paper&r."
+				""
+				"Note: Templates are one time use, where as Blueprints have infinite uses."
+				"{@pagebreak}"
+				"To craft a Template Board, you'll need to make a &3Stone Anvil&r first."
+				""
+				"Once you have one, craft yourself a &aCrude Knife&r and place some Logs on the anvil. Right clicking the logs on the table with the Knife will cut them into boards!"
+			]
+			hide_until_deps_complete: true
+			icon: "silentgear:blueprint_paper"
+			id: "4A4DCC19C03215F5"
+			rewards: [
+				{
+					id: "37ECBBCB109FC6B8"
+					item: {
+						Count: 1
+						id: "silentgear:blueprint_package"
+						tag: {
+							silentlib.LootContainer: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "06622B4D76E7512E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "29350E32243A8E8C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "silentgear:blueprint_paper"
+							}
+							{
+								Count: 1b
+								id: "silentgear:template_board"
+							}
+						]
+					}
+				}
+				title: "Template Options"
+				type: "item"
+			}]
+			title: "Custom Tools with &aSilent Gear&r!"
+			x: -16.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4A4DCC19C03215F5"]
+			description: [
+				"Creating &bTool Parts&r can be confusing at first, so let's break it down!"
+				""
+				"To create a part, you'll first need either the Template or Blueprint for that part. The &6Blueprint Package&r that you received from the first quest should give you the blueprints for the basic tools!"
+				""
+				"Using the &aTool Rod Blueprint&r, you can combine it in a crafting table with 2 pieces of a &bTool Rod Material&r to create the part. You can also see all of the recipes by hitting &aU&r on the blueprint."
+				"{@pagebreak}"
+				"To see if a material can be used for a specific part, you can search in JEI for &a$Material&r to list out everything in the pack that has a Silent Gear stat attached to it."
+				""
+				"When hovering over an item that says SGear Material, you can hold &bCtrl&r to see all of the stats for that material, including the part type it can create."
+				"{@pagebreak}"
+				"&aMain Materials&r can create the main part of a tool, like a Pickaxe Head, Sword Blade, etc."
+				""
+				"There are other special part types like &aTip Upgrades&r or &aCoatings&r, but for now, let's create an &bIron Tool Rod&r with our blueprint."
+				""
+				"In a crafting table, you can place in a Silent Gear tool with the new tool rod to replace the part. Iron Tool Rods act like magnets!"
+			]
+			id: "3A88A925A18DC374"
+			rewards: [
+				{
+					id: "6B5733A1F67809B2"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					id: "1D86A09666BC3380"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1B1815A9EA0D34D1"
+				item: "immersiveengineering:stick_iron"
+				type: "item"
+			}]
+			title: "Tool Parts"
+			x: -19.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			description: [
+				"When a Silent Gear tool reaches 0 durability, it doesn't break forever. Instead, it becomes unusable until you repair it using a &aRepair Kit&r!"
+				""
+				"There are several tiers of repair kits you can make. The higher the tier, the more efficient it is to repair gear with."
+				""
+				"To repair an item, you'll need to combine the repair kit in a crafting table with the material you want to repair with. Now you can combine the kit with the tool in the crafting grid to repair it!"
+				"{@pagebreak}"
+				"The main material of the tool is what is needed to repair it with."
+				""
+				"For example, a pickaxe with an Iron Pickaxe part will need Iron to repair it."
+			]
+			id: "0A1DAAED1D78347C"
+			rewards: [
+				{
+					count: 2
+					id: "6575F1886AEFF911"
+					item: "silentgear:blueprint_paper"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "1687D58E7515CCE3"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "7CDE1EDA14BE44CE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(silentgear:repair_kits)"
+					}
+				}
+				title: "Repair Kits"
+				type: "item"
+			}]
+			title: "&aRepairing Tools&r"
+			x: -18.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			description: [
+				"Just like tools, you can make custom armor as well with Silent Gear."
+				""
+				"Don't have enough Iron in the early game? Make &aCopper Armor&r instead!"
+				""
+				"Keep an eye out for special traits for armor pieces from certain materials. It's easy to add self repair to your gear with the right materials."
+			]
+			id: "548D22854D176A17"
+			rewards: [
+				{
+					count: 2
+					id: "5CF5633B3DEDD900"
+					item: "silentgear:blueprint_paper"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "302C098B8FAAC472"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "32C401BAF48D6BB1"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "silentgear:helmet_blueprint"
+							}
+							{
+								Count: 1b
+								id: "silentgear:chestplate_blueprint"
+							}
+							{
+								Count: 1b
+								id: "silentgear:leggings_blueprint"
+							}
+							{
+								Count: 1b
+								id: "silentgear:boots_blueprint"
+							}
+						]
+					}
+				}
+				title: "Armor Blueprints"
+				type: "item"
+			}]
+			title: "&aCustom Armor&r!"
+			x: -20.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			description: [
+				"SGear materials come with specific &aProperties&r that determine the stats of an item, like durability, attack damage, and more."
+				""
+				"One of the unique properties of a material is the &aEnchantment&r value. This determines what enchants and level of enchants the tool can get when using an Enchanting Table."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "silentgear:item/mod_kit"
+				}
+			}
+			id: "3E76038F3ADDD6B5"
+			rewards: [
+				{
+					id: "1D9E4BD246B5A8A4"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "7B99B1CF07151C91"
+					item: "minecraft:book"
+					type: "item"
+				}
+				{
+					id: "385839451E3AD355"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "6F10D6E9E8EC9699"
+				title: "Part Properties"
+				type: "checkmark"
+			}]
+			title: "&aPart Properties&r"
+			x: -20.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			description: [
+				"You might have noticed that specific materials come with certain &aTraits&r attached to it, like how the Iron Tool Rod acts as a magnet!"
+				""
+				"When crafting tool parts, materials will add these &aTraits&r that act as either small boosts or passive abilities. Most Traits will describe what they do in the tooltip as well."
+				"{@pagebreak}"
+				"A great way to add special traits to your pickaxe is by making a &aTip Upgrade&r."
+				""
+				"This adds an extra part to the tool to give it more stats or traits, while allowing the tool to still be repaired using the same material type it is made out of."
+				""
+				"For example, if you install a &bDiamond Tip Upgrade&r to an Iron pickaxe, it will increase its mining level and allow it to mine Obsidian while only needing Iron to repair it."
+			]
+			id: "5A733510C7C47171"
+			rewards: [
+				{
+					id: "503E9245E4B42761"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "2DFCABCA4C5A9F9B"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "3CE2571BB8D51FA7"
+				item: "silentgear:tip_blueprint"
+				type: "item"
+			}]
+			title: "&aRepairing Tools&r"
+			x: -18.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			description: [
+				"&cCrimson Iron Ore&r can be found in the Nether at most heights."
+				""
+				"While it has decent stats, a &cCrimson Iron Tip Upgrade&r can grant a tool Auto-Smelt!"
+				""
+				"This is also used to craft a much stronger alloy called &6Crimson Steel&r."
+			]
+			hide_dependency_lines: true
+			icon: "silentgear:raw_crimson_iron"
+			id: "522A6653D704FBAC"
+			rewards: [{
+				id: "08F9B81620E09C68"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "25E8E7EA9366BB87"
+					item: "silentgear:raw_crimson_iron"
+					type: "item"
+				}
+				{
+					id: "6D481BB872C0D4F3"
+					item: "silentgear:crimson_iron_ingot"
+					type: "item"
+				}
+			]
+			title: "The Metal of the &cNether&r"
+			x: -23.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["522A6653D704FBAC"]
+			description: [
+				"The &6Salvager&r allows you to recycle unused parts and items to get the materials used to craft them back."
+				""
+				"This is also a great machine to use for mob farms, as it can break down the excess tools, armors, and weapons into mats!"
+			]
+			id: "711410B5141D4746"
+			rewards: [{
+				id: "3DF4DC30D0023ACC"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "69C1556DA4E91BD4"
+				item: "silentgear:salvager"
+				type: "item"
+			}]
+			title: "Recycling Parts"
+			x: -22.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["522A6653D704FBAC"]
+			description: [
+				"Once you've made some &6Crimson Steel&r, you can start combining metals together in an &6Alloy Forge&r."
+				""
+				"This machine can combine any combination of main materials together to create stronger &6Alloys&r."
+				""
+				"While you can create your own custom alloys, this is also how you make &dTyrian Steel Ingots&r."
+			]
+			id: "1F3F5578546D0525"
+			rewards: [{
+				id: "092B62CA4052F64D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6BC4A17FEED1BA68"
+				item: "silentgear:metal_alloyer"
+				type: "item"
+			}]
+			title: "Creating Custom &aAlloys&r"
+			x: -22.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			description: [
+				"The &dStarlight Charger&r uses the power of the &5Night&r to enchant materials with the &dStar Charged&r enchantment. This enchant grants a huge buff to the stats of the material."
+				""
+				"To use this, you'll need to build out &a4 Pillars&r around the Starlight Charger to get it to work, as well as using a &dCharger Catalyst&r for each material you want to enchant."
+				"{@pagebreak}"
+				"The &bPillars&r of the Charger are built in the corners of a 7x7 square area centered around the Starlight Charger."
+				""
+				"They are 3 blocks tall, with the top block requiring a specific &6Pillar Cap&r. The other 2 blocks can be anything you'd like!"
+				""
+				"The Pillar Cap blocks determine the tier of the Charger, which determines which Catalyst you can use."
+				""
+				"- &cCrimson Steel Block&r | &cTier 1&r"
+				"- &dAzure Electrum Block&r | &dTier 2&r"
+				"- &6Tyrian Steel Block&r | &6Tier 3&r"
+			]
+			icon: "silentgear:starlight_charger"
+			id: "3DFC0C1A4E9C30E0"
+			rewards: [{
+				id: "38FD19FAC863CB49"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "657027607489EEE4"
+					item: "silentgear:starlight_charger"
+					type: "item"
+				}
+				{
+					id: "000A1FA9BA6B2730"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(silentgear:starlight_charger_catalysts)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "The Power of the &dStars&r"
+			x: -24.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			description: [
+				"You can increase any material's stats by grading them in the &6Material Grader&r."
+				""
+				"To do this, place in a material you would like to upgrade as well as a &aGrading Catalyst&r. The better the Catalyst used, the higher the chance for a better material &bGrade&r."
+				""
+				"Don't like the grade you get? Run it back through!"
+				""
+				"Ranks of Grades: E, D, C, B, A, S, SS, SSS, and &6MAX&r."
+			]
+			icon: "silentgear:material_grader"
+			id: "4548C407393DD093"
+			rewards: [{
+				id: "2E331891D5F19498"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "545DF01252C6F385"
+					item: "silentgear:material_grader"
+					type: "item"
+				}
+				{
+					id: "62BB50BF9EE7CED6"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(silentgear:grader_catalysts)"
+						}
+					}
+					title: "Grading Catalyst"
+					type: "item"
+				}
+			]
+			title: "Grading &aMaterials&r"
+			x: -24.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			description: [
+				"You can find &dAzure Silver Ore&r in the End."
+				""
+				"This ore requires a harvest tier of Netherite to mine. This metal is mostly used to craft &dAzure Electrum Ingots&r."
+			]
+			hide_dependency_lines: true
+			icon: "silentgear:raw_crimson_iron"
+			id: "01F967F7D862C6F2"
+			rewards: [{
+				id: "7541CA2C5AFF9163"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "2D73C933C5C221AC"
+					item: "silentgear:raw_azure_silver"
+					type: "item"
+				}
+				{
+					id: "2586BD1097EBCEC8"
+					item: "silentgear:azure_silver_ingot"
+					type: "item"
+				}
+			]
+			title: "The Metal of the &dEnd&r"
+			x: -25.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["01F967F7D862C6F2"]
+			description: ["The &6Recrystalizer&r allows you to combine &bGems&r together to make custom gems!"]
+			id: "012CBEDABF4D30E8"
+			rewards: [{
+				id: "63EC63E1706CA068"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			tasks: [{
+				id: "2F41508CA8B49BA7"
+				item: "silentgear:recrystallizer"
+				type: "item"
+			}]
+			title: "Custom &6Gems&r"
+			x: -26.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4A4DCC19C03215F5"]
+			description: [
+				"Vanilla tools can be converted into their &aSilent Gear&r counterparts by placing the tool back into a crafting table."
+				""
+				"This converts them into customizable tools, allowing you to change specific parts or even repair it using &aRepair Kits&r!"
+			]
+			hide_dependency_lines: true
+			id: "6C3D0597D1BFCE15"
+			optional: true
+			shape: "rsquare"
+			tasks: [{
+				id: "4DC727F187352A23"
+				item: {
+					Count: 1
+					id: "silentgear:pickaxe"
+					tag: {
+						Damage: 0
+						SGear_Data: {
+							Construction: {
+								Parts: [
+									{
+										ID: "silentgear:pickaxe_head"
+										Item: {
+											Count: 1b
+											id: "silentgear:pickaxe_head"
+											tag: {
+												Damage: 0
+												Materials: [{
+													ID: "silentgear:iron"
+												}]
+											}
+										}
+									}
+									{
+										ID: "silentgear:rod"
+										Item: {
+											Count: 1b
+											id: "silentgear:rod"
+											tag: {
+												Materials: [{
+													ID: "silentgear:wood"
+												}]
+											}
+										}
+									}
+								]
+							}
+							Properties: {
+								HarvestTier: "minecraft:iron"
+								LockStats: 0b
+								ModVersion: "3.6.6"
+								Stats: {
+									"silentgear:attack_reach": 3.0f
+									"silentgear:attack_speed": -2.8f
+									"silentgear:charging_value": 0.7f
+									"silentgear:durability": 250.0f
+									"silentgear:enchantment_value": 14.0f
+									"silentgear:harvest_speed": 6.0f
+									"silentgear:magic_damage": 1.0f
+									"silentgear:melee_damage": 3.0f
+									"silentgear:rarity": 20.0f
+									"silentgear:repair_efficiency": 1.0f
+								}
+								Traits: [
+									{
+										Level: 3b
+										Name: "silentgear:malleable"
+									}
+									{
+										Level: 1b
+										Name: "silentgear:magnetic"
+									}
+									{
+										Level: 2b
+										Name: "silentgear:flexible"
+									}
+								]
+							}
+							Rendering: {
+								Model: 3
+								ModelKey: "pickaxe:pickaxe_head{iron},rod{wood},"
+							}
+						}
+						SGear_UUID: [I;
+							1259497874
+							1851212821
+							-1980772364
+							101674197
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Converting Vanilla Tools"
+			x: -16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			hide_dependency_lines: true
+			id: "19111524EBCCE89B"
+			rewards: [{
+				id: "1EB954D782DF193E"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "3x3 Shovel"
+			tasks: [{
+				id: "01E601535B536B5C"
+				item: "silentgear:excavator_blueprint"
+				type: "item"
+			}]
+			x: -18.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			hide_dependency_lines: true
+			id: "17C555748F7C35BB"
+			rewards: [{
+				id: "2CDC1A84F45D604B"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "The All In One Tool"
+			tasks: [{
+				id: "0D7BA61AA4F5F58A"
+				item: "silentgear:paxel_blueprint"
+				type: "item"
+			}]
+			x: -19.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			hide_dependency_lines: true
+			id: "3A780C6DF00E7F4D"
+			rewards: [{
+				id: "13D9E8F327C1EB95"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "3x3 Mining"
+			tasks: [{
+				id: "3DE424FF79696623"
+				item: "silentgear:hammer_blueprint"
+				type: "item"
+			}]
+			x: -20.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			hide_dependency_lines: true
+			id: "76B469AF5C9F1F08"
+			rewards: [{
+				id: "374BB2F87ABF7E83"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "24AFEDF36433D4B3"
+				item: "silentgear:trident_blueprint"
+				type: "item"
+			}]
+			x: -18.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			hide_dependency_lines: true
+			id: "508D90076E753AC6"
+			rewards: [{
+				id: "77974EA8CCB50B0E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7EBB7F3F576F1334"
+				item: "silentgear:spear_blueprint"
+				type: "item"
+			}]
+			x: -19.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			hide_dependency_lines: true
+			id: "5F003E88FD5D127C"
+			rewards: [{
+				id: "78D375BBA0AA6F39"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "45A30AF4E238062A"
+				item: "silentgear:knife_blueprint"
+				type: "item"
+			}]
+			x: -20.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			hide_dependency_lines: true
+			id: "2D534B86EA902D53"
+			rewards: [{
+				id: "52D44FCF100CC9B5"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1458A7346C539504"
+				item: "silentgear:dagger_blueprint"
+				type: "item"
+			}]
+			x: -18.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			hide_dependency_lines: true
+			id: "1EB1130D54FAC17D"
+			rewards: [{
+				id: "0E701289A3E491D7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4D41096357626EB5"
+				item: "silentgear:katana_blueprint"
+				type: "item"
+			}]
+			x: -20.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			hide_dependency_lines: true
+			id: "1B40BF2D535C3179"
+			rewards: [{
+				id: "2EC30A92AE597C3F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7271EDA656AAB956"
+				item: "silentgear:machete_blueprint"
+				type: "item"
+			}]
+			x: -19.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			hide_dependency_lines: true
+			id: "7182FAF8AA78B763"
+			rewards: [{
+				id: "3EAF2D57CBCD1E82"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2AA20559DBF8BC63"
+				item: "silentgear:shield_blueprint"
+				type: "item"
+			}]
+			x: -19.5d
+			y: -6.5d
+		}
+		{
+			description: ["This chapter is all about teaching you some of the different ways to craft and enhance any gear you might need on your adventures!"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "supplementaries:textures/gui/book/icon/curseforge.png"
+				}
+			}
+			id: "7255C82597354616"
+			size: 3.0d
+			tasks: [{
+				id: "4C1FA4F53779C33E"
+				title: "Gearing Up For Adventure!"
+				type: "checkmark"
+			}]
+			x: -11.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			description: ["&aGrips&r can be added to most tools and weapons to provide a small stat bonus."]
+			hide_dependency_lines: true
+			id: "3390B337659102C0"
+			rewards: [{
+				id: "5A68FDD1025C1DF4"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "3A9554342034C3D5"
+				item: "silentgear:grip_blueprint"
+				type: "item"
+			}]
+			x: -19.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			description: [
+				"Armors can be upgraded by adding a &aLining&r to them. "
+				""
+				"Using &2Leather&r as a lining can be a decent upgrade to add &bFlexible V&r to your armor!"
+			]
+			hide_dependency_lines: true
+			id: "0279EC47CC82C9CF"
+			rewards: [{
+				id: "1EB3AD33017686B0"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4E796B6D9588A61B"
+				item: "silentgear:lining_blueprint"
+				type: "item"
+			}]
+			x: -19.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			description: [
+				"A &aCoating&r can be applied to most items, excluding the Elytra."
+				""
+				"These can provide a large stat bonus and add some unique traits to tools."
+				""
+				"Note: Items that can be used as a Coating can be applied without making a blueprint, just combine them with the tool in a crafting table to apply them."
+			]
+			hide_dependency_lines: true
+			id: "0BEC9D80BC8A5AD3"
+			rewards: [{
+				id: "32E6FFD8EE3ADDF8"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "30D06551A6F9F272"
+				item: "silentgear:coating_blueprint"
+				type: "item"
+			}]
+			x: -20.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			description: [
+				"&aBindings&r can be added to most tools and weapons, but is a required part for &6Elytras&r."
+				""
+				"These only add minor stat bonuses."
+			]
+			hide_dependency_lines: true
+			id: "481B9C4491A9B7EE"
+			rewards: [{
+				id: "30AB925A427B4A56"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "745B27A3FE05DBC5"
+				item: "silentgear:binding_blueprint"
+				type: "item"
+			}]
+			x: -19.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4A98E8965948F3D9"]
+			description: [
+				"Custom bracelets can be made using the &aBracelet Blueprint&r."
+				""
+				"These take &b3 main materials&r, and creates a Bracelet part."
+				""
+				"To be able to equip it, you'll need to craft the part together with &aJeweler Tools&r, as well as any &6Jewelry Settings&r you want to add!"
+			]
+			id: "706F4A9032561FEF"
+			rewards: [{
+				id: "6A48D491D3CC1176"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "3570D74763C5B7DB"
+				item: "silentgear:bracelet_blueprint"
+				type: "item"
+			}]
+			x: -23.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			description: [
+				"With a set of &aJeweler Tools&r, you can make custom items that go into your Curios slots!"
+				""
+				"Using the tool, you can combine &aBort&r with a &bGem&r to create a &6Jewelry Setting&r. These can be used to add gems to &bNecklaces, Rings&r, or &bBracelets&r."
+			]
+			hide_dependency_lines: true
+			icon: "silentgear:jeweler_tools"
+			id: "4A98E8965948F3D9"
+			rewards: [{
+				id: "5FCE5ED1CA01A0CD"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "072931D78E359889"
+					item: "silentgear:bort"
+					type: "item"
+				}
+				{
+					id: "04049F6F3A3655A4"
+					item: "silentgear:jeweler_tools"
+					type: "item"
+				}
+			]
+			title: "Jewelry"
+			x: -23.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4A98E8965948F3D9"]
+			description: [
+				"Custom bracelets can be made using the &aBracelet Blueprint&r."
+				""
+				"These take &b3 main materials&r, and creates a Bracelet part."
+				""
+				"To be able to equip it, you'll need to craft the part together with &aJeweler Tools&r, as well as any &6Jewelry Settings&r you want to add!"
+			]
+			id: "428B10CBE0B0A987"
+			rewards: [{
+				id: "447AEA6BF1E8F1F9"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "7E9C5BB3B2116D21"
+				item: "silentgear:ring_blueprint"
+				type: "item"
+			}]
+			x: -24.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			hide_dependency_lines: true
+			id: "176E86C86ACF5D3C"
+			rewards: [{
+				id: "294E6730B2C96B20"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "7728FE083A522EBA"
+				item: "silentgear:crossbow_blueprint"
+				type: "item"
+			}]
+			x: -23.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			description: [
+				"Create your own custom &aArrows&r!"
+				""
+				"The &aArrow Blueprint&r creates an &bArrow Head Part&r. Combine this with a Tool Rod and a &eFletching Part&r to create your own arrows."
+				""
+				"This will give you an item similar to a bundle of arrows."
+				""
+				"Note: Do not use these with a vanilla crossbow!"
+			]
+			hide_dependency_lines: true
+			icon: "silentgear:arrow_blueprint"
+			id: "1D37ED86BC04A1C7"
+			rewards: [{
+				id: "1778D52065CC51EF"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "4220902C57B0890A"
+					item: "silentgear:arrow_blueprint"
+					type: "item"
+				}
+				{
+					id: "0150AFDCC94B6EA7"
+					item: "silentgear:fletching_blueprint"
+					type: "item"
+				}
+			]
+			title: "Custom Arrows"
+			x: -24.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			hide_dependency_lines: true
+			id: "01CA84BDBACC4AAA"
+			rewards: [{
+				id: "333979C32F08F34C"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "3F38CD36FC1E3EBF"
+				item: "silentgear:bow_blueprint"
+				type: "item"
+			}]
+			x: -24.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3A88A925A18DC374"]
+			description: [
+				"The &aSlingshot&r is a decent starter ranged weapon that fires &3Pebbles&r for ammo."
+				""
+				"It has a fast draw speed and low damage."
+				""
+				"&3Pebbles&r can be created using a &bStone Anvil&r and a &aHammer&r!"
+			]
+			hide_dependency_lines: true
+			id: "02CF6F576702CFA5"
+			rewards: [
+				{
+					id: "0482A8E4576DD331"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 64
+					id: "1FF6CCE0F29F1A9A"
+					item: "silentgear:pebble"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "22FF689A2938DE4A"
+					item: "silentgear:pebble"
+					type: "item"
+				}
+				{
+					id: "5298AE8ED2C5253C"
+					item: "silentgear:slingshot_blueprint"
+					type: "item"
+				}
+			]
+			title: "Throwing Pebbles"
+			x: -24.0d
+			y: -6.0d
+		}
+		{
+			description: ["Weapons Galore! A whole new arsenal of weaponry made for Minecraft. It adds new versions of weapons from that mod, as well expanding the arsenal with a bunch of original weapons, including a variety of swords, polearms, blunt and ranged weapons."]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "spartanfire:item/fire_dragonsteel_battleaxe"
+				}
+			}
+			id: "7D2A23DD6D4954CD"
+			rewards: [{
+				id: "40620C359C2991B4"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "20D912E37909F86F"
+				title: "Spartan Weaponary"
+				type: "checkmark"
+			}]
+			title: "Unique Weapons with Spartan Weaponary"
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			description: ["Spartan Shields adds a whole new selection of unique shields to the game! "]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "spartanshields:item/lead_basic_shield"
+				}
+			}
+			id: "73AF1B00D192D0FB"
+			rewards: [{
+				id: "5B869C5F5A416137"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "6BA54332460C0956"
+				title: "Spartan Shields"
+				type: "checkmark"
+			}]
+			title: "Unique Protection with Spartan Shields"
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "28001DB9D3EEAFA8"
+			rewards: [{
+				id: "33CEFE414A833117"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3DEE6B98C3C93FFF"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:daggers)"
+					}
+				}
+				title: "Daggers"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "0C1835BCE02C16F1"
+			rewards: [{
+				id: "0A7F36A9A13BA1A3"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "40BC145299ED6B8E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:longswords)"
+					}
+				}
+				title: "Long Swords"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "1B075085B6E1385C"
+			rewards: [{
+				id: "739A00E7879BC795"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0286D35D26198A38"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:rapiers)"
+					}
+				}
+				title: "Rapiers"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "56A2526E28902DE2"
+			rewards: [{
+				id: "52E72622678BFC05"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "319FDBBC15B459FB"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:battle_hammers)"
+					}
+				}
+				title: "Battle Hammers"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "74677ED99B19A289"
+			rewards: [{
+				id: "1BD8A90A4DB98682"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "029924757FCBE7AA"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:sabers)"
+					}
+				}
+				title: "Sabers"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "6746FDCA0DE286FB"
+			rewards: [{
+				id: "208F852B23C94F5A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5F9FF1ED322D740F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:katanas)"
+					}
+				}
+				title: "Katanas"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "54DC9B29DC61CFC2"
+			rewards: [{
+				id: "7D8ECAF740E0A24D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "687E787BB420090D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:greatswords)"
+					}
+				}
+				title: "Great Swords"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "0EB8881C90674018"
+			rewards: [{
+				id: "3DC5A35CA577F035"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2695FBA6CA8304B9"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:clubs)"
+					}
+				}
+				title: "Clubs"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "5338451172216150"
+			rewards: [{
+				id: "5A1EB1AF26E124AA"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "07D8B67E5AC45619"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:warhammers)"
+					}
+				}
+				title: "Warhammers"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "2335A459DF65D776"
+			rewards: [{
+				id: "1AC687B1F85A7DEC"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4AED0461D7D69E8A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:spears)"
+					}
+				}
+				title: "Spears"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "2AD8D5BAB8955AFE"
+			rewards: [{
+				id: "640D11A7548B3FAD"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4D7E6C4178624477"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:halberds)"
+					}
+				}
+				title: "Halberds"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "0E5857771CA9C6B7"
+			rewards: [{
+				id: "7A306F2C2EADC396"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "605C27BC5ACA170A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:pikes)"
+					}
+				}
+				title: "Pikes"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "2C034533FC6A6597"
+			rewards: [{
+				id: "7045D1ED9DC63947"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0D937B4B17F53D4B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:longbows)"
+					}
+				}
+				title: "Longbows"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "52FECA0C1B2A1D84"
+			rewards: [{
+				id: "160CFE56D86A5282"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3E70F18D8D8EF6D4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:lances)"
+					}
+				}
+				title: "Lances"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "4E010E31F3A15C74"
+			rewards: [{
+				id: "2382921210196C96"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "607CCF63E36335EE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:heavy_crossbows)"
+					}
+				}
+				title: "Heavy Crossbows"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "11A0299366EC46AA"
+			rewards: [{
+				id: "0B0646B30369FF6A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1A8E78D64444C939"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:throwing_knives)"
+					}
+				}
+				title: "Throwing Knifes"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "00382DCA56C7B0B3"
+			rewards: [{
+				id: "005F2CBDB8901469"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "768D8076652EB8AE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:javelins)"
+					}
+				}
+				title: "Javelins"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "760460B9F01F155D"
+			rewards: [{
+				id: "1F443DE786A3885E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0468EB2DD5A4886A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:tomahawks)"
+					}
+				}
+				title: "Tomahawks"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "08D818986CB221F5"
+			rewards: [{
+				id: "4EA10398319CA8FB"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1CEE03E32313213E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:boomerangs)"
+					}
+				}
+				title: "Boomerangs"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "23371E0244B43A86"
+			rewards: [{
+				id: "7922D3C83E673D55"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6B3A82A730B186FD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:battleaxes)"
+					}
+				}
+				title: "Battleaxes"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "6F8CD84B8A5C1AFD"
+			rewards: [{
+				id: "3ED8C59F82FD5085"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "59835AB442592E2B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:glaives)"
+					}
+				}
+				title: "Glaives"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "09CAE58A972749C3"
+			rewards: [{
+				id: "4A4E05E071AE9C2A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "731558BBC35A27D6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:flanged_maces)"
+					}
+				}
+				title: "Flanged Maces"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "086973786A072B86"
+			rewards: [{
+				id: "0FE3B06650E73190"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6A0A55BF1F5EF1B3"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:quarterstaves)"
+					}
+				}
+				title: "Quarterstaffs"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "2B30710215875846"
+			rewards: [{
+				id: "560156A60EFC8985"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "224A86153FCC1094"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:scythes)"
+					}
+				}
+				title: "Scythes"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "2C447466CC9BE49B"
+			rewards: [{
+				id: "11C9A907179D0767"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "67C1AD8580FBF98C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:arrow_quivers)"
+					}
+				}
+				title: "Arrow Quivers"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "6BF93DF0EC59D86C"
+			rewards: [{
+				id: "0F217C7F8FAA13FC"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1454E612E8A03CD4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:quarterstaves)"
+					}
+				}
+				title: "Quarterstaffs"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "401AE593FEB9CD38"
+			rewards: [{
+				id: "7C45B269F4E85554"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7EBAF6CD9C7A4BF6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:bolt_quivers)"
+					}
+				}
+				title: "Bolt Quivers"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "5A4B8F51F7C5944D"
+			rewards: [{
+				id: "32916430BB264654"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3511AE6DAA798A3A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:arrows)"
+					}
+				}
+				title: "Arrows"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "3849AEE6CFDF0453"
+			rewards: [{
+				id: "4B541713DEC2B104"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "56243932860D628E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(spartanweaponry:bolts)"
+					}
+				}
+				title: "Bolts"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D2A23DD6D4954CD"]
+			hide_dependency_lines: true
+			id: "55038592768EBD11"
+			rewards: [{
+				id: "4F72A8D0BEB829BE"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "52C28EC0E0BF4292"
+				item: "spartanweaponry:dynamite"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+	]
 	title: "Flexible Weaponary"
 }
