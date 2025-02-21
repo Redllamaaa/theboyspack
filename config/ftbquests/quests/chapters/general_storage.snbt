@@ -1224,6 +1224,48 @@
 			x: 0.5d
 			y: 5.0d
 		}
+		{
+			description: [
+				"&aEnder Storage&r allows for cross-dimensional storage of items and fluids."
+				""
+				"&aEnder Chests&r link their inventories to others with matching color patterns. You can use any colored dye on the wool pads to change its color."
+				""
+				"&aEnder Pouches&r allow you to remotely access an &aEnder Chest&r of the same color pattern. Right-clicking the pouch on any &aEnder Chest&r will change the pouch's color to match that of the chest."
+				""
+				"&aEnder Tanks&r work in the same way as &aEnder Chests&r but store liquids instead of items."
+				""
+				"Using a &bDiamond&r on the latch of an &aEnder Chest&r will move it to a seperate private network for the player that used the diamond. This is especially good for server use."
+			]
+			icon: "enderstorage:ender_chest"
+			id: "7AB48C0701C33975"
+			rewards: [{
+				id: "289B54A588CEE724"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "31C16A04FFC227A8"
+					item: "enderstorage:ender_chest"
+					type: "item"
+				}
+				{
+					id: "4246F418FD54A84A"
+					item: "enderstorage:ender_tank"
+					type: "item"
+				}
+				{
+					id: "147EBA90CA455630"
+					item: "enderstorage:ender_pouch"
+					type: "item"
+				}
+			]
+			title: "&aEnder Storage"
+			x: 0.0d
+			y: -3.75d
+		}
 	]
 	title: "General Storage"
 }
