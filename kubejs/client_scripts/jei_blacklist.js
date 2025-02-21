@@ -67,5 +67,8 @@ JEIEvents.hideItems(event => {
       'ad_astra:steel_rod',
       'ad_astra:steel_block',
 
+      // Silent Gear
+      'silentgear:iron_rod',
+
     ]);
   });
