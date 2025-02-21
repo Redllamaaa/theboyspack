@@ -1,16 +1,18 @@
 // priority: 0
 
-/* ServerEvents.recipes(spartanshields => { 
+const poweredshields = [
+    'spartanshields:basic_mekanist_basic_shield',
+    'spartanshields:basic_mekanist_tower_shield',
+    'spartanshields:advanced_mekanist_basic_shield',
+    'spartanshields:advnced_mekanist_tower_shield',
+    'spartanshields:elite_mekanist_basic_shield',
+    'spartanshields:elite_mekanist_tower_shield',
+    'spartanshields:ultimate_mekanist_basic_shield',
+    'spartanshields:ultimate_mekanist_tower_shield'
+]
 
-	// Removal
-	spartanshields.remove({ output: 'spartanshields:enderium_tower_shield'});
-    spartanshields.remove({ output: 'spartanshields:enderium_basic_shield'});
-    spartanshields.remove({ output: 'spartanshields:lumium_tower_shield'});
-    spartanshields.remove({ output: 'spartanshields:lumium_basic_shield'});
-    spartanshields.remove({ output: 'spartanshields:signalum_tower_shield'});
-    spartanshields.remove({ output: 'spartanshields:signalum_basic_shield'});
-  })
+ServerEvents.tags('item', spartanshields => {
+    spartanshields.add('forge:shields/powered', poweredshields);
+});
 
-
-
-console.info('[KubeJS] Spartan Shields kubejs loaded.') */
+console.info('[KubeJS] Spartan Shields kubejs loaded.')
