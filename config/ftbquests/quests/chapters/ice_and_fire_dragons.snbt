@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ice_and_fire_dragons"
-	group: ""
+	group: "2987039AB4197A8E"
 	icon: "iceandfire:dragon_skull_fire"
 	id: "53C5ABF9E0AA409B"
 	images: [{
@@ -13,7 +13,7 @@
 		x: -0.5d
 		y: -0.5d
 	}]
-	order_index: 2
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
