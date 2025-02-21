@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "create"
 	group: "00B02FC8BB194427"
+	icon: "create:wrench"
 	id: "393DE4BCF9AFDCFC"
 	order_index: 2
 	quest_links: [ ]
@@ -2205,5 +2206,5 @@
 			y: 10.0d
 		}
 	]
-	title: " &eCreate"
+	title: "Create"
 }
