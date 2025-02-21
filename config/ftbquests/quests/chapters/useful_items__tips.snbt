@@ -44,7 +44,7 @@
 			y: 0.5d
 		}
 		{
-			description: ["The &6Artifacts&r Mod adds 44 new and unique items, each with the ability to give you various unique abilities for you to use!"]
+			description: ["The &bArtifacts&r Mod adds 44 new and unique items, each with the ability to give you various unique abilities for you to use!"]
 			id: "536691F001A6C0B2"
 			rewards: [{
 				id: "6480F35F141CE422"
@@ -57,7 +57,7 @@
 				item: "artifacts:umbrella"
 				type: "item"
 			}]
-			title: "&6Artifacts&r"
+			title: "&bArtifacts&r"
 			x: 6.5d
 			y: 0.0d
 		}
@@ -139,6 +139,8 @@
 				""
 				"&aRight Clicking&r on a recipe will show you everything that item makes or is used in."
 				"&aLeft Clicking&r on a recipe will show you how to make that item from the recipe."
+				""
+				"To search by mod name use the \"&a@&r\" key before search in the search box. (e.g @Mekanism)"
 			]
 			icon: {
 				Count: 1
@@ -170,6 +172,8 @@
 				"This makes it so every person who comes up to that chest will find there own set of loot inside!"
 				""
 				"No more finding looted structures around the world, unless you were already there."
+				""
+				"When these chests are destoryed they will not drop the loot inside, so make sure to avoid any traps before looting."
 			]
 			icon: "lootr:trophy"
 			icon_scale: 1.5d
@@ -219,6 +223,35 @@
 			title: "&bNature's Compass&r"
 			x: 6.5d
 			y: 1.0d
+		}
+		{
+			description: [
+				"By holding down the &a`&r key you can mine multiple ores or blocks in one go. "
+				""
+				"&6Ultimine&r only works when you are holding the correct tool in your hand, such as an Axe for cutting wood."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "iceandfire:item/dragonsteel_fire_pickaxe"
+				}
+			}
+			id: "70D1404606DE3CA3"
+			rewards: [{
+				id: "232E4CF93C3B1CE3"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "32F977F1D2391C85"
+				title: "Lootr"
+				type: "checkmark"
+			}]
+			title: "&6Veinmining?"
+			x: 2.5d
+			y: -3.0d
 		}
 	]
 	title: "Useful Items \\&\\ Tips"
