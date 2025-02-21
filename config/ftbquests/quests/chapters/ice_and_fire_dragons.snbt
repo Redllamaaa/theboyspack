@@ -5,6 +5,14 @@
 	group: ""
 	icon: "iceandfire:dragon_skull_fire"
 	id: "53C5ABF9E0AA409B"
+	images: [{
+		height: 30.0d
+		image: "theboyspack:textures/quests/iceandfire.png"
+		rotation: 0.0d
+		width: 17.0d
+		x: -0.5d
+		y: -0.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -14,7 +22,7 @@
 			rewards: [{
 				id: "31045F64A9A28788"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			shape: "octagon"
 			size: 2.0d
@@ -38,16 +46,16 @@
 			rewards: [{
 				id: "378E4047813A231B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			subtitle: "Click on the scale to learn more!"
 			tasks: [{
 				id: "4ADC46F4B9A68D7C"
 				item: {
 					Count: 1
-					id: "itemfilters:tag"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						value: "forge:scales/fire_dragon"
+						"ftbfiltersystem:filter": "item_tag(iceandfire:scales/dragon/fire)"
 					}
 				}
 				title: "Slay any Fire dragon!"
@@ -62,16 +70,16 @@
 			rewards: [{
 				id: "42B281BCE447248D"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			subtitle: "Click on the scale to learn more!"
 			tasks: [{
 				id: "2C38EDA94738B25A"
 				item: {
 					Count: 1
-					id: "itemfilters:tag"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						value: "forge:scales/ice_dragon"
+						"ftbfiltersystem:filter": "item_tag(iceandfire:scales/dragon/ice)"
 					}
 				}
 				title: "Slay any Ice dragon!"
@@ -86,16 +94,16 @@
 			rewards: [{
 				id: "6ADD49FD054F9DD4"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			subtitle: "Click on the scale to learn more!"
 			tasks: [{
 				id: "1BC7DBCE2CFB50A0"
 				item: {
 					Count: 1
-					id: "itemfilters:tag"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						value: "forge:scales/lightning_dragon"
+						"ftbfiltersystem:filter": "item_tag(iceandfire:scales/dragon/lightning)"
 					}
 				}
 				title: "Slay any Lightning dragon!"
@@ -110,7 +118,7 @@
 			rewards: [{
 				id: "3808F789AA6D96E8"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "21EAAB181975526E"
@@ -134,7 +142,7 @@
 			rewards: [{
 				id: "5D928C8C9F538DA7"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "7D894C9A604C81A7"
@@ -158,7 +166,7 @@
 			rewards: [{
 				id: "3AF4D74E5A6AC909"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "271D0655DFDC38C1"
@@ -201,7 +209,7 @@
 			rewards: [{
 				id: "41AF7B8FB569E9DD"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "291119A0B85E5C9D"
@@ -225,7 +233,7 @@
 			rewards: [{
 				id: "3CFD10BD5CAEBB6E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "446E1539B246BB6D"
@@ -249,7 +257,7 @@
 			rewards: [{
 				id: "5E310751F66E613A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "6ACBBD5825CEC2CD"
@@ -273,7 +281,7 @@
 			rewards: [{
 				id: "57916E387FA67E70"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "140B68DC0D47D547"
@@ -316,7 +324,7 @@
 			rewards: [{
 				id: "164D4BD2BB479AB4"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "0A3BA92372E67F42"
@@ -340,7 +348,7 @@
 			rewards: [{
 				id: "7D2C6BA3F246D6E0"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "0EB40544BF88CACD"
@@ -364,7 +372,7 @@
 			rewards: [{
 				id: "7EAB0DBAFF8E52BC"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "127992F6E81C4BB9"
@@ -388,7 +396,7 @@
 			rewards: [{
 				id: "5947D9CA7C0244C6"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "1FD3F38D39B12233"
@@ -431,7 +439,7 @@
 			rewards: [{
 				id: "3C3D98576767791A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "0864576AC8371698"
@@ -456,7 +464,7 @@
 			rewards: [{
 				id: "40FD725C507DE90A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "016600D915AF06DE"
@@ -481,7 +489,7 @@
 			rewards: [{
 				id: "3832705A9FAA435A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "7DA3080F2B3E02F7"
@@ -506,7 +514,7 @@
 			rewards: [{
 				id: "33FE237CD415A5F9"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "5B23E6674FBB4682"
@@ -530,7 +538,7 @@
 			rewards: [{
 				id: "0B50B737C829C639"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "4921EEBF5FA54DA1"
@@ -601,7 +609,7 @@
 			rewards: [{
 				id: "2F26A22D29BE99B3"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "03DD66F1004D3C84"
@@ -626,7 +634,7 @@
 			rewards: [{
 				id: "52D384E690F476EE"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "46211E84A1A68344"
@@ -654,7 +662,7 @@
 			rewards: [{
 				id: "486FA55FF82DD449"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "2412808E16ABCE1F"
@@ -682,7 +690,7 @@
 			rewards: [{
 				id: "21F8A80AB5038E85"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "45E1BEE12E41FE41"
@@ -709,7 +717,7 @@
 			rewards: [{
 				id: "4B7D0EBE4E931E9D"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "702F12FBB62E3915"
@@ -732,7 +740,7 @@
 			rewards: [{
 				id: "0ED068F1E2AD50F5"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "430714BC2E7F90D9"
@@ -757,7 +765,7 @@
 			rewards: [{
 				id: "5B3E6B1923E3236D"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "1EF31CBDA907DC53"
@@ -805,7 +813,7 @@
 			rewards: [{
 				id: "640AB978A0B9B4E8"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "67A693E3761346BA"
@@ -828,7 +836,7 @@
 			rewards: [{
 				id: "490988B868E04BAB"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "04B97B8533F9A5C7"
@@ -852,7 +860,7 @@
 			rewards: [{
 				id: "488E662050D9F556"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "20CD02A6C59D3256"
@@ -881,7 +889,7 @@
 			rewards: [{
 				id: "12FDE1797B5E2140"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "05C44DFC0FC218AE"
@@ -907,7 +915,7 @@
 			rewards: [{
 				id: "0B70B026DBEAD458"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			shape: "hexagon"
 			tasks: [{
@@ -931,7 +939,7 @@
 			rewards: [{
 				id: "38F781893D379518"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			shape: "hexagon"
 			tasks: [{
@@ -956,7 +964,7 @@
 			rewards: [{
 				id: "18C8F95FC0A4D08F"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "27630217A1027FC1"
@@ -982,7 +990,7 @@
 			rewards: [{
 				id: "510409A41114EEEF"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "0AC4E22746A8E4A0"
@@ -1006,7 +1014,7 @@
 			rewards: [{
 				id: "363852520CC7DF47"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "6B7B606F45BEB153"
@@ -1030,7 +1038,7 @@
 			rewards: [{
 				id: "33BE00BC5A683812"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "2C76D7A98BDB4E6E"
@@ -1053,7 +1061,7 @@
 			rewards: [{
 				id: "2FC4098B4968D92A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "3CCFEDCC39DC3992"
@@ -1081,7 +1089,7 @@
 			rewards: [{
 				id: "1067151B3C866DF9"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "2A8CB89E57A1253E"
@@ -1107,7 +1115,7 @@
 			rewards: [{
 				id: "69278D08D191122C"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "7746B0AAC5A7CF68"
@@ -1130,7 +1138,7 @@
 			rewards: [{
 				id: "05C55B7F1E23A0CD"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "0F62115205D793EF"
@@ -1153,7 +1161,7 @@
 			rewards: [{
 				id: "0E3818FB56A1DD26"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "7AFC4E589642968A"
@@ -1178,7 +1186,7 @@
 			rewards: [{
 				id: "6A5515A6E272D809"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "4EA299FFA71040B6"
@@ -1203,7 +1211,7 @@
 			rewards: [{
 				id: "6698E812EF7DBCB0"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "4DE62474F8989571"
@@ -1226,7 +1234,7 @@
 			rewards: [{
 				id: "07E494B21C74E34D"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			shape: "octagon"
 			size: 2.0d
@@ -1250,7 +1258,7 @@
 			rewards: [{
 				id: "4B8424FE3EB3B1FF"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "557F6530028246D7"
@@ -1274,7 +1282,7 @@
 			rewards: [{
 				id: "20CD35BA3B97EA9E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "6883B98C384FEE5D"
@@ -1298,7 +1306,7 @@
 			rewards: [{
 				id: "532B2A967A226068"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "1A20A57AB4E2797C"
@@ -1321,7 +1329,7 @@
 			rewards: [{
 				id: "7E0E910E0CD8A395"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "6651C8310874C6FE"
@@ -1346,7 +1354,7 @@
 			rewards: [{
 				id: "6C26F73EC8E7BB66"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "21747FDDD543995F"
@@ -1527,7 +1535,7 @@
 			rewards: [{
 				id: "445DD890620A050B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "61115568CF7E91BD"
@@ -1554,7 +1562,7 @@
 			rewards: [{
 				id: "1B69D646ECC72F1E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "1B312C01372F53C9"
@@ -1608,7 +1616,7 @@
 			rewards: [{
 				id: "216EE400EBEB113B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "4F3F53FF73BC5E76"
@@ -1639,7 +1647,7 @@
 			rewards: [{
 				id: "6068EE2D60A31B5A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "33EAA179E3DA3CBB"
@@ -1667,7 +1675,7 @@
 			rewards: [{
 				id: "20777366BB503B52"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "0A74D7E989DA4C88"
@@ -1692,7 +1700,7 @@
 			rewards: [{
 				id: "50746182DFC885E5"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "7B568A53CC48F830"
@@ -2085,7 +2093,7 @@
 			rewards: [{
 				id: "7A0F5C91E9ED1145"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "49336133B2F9E1AE"
@@ -2104,61 +2112,22 @@
 			y: 5.5d
 		}
 		{
+			description: ["I hate tags."]
 			id: "0E4019386C4B8CFE"
-			rewards: [
-				{
-					id: "26E769C4AF00777D"
-					type: "custom"
-				}
-				{
-					id: "1792FAF62E1B3D31"
-					type: "xp_levels"
-					xp_levels: 2
-				}
-				{
-					id: "0179BB6FDD971B2D"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"dungeons_libraries:built_in_enchantments": {
-								BuiltInEnchantments: [ ]
-							}
-						}
-						id: "ftbquests:lootcrate"
-						tag: {
-							rpgloot.randomize: 0b
-							type: "materials_random"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "778B3D9BF2973AEB"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"dungeons_libraries:built_in_enchantments": {
-								BuiltInEnchantments: [ ]
-							}
-						}
-						id: "ftbquests:lootcrate"
-						tag: {
-							rpgloot.randomize: 0b
-							type: "materials_monsters"
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "1792FAF62E1B3D31"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
 					id: "5EC5EB9F59AFFD5A"
 					item: {
 						Count: 1
-						id: "itemfilters:tag"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							value: "radrecipes:dragonscale_helmets"
+							"ftbfiltersystem:filter": "item_tag(forge:armors/scale)item_tag(forge:armors/helmets)"
 						}
 					}
 					title: "Any Dragon Scale Helmet"
@@ -2168,9 +2137,9 @@
 					id: "76DA77A8BBF13A58"
 					item: {
 						Count: 1
-						id: "itemfilters:tag"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							value: "radrecipes:dragonscale_chestplates"
+							"ftbfiltersystem:filter": "item_tag(forge:armors/scale)item_tag(forge:armors/chestplates)"
 						}
 					}
 					title: "Any Dragon Scale Chestplate"
@@ -2180,9 +2149,9 @@
 					id: "299B06BC8A9C8C52"
 					item: {
 						Count: 1
-						id: "itemfilters:tag"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							value: "radrecipes:dragonscale_leggings"
+							"ftbfiltersystem:filter": "item_tag(forge:armors/scale)item_tag(forge:armors/leggings)"
 						}
 					}
 					title: "Any Dragon Scale Leggings"
@@ -2192,9 +2161,9 @@
 					id: "57EA31480520C9E3"
 					item: {
 						Count: 1
-						id: "itemfilters:tag"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							value: "radrecipes:dragonscale_boots"
+							"ftbfiltersystem:filter": "item_tag(forge:armors/scale)item_tag(forge:armors/boots)"
 						}
 					}
 					title: "Any Dragon Scale Boots"
@@ -2207,60 +2176,20 @@
 		}
 		{
 			id: "7D9F47D76734EA0B"
-			rewards: [
-				{
-					id: "6A31BF604C1F8394"
-					type: "custom"
-				}
-				{
-					id: "613C63506A585813"
-					type: "xp_levels"
-					xp_levels: 2
-				}
-				{
-					id: "090904CA1BFFD61F"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"dungeons_libraries:built_in_enchantments": {
-								BuiltInEnchantments: [ ]
-							}
-						}
-						id: "ftbquests:lootcrate"
-						tag: {
-							rpgloot.randomize: 0b
-							type: "materials_random"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "37DA0D6391DF481E"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"dungeons_libraries:built_in_enchantments": {
-								BuiltInEnchantments: [ ]
-							}
-						}
-						id: "ftbquests:lootcrate"
-						tag: {
-							rpgloot.randomize: 0b
-							type: "materials_monsters"
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "613C63506A585813"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
 					id: "645C2796B665742B"
 					item: {
 						Count: 1
-						id: "itemfilters:tag"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							value: "radrecipes:tide_guardian_helmets"
+							"ftbfiltersystem:filter": "item_tag(forge:armors/tide)item_tag(forge:armors/helmets)"
 						}
 					}
 					title: "Any Tide Guardian Helmet"
@@ -2270,9 +2199,9 @@
 					id: "22FB16863940F599"
 					item: {
 						Count: 1
-						id: "itemfilters:tag"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							value: "radrecipes:tide_guardian_chestplates"
+							"ftbfiltersystem:filter": "item_tag(forge:armors/tide)item_tag(forge:armors/chestplates)"
 						}
 					}
 					title: "Any Tide Guardian Chestplate"
@@ -2282,9 +2211,9 @@
 					id: "1C3A166979166A03"
 					item: {
 						Count: 1
-						id: "itemfilters:tag"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							value: "radrecipes:tide_guardian_leggings"
+							"ftbfiltersystem:filter": "item_tag(forge:armors/tide)item_tag(forge:armors/leggings)"
 						}
 					}
 					title: "Any Tide Guardian Leggings"
@@ -2294,9 +2223,9 @@
 					id: "56791C8B6A205CA2"
 					item: {
 						Count: 1
-						id: "itemfilters:tag"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							value: "radrecipes:tide_guardian_boots"
+							"ftbfiltersystem:filter": "item_tag(forge:armors/tide)item_tag(forge:armors/leggings)"
 						}
 					}
 					title: "Any Tide Guardian Boots"
@@ -2543,7 +2472,7 @@
 			rewards: [{
 				id: "029457FEDA0E920E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "3CB84413F32FDB55"
@@ -2566,7 +2495,7 @@
 			rewards: [{
 				id: "5590778D7EF9D76C"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "0D714BBE2908402B"
@@ -2589,7 +2518,7 @@
 			rewards: [{
 				id: "1F7A5E097D5C5C1A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "291E0F94BC74C6F0"
@@ -2612,7 +2541,7 @@
 			rewards: [{
 				id: "024A0852DA32ED01"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 			tasks: [{
 				id: "799A78A95F1E1E3D"
