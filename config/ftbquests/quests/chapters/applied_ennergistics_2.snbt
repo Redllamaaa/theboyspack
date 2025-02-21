@@ -3,9 +3,1115 @@
 	default_quest_shape: ""
 	filename: "applied_ennergistics_2"
 	group: "00B02FC8BB194427"
+	icon: "ae2:drive"
 	id: "479F86B4485045A0"
-	order_index: 4
+	images: [
+		{
+			height: 2.0d
+			image: "ae2:block/molecular_assembler_lights"
+			rotation: 0.0d
+			width: 2.0d
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			height: 1.0d
+			image: "ae2:item/singularity"
+			rotation: 45.0d
+			width: 1.0d
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			height: 3.0d
+			image: "ftbquests:tasks/input_only"
+			rotation: 0.0d
+			width: 3.0d
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			height: 1.0d
+			image: "ae2:block/chest/top"
+			order: -3
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "ae2:block/controller"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.5d
+			y: 4.5d
+		}
+	]
+	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
-	title: "Applied Ennergistics 2"
+	quests: [
+		{
+			description: [
+				"&dApplied Energistics&r is a highly customizable &bdigital storage mod&r that completely changes the way you experience modded MC. Gone are the days of chest walls!"
+				""
+				"To get started with Applied Energistics, you'll want to first construct a &aCharger&r. This machine accepts power to charge items, which you'll need for the progression of the mod."
+			]
+			id: "37104662F0BDDE66"
+			min_width: 250
+			rewards: [{
+				count: 16
+				id: "2D300F8A2CCFFB76"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "0AAF1E3BD30F51F1"
+				item: "ae2:charger"
+				type: "item"
+			}]
+			title: "Getting Started With &dApplied Energistics&r!"
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["37104662F0BDDE66"]
+			description: [
+				"Our next step will be to acquire the main resource for the mod, &bCertus Quartz&r. Unfortunately, it can only be gathered from &dMeteorites&r."
+				""
+				"You can craft a &bMeteorite Compass&r by placing a compass in the &aCharger&r. This compass will point in the direction of the nearest fallen Meteorite!"
+				"{@pagebreak}"
+				"Once you've located a fallen meteorite, you should mine the &aSky Stone&r that surrounds the core."
+				""
+				"In the center of the meteor, you'll find a &dMysterious Cube&r. Break this cube to get all of the &aInscriber Presses&r!"
+				""
+				"NOTE: If you mine the mysterious cube with &dSilk Touch&r, it won't break into the presses. This just allows you to move them if you want it for base decor!"
+			]
+			id: "2E963ABB0EB1581C"
+			min_width: 250
+			require_sequential_tasks: false
+			rewards: [{
+				id: "1B7D15FABCA01A64"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [
+				{
+					id: "1EABD780803662B2"
+					item: "ae2:meteorite_compass"
+					type: "item"
+				}
+				{
+					id: "3EB3DC0E20ACCE4A"
+					structure: "ae2:meteorite"
+					title: "Find a meteorite!"
+					type: "structure"
+				}
+				{
+					id: "6C26FAA4A64FB4B6"
+					item: "ae2:sky_stone_block"
+					type: "item"
+				}
+			]
+			title: "&fFinding A &6Meteorite&r"
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2E963ABB0EB1581C"]
+			description: [
+				"Inside of every meteorite, you'll also find &aFlawless Budding Certus Quartz&r. These work similarly to amethyst and will bud crystals over time."
+				""
+				"The Flawless blocks will decay into &aFlawed Budding Certus Quartz&r if you mine them, but they can be moved using things like a &bCardboard Box&r or &bPacking Tape&r. "
+				"{@pagebreak}"
+				"Each time a crystal is formed, the budding block has a chance to decay to a lower tier version and must be repaired by throwing it in water with &bCharged Certus Quartz Crystals&r."
+				""
+				"Flawless Budding Certus Quartz do not suffer this drawback and can be grown indefinitely!"
+				"{@pagebreak}"
+				"Harvesting the &bCertus Crystals&r before they are fully grown will only give dust, while fully grown crystals will give full &bCertus Quartz&r crystals."
+				""
+				"It is worth it to fully automate harvesting crystals as soon as possible, but that requires some Certus to get started with."
+				""
+				"That's why you can twerk to grow the crystals in the early game! To do this, hold a hoe in your hand and start crouching."
+			]
+			icon: "ae2:charged_certus_quartz_crystal"
+			icon_scale: 2.0d
+			id: "73EC5E7F2300B99D"
+			min_width: 250
+			rewards: [{
+				id: "3E860631304EEB85"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [
+				{
+					id: "78B8198E8713DA7C"
+					item: "ae2:certus_quartz_dust"
+					type: "item"
+				}
+				{
+					id: "778725BC7B83D34E"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			title: "&bCertus Quartz&r"
+			x: 0.5d
+			y: -3.75d
+		}
+		{
+			dependencies: ["0224277CBEC1375E"]
+			description: [
+				"Budding Crystals can take some time to grow and when you're trying to get your system up and running, no one wants to do a bunch of waiting around."
+				""
+				"&bGrowth Accelerators&r can be crafted and placed under the budding block to speed up the rate they grow substantially. These do require power to work."
+			]
+			id: "60871670B71C711F"
+			min_width: 300
+			rewards: [
+				{
+					count: 2
+					id: "3CE0DA747322C1FC"
+					item: "ae2:annihilation_plane"
+					type: "item"
+				}
+				{
+					id: "2FFCB40DACFD325B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "4E4AE2BAE9D69058"
+				item: "ae2:growth_accelerator"
+				type: "item"
+			}]
+			title: "&bAutomating Crystals"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73EC5E7F2300B99D"]
+			description: [
+				"&dFluix&r is at the heart of all of technology in Applied Energistics."
+				""
+				"To make the &dFluix Crystal&r, you'll first need to charge &bCertus Quartz Crystal&r in the charger. Next, toss the crystal with a piece of redstone and nether quartz in a pool of water out in the world."
+				""
+				"The components will react and form a Fluix Crystal that is ready for refinement! You can do many of these at once to speed up the process, as well as eventually making machines that can automate the creation process for you."
+			]
+			id: "78ADC11570C5561E"
+			min_width: 300
+			rewards: [{
+				id: "309BF9F0EF069692"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 8L
+				id: "4D027F7CC4603399"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			title: "&dFluix Crystals&r"
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["78ADC11570C5561E"]
+			description: [
+				"AE2 has its own power unit called &bAE&r. By default, it does not accept power directly from other sources."
+				""
+				"However, you can use an &bEnergy Acceptor&r to convert FE power into AE power for your network, which can be distributed out using &aGlass Cables&r."
+				""
+				"If you start running out of power as you add more machines to your network, it might help to create an energy buffer using &bEnergy Cells&r, which store AE for future use."
+				"{@pagebreak}"
+				"You can also generate free power using the &dCrystal Resonance Generator&r. "
+				""
+				"This generator extracts free energy from the vibrations of the crystals within it to generate around 20 AE/t. Due to excess vibrations, you can only have one of these per AE network."
+			]
+			icon: "ae2:fluix_glass_cable"
+			id: "0224277CBEC1375E"
+			min_width: 300
+			rewards: [
+				{
+					id: "0C3323880819C958"
+					item: "ae2:energy_cell"
+					type: "item"
+				}
+				{
+					id: "0708B81DF89ECBFF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "6D4D112569B7A4EF"
+					item: "ae2:energy_acceptor"
+					type: "item"
+				}
+				{
+					id: "5E8589F2866188F9"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+				{
+					id: "73910D1CA7580039"
+					item: "ae2:crystal_resonance_generator"
+					type: "item"
+				}
+			]
+			title: "&fPowering Your &bNetwork"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["73EC5E7F2300B99D"]
+			description: [
+				"The &aInscriber&r is one of the most important machines in AE2."
+				""
+				"These machines create your processors for all of your AE technology. These do require power but can accept regular FE power from other modded sources."
+				""
+				"You'll want one for each of &eInscriber Press&r you have, and should look to automate this as soon as possible. Each Inscriber can take up to &b4 Acceleration Cards&r to greatly increase their working speed."
+			]
+			icon: "ae2:inscriber"
+			id: "663460DE8AF7E464"
+			min_width: 250
+			rewards: [
+				{
+					count: 4
+					id: "043209DA4BD2F497"
+					item: "ae2:inscriber"
+					type: "item"
+				}
+				{
+					id: "2E3F1375DD29C37F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 5
+					id: "46243D99CE1866C7"
+					item: "ae2:speed_card"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "010FA7DD575A2D08"
+					item: "ae2:inscriber"
+					type: "item"
+				}
+				{
+					id: "4A0E3A9A16172E93"
+					item: "ae2:printed_engineering_processor"
+					type: "item"
+				}
+				{
+					id: "6540FDC216483362"
+					item: "ae2:printed_calculation_processor"
+					type: "item"
+				}
+				{
+					id: "424997BDCAB23659"
+					item: "ae2:printed_logic_processor"
+					type: "item"
+				}
+			]
+			title: "&aInscribing Processors"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["663460DE8AF7E464"]
+			description: [
+				"&aSilicon&r is needed for crafting most of the electronic parts in the mod, including creating completed &aProcessors&r. Silicon is crafted by smelting down &bCertus Dust&r."
+				""
+				"You'll want to have a dedicated Inscriber that is automated and pumps out &aPrinted Silicon&r as soon as possible!"
+			]
+			icon: "ae2:printed_silicon"
+			id: "10143533A2437ABE"
+			min_width: 250
+			rewards: [
+				{
+					count: 3
+					id: "0236664F2B41C76F"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "16B88955B2E54705"
+					item: "ae2:printed_calculation_processor"
+					type: "item"
+				}
+				{
+					id: "238BACCFD7BE97EF"
+					item: "ae2:printed_engineering_processor"
+					type: "item"
+				}
+				{
+					id: "77E3FA2CDF34F21D"
+					item: "ae2:printed_logic_processor"
+					type: "item"
+				}
+				{
+					id: "7053B75A6E11DA47"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "5C9EA4BD007EDEF1"
+					item: "ae2:silicon"
+					type: "item"
+				}
+				{
+					icon: "ae2:printed_silicon"
+					id: "2A9F8453FF261C0B"
+					type: "item"
+				}
+			]
+			title: "&aSilicon"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["10143533A2437ABE"]
+			description: [
+				"In another Inscriber, you can combine a &bPrinted Circuit&r with &aPrinted Silicon&r and a piece of &cRedstone&r to craft a complete &6Processor&r."
+				""
+				"These Processors are the main crafting components you'll need for most of the electronics you'll use, like &aTerminals&r, &eDisk Drives&r, and lots more."
+				""
+				"It's worth automating the production of these as soon as possible!"
+				"{@pagebreak}"
+				"As a tip for automation, you can use your 5th Inscriber to complete Processors in the chain."
+				""
+				"You can set filters to pipe &cRedstone&r into back, &bPrinted Silicon&r into the top, and any &aPrinted Processor&r into the bottom. The finished Processors can then be piped out of the front."
+				""
+				"A simple way to achieve this is using locked &aFunctional Drawers&r."
+			]
+			id: "02F6AC9E53029E0A"
+			min_width: 300
+			rewards: [{
+				id: "4B2D3E07C650131E"
+				type: "xp"
+				xp: 5
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "27F8AF789DE14145"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ae2:logic_processor"
+							}
+							{
+								Count: 1b
+								id: "ae2:calculation_processor"
+							}
+							{
+								Count: 1b
+								id: "ae2:engineering_processor"
+							}
+						]
+					}
+				}
+				title: "Any Processor"
+				type: "item"
+			}]
+			title: "&aCompleting Processors"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["46A1341E5E97ABDC"]
+			description: [
+				"The &6Crafting Grid&r allows you to access all connected inventories and craft with them at one central location."
+				""
+				"Just like other Panels, these cannot connect to Dense Cables. Glass, Covered, or Smart Cables will work!"
+				""
+				"The &6Storage Bus&r allows you to connect your existing storages to your network."
+			]
+			id: "45E7D62C229F898C"
+			min_width: 300
+			rewards: [
+				{
+					id: "002FAD56A3DDC33E"
+					item: "ae2:storage_bus"
+					type: "item"
+				}
+				{
+					id: "24368D08CAA14244"
+					type: "xp"
+					xp: 5
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "2194BF94997B00BA"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			title: "&fME Crafting Terminal"
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["46A1341E5E97ABDC"]
+			description: [
+				"If you're looking to store your items &bDigitally&r, you'll want to make the &aDisk Drive Bay&r and some &6Storage Cells&r."
+				""
+				"The Disk Drive Bay can contain up to &b10 AE Disks&r. When connected to your network, items can automatically be stored as digital media and accessed via interfaces, I/O Buses and Terminals."
+				""
+				"Each &aItem Storage Cell&r can store up to 63 different item types. The size of the Storage Cell will determine how many of each item type it can store, which is measured in &bBytes&r."
+				"{@pagebreak}"
+				"For Example: A 1k Item Storage Cell can hold up to 8,128 items of a single type. If you were using all 63 types on that disk, you could hold a maximum of 4160 items."
+				""
+				"This may seem confusing at first, but it becomes fairly easy to understand when you start using them. If you really want to avoid typed drives however, AE2Things has you covered. You can make the &btypless drives&r for a slightly higher cost."
+				""
+				"This quest rewards you with a choice of the storage type of your choosing."
+			]
+			icon: "ae2:drive"
+			id: "71024D8DC19834AC"
+			min_width: 300
+			rewards: [{
+				id: "1BA91C0C2623B6CC"
+				type: "xp"
+				xp: 5
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "736F6172F362C5F8"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					id: "5479E86686A3263A"
+					item: "ae2:cell_component_1k"
+					type: "item"
+				}
+			]
+			title: "&fThe Start of &dDigital Storage&f!"
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["71024D8DC19834AC"]
+			description: [
+				"The &aCell Workbench&r allows you to configure what types of items you want to allow onto an AE Storage Cell."
+				""
+				"The Cells can also be upgraded with &aEqual Distribution&r, which will ensure that all of the configured slots are allocated the same amount of space and a single item type won't overtake all available bytes of storage. "
+				"{@pagebreak}"
+				"The &aOverflow Destruction&r upgrade will also void any additional items of a specific item type that is stored on the system. By using this upgrade, you can create a drive that is configured to act like an entire wall of storage drawers with void upgrades. Very handy!"
+			]
+			id: "083990CE5CA6E313"
+			min_width: 250
+			rewards: [
+				{
+					id: "07A324237DBE4364"
+					item: "ae2:void_card"
+					type: "item"
+				}
+				{
+					id: "3408A2AAB82E10D2"
+					item: "ae2:equal_distribution_card"
+					type: "item"
+				}
+				{
+					id: "3DB93AEAFEA16371"
+					type: "xp"
+					xp: 5
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "385954490EB6E48C"
+				item: "ae2:cell_workbench"
+				type: "item"
+			}]
+			title: "&fCell Workbench"
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["02F6AC9E53029E0A"]
+			description: [
+				"&aImport&r and &aExport Buses&r will allow you to pipe items into and out of your system and any other connected inventories."
+				""
+				"This, along with interfaces and pattern providers, will allow you to fully automate your entire base!"
+				""
+				"These devices can be upgraded with &aCards&r to be redstone sensitive, accept NBT specific items or not (Fuzzy), or to increase speed and capacity with &eAcceleration&r and &eCapacity Cards&r."
+			]
+			id: "2FFA4CF8C062AD5E"
+			rewards: [
+				{
+					count: 2
+					id: "40F4286DC8B9F3BC"
+					item: "ae2:speed_card"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4CC254A4A9942A7F"
+					item: "ae2:capacity_card"
+					type: "item"
+				}
+				{
+					id: "0C40B4F250627CC0"
+					type: "xp"
+					xp: 5
+				}
+			]
+			tasks: [{
+				id: "142FDDC7CB586604"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ae2:import_bus"
+							}
+							{
+								Count: 1b
+								id: "ae2:export_bus"
+							}
+						]
+					}
+				}
+				title: "I/O Bus"
+				type: "item"
+			}]
+			title: "&fI/O Bus"
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7E4FF5A454039E47"]
+			description: [
+				"The &6Crafting CPU Multiblock&r is the heart of autocrafting within AE2."
+				""
+				"These multiblocks must be built as rectangular prisms in shape with no empty blocks, and contain at least 1 or more &aCrafting Storages&r. While optional, &aCrafting Co-Processors&r are recommended to use as well."
+				"{@pagebreak}"
+				"&aCrafting Storage&r blocks are used to store the ingredients of a craft. The storage amount will determine how many items you can request to be autocrafted at once."
+				""
+				"For example, if you want to craft 1k Crafting Tables, you will need to have enough crafting storage to store the ingredients of all 1k of them."
+				"{@pagebreak}"
+				"The &6Crafting Co-Processor&r is an optional block but is recommended as each additional Co-Processor allows for more sub tasks to be queued at once, and somewhat speeds up complex autocrafting operations."
+				""
+				"For example, crafting 1k Crafting Tables might require turning logs into planks, then planks into tables. With multiple Co-Processors, your multiblock can craft the logs into planks at the same time as it crafts planks into tables. Otherwise, it would craft all of the logs into planks until finished, then craft the planks into the tables all at once."
+				"{@pagebreak}"
+				"One important thing to note is that each &6Crafting CPU Multiblock&r can only handle one type of task at a time. For example, if you wanted to craft both 1k Crafting Tables and autosmelt 1k Iron Ingots at the same time, you will need 2 separate CPU Multiblocks to achieve this."
+				""
+				"For more info, you can always refer to the AE2 Guide."
+			]
+			id: "43949500F6A0B46A"
+			min_width: 300
+			rewards: [
+				{
+					id: "1644EB746E300C9B"
+					item: "ae2:16k_crafting_storage"
+					type: "item"
+				}
+				{
+					id: "60AB78F9DE88A1A8"
+					item: "ae2:crafting_accelerator"
+					type: "item"
+				}
+				{
+					id: "4E722194E78AA662"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "40984ACB942A9BA5"
+					type: "loot"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "07AD0E71B667C55D"
+					item: "ae2:crafting_accelerator"
+					type: "item"
+				}
+				{
+					id: "2878D28D0DF1FD02"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ae2:1k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:4k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:16k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:64k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:256k_crafting_storage"
+								}
+							]
+						}
+					}
+					title: "Any Crafting Storage"
+					type: "item"
+				}
+			]
+			title: "&fThe Autocrafting &6Multiblock"
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["69F87073390131D5"]
+			description: [
+				"Once you've encoded some patterns using the Pattern Encoding Terminal, you can place them  into a &6Pattern Provider&r. The Providers will try to complete the craft using whatever block it is attached to."
+				""
+				"For doing shaped and shapeless craft recipes that don't require machines, you can place the Provider next to a &6Molecular Assembler&r. These Assemblers are just fancy autocrafters!"
+				"{@pagebreak}"
+				"For other autocrafting tasks that require some type of processing, you'd place the Provider facing the machine you want to craft in."
+				""
+				"For example, you can set up autosmelting for recipes by placing a Furnace in front of the Provider, and then encoding the appropriate smelting recipes onto patterns to be placed into the Providers."
+				"{@pagebreak}"
+				"For more information about how to make the Pattern Providers and Assemblers work faster, check out the AE2 Guide!"
+			]
+			id: "16B60BCB8240F808"
+			min_width: 300
+			require_sequential_tasks: true
+			rewards: [{
+				id: "4861369BE790E247"
+				type: "xp"
+				xp: 5
+			}]
+			shape: "square"
+			subtitle: "The \"What\" and \"Where\" of Autocrafting"
+			tasks: [
+				{
+					id: "0D39FA23D0F8D9B4"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+				{
+					id: "3FBC5BF7FCC72319"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+			]
+			title: "&fStoring Patterns"
+			x: -0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["78ADC11570C5561E"]
+			description: [
+				"The &6Matter Condensor&r will destroy any item inserted into it like a trashcan. If you provide it a 64k Cell to act as a buffer, it will instead convert the items into &bMatter Balls&r or &dSingularities&r."
+				""
+				"These &dSingularities&r are critical for creating massive storages and inter-dimensional linking. "
+			]
+			icon: "ae2:condenser"
+			id: "4B463FDAEAC42511"
+			rewards: [
+				{
+					count: 3
+					id: "4D642BDAF91DB4DE"
+					item: "ae2:cell_component_1k"
+					type: "item"
+				}
+				{
+					id: "5FA72C20E98409BE"
+					type: "xp"
+					xp: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "24481A52D8B8902C"
+					item: "ae2:condenser"
+					type: "item"
+				}
+				{
+					id: "616DD1A38ECF453E"
+					item: "ae2:singularity"
+					type: "item"
+				}
+			]
+			title: "&fThe &6Matter Condenser"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["45E7D62C229F898C"]
+			description: [
+				"The &dWireless Access Point&r will allow you to access your AE inventories remotely by using a  &6Wireless Grid&r."
+				""
+				"Using &bWireless Boosters&r will extend the range at the cost more energy to operate. You can also have multiple wireless access points around your base instead of trying to extend the signal from a central location."
+			]
+			id: "0C784115309E7C1C"
+			min_width: 250
+			rewards: [
+				{
+					count: 2
+					id: "449234AC08F8FD4F"
+					item: "ae2:wireless_booster"
+					type: "item"
+				}
+				{
+					id: "62D5ACA9913A1FF7"
+					type: "xp"
+					xp: 5
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "6977DD1818546AA2"
+				item: "ae2:wireless_access_point"
+				type: "item"
+			}]
+			title: "&dWireless Access"
+			x: -3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0C784115309E7C1C"]
+			description: [
+				"To make use of your Wireless Access Points, you'll need to craft the &dWireless Crafting Terminal&r."
+				""
+				"This device will allow you to link to a wireless access point in your network by placing it in the slot in its interface. Once linked, you can access all of your items and even craft on the go anywhere you have signal!"
+			]
+			id: "54C31D0BAFA952D4"
+			min_width: 250
+			rewards: [
+				{
+					id: "3BECB8D2D8B07879"
+					type: "xp"
+					xp: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "254693A38D59F720"
+					type: "loot"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "5FEB6B7B3C8EBFE8"
+				item: "ae2:wireless_crafting_terminal"
+				type: "item"
+			}]
+			title: "&bWireless Crafting"
+			x: -4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["54C31D0BAFA952D4"]
+			description: [
+				"The &6Wireless Universal Terminal&r allows you to make use of the several different types of Wireless Terminals."
+				""
+				"This can be crafted by combining your Wireless Crafting Grid with another Wireless Terminal, like the &aWireless Pattern Access Terminal&r."
+			]
+			id: "1953C2127633B6D7"
+			min_width: 250
+			rewards: [
+				{
+					id: "3784BEDB2282908B"
+					item: "ae2wtlib:wireless_pattern_encoding_terminal"
+					type: "item"
+				}
+				{
+					id: "074D961C31DA103C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "24F692587E8323ED"
+					item: "ae2wtlib:wireless_pattern_encoding_terminal"
+					type: "item"
+				}
+				{
+					id: "63B04EABB9E704A5"
+					item: "ae2wtlib:wireless_universal_terminal"
+					type: "item"
+				}
+			]
+			title: "&fThe &6Universal Wireless Terminal"
+			x: -6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1953C2127633B6D7"]
+			description: [
+				"Say you want to build or connect a part of your network in another location that cables can't reach, like another dimension. To do this, you'll need to create a &dQuantum Network Bridge&r."
+				""
+				"To make this, you'll need to build 2 identical multiblock structures: one connected to your main network, and one connected to the new place you want to build in."
+				""
+				"Each multiblock will consist of &b8 Quantum Rings&r with a &6ME Quantum Link Chamber&r in the center. To connect the two, you'll need to craft and use a &dQuantum Entangled Singularity&r on each of the Link Chambers to connect them."
+				"{@pagebreak}"
+				"The Quantum Ring only allows 128 channels total from it, no matter which face you connect to. You can also only connect to the 4 Quantum Rings that are adjacent to the Link Chamber, as the corners do not connect."
+				""
+				"Note: Both sides will need to be chunk loaded to work."
+			]
+			id: "3A59D1773EBD3B8A"
+			min_width: 300
+			rewards: [
+				{
+					count: 8
+					id: "4BB034A7821EA3FF"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+				{
+					id: "06806C12689FBEFE"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+				{
+					id: "6344AD7810F07451"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Extending Your Network"
+			tasks: [
+				{
+					count: 2L
+					id: "232B93A30789864B"
+					item: "ae2:quantum_entangled_singularity"
+					type: "item"
+				}
+				{
+					id: "50B92D9FA4C16F40"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4D6C0DFDBB750AF7"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+			]
+			title: "&6Quantum Network Bridges"
+			x: -6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["37104662F0BDDE66"]
+			description: [
+				"&bAE2&r comes with a built in guide that you can access at any time within JEI."
+				""
+				"When hovering an item from the mod, you'll be prompted to hold the keybind to open up the guide."
+				""
+				"This guide is incredibly detailed and can be super helpful if you need help along the way!"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ae2:item/creative_item_cell"
+				}
+			}
+			id: "6BB9FD515DFD8FF1"
+			rewards: [{
+				id: "2E62ACDB54CBA418"
+				type: "xp"
+				xp: 5
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "55B1C70507F60EDF"
+				title: "&fThe &bAE2 Guide"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["46A1341E5E97ABDC"]
+			description: [
+				"&6Controllers&r are used to increase the amount of channels a network has. These aren't necessary to use in the early game, especially since you have 32 channels to work with by default. Networks without a &6Controller&r are considered &bAd-Hocs&r."
+				""
+				"The Controller is considered the routing hub of your ME network. You cannot have 2 separate ME Controllers in the same network, but you can build a massive multiblock Controller if you need the channels."
+				"{@pagebreak}"
+				"A single Controller will provide &b128 Channels&r per face with the 4x settings. This makes it where if you add a controller, you will most likely never have to worry about channels."
+				""
+				"You can find more info and rules for building multiblock controllers in the AE2 Guide."
+			]
+			id: "0E06BDC6265EB7F7"
+			min_width: 300
+			rewards: [{
+				id: "37DCD6DBCC58B3A0"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "3509D2F41D6F4F08"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			title: "&fAdding More &6Channels"
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["71024D8DC19834AC"]
+			description: [
+				"One of the main uses of digital storage is the ability to &6Autocraft Items&r."
+				""
+				"In AE2, this is done by creating custom multiblocks that make use of &aCrafting CPUs, Co-Processors&r, and more."
+				""
+				"To get started, you'll need to make the main crafting component: the &6Crafting Unit&r."
+			]
+			icon_scale: 2.0d
+			id: "7E4FF5A454039E47"
+			min_width: 250
+			rewards: [{
+				id: "5DB6B235B8FF9657"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "none"
+			tasks: [{
+				id: "6D728EB09B59FB1D"
+				item: "ae2:crafting_unit"
+				type: "item"
+			}]
+			title: "&6Autocrafting"
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["02F6AC9E53029E0A"]
+			description: [
+				"Before you start building out your &bAE Network&r, it's time to talk about &6Channels&r. Don't worry, the pack's default is set to &b4x by default&r with the intention of having an easier time for players who might be new to AE2."
+				""
+				"&6Channels&r are essentially the limit of the total number of devices that your Network can interact with at one time. This can be increased with some clever mechanics and the use of multiblock &aControllers&r, which will be discussed in a different quest."
+				""
+				"With the increased settings, you have &632 Channels&r per network before needing to add more channels."
+				"{@pagebreak}"
+				"To connect different parts of your networks, you can do this by using 3 different types of ME Cables: &bGlass Cables&r, &bDense Cables&r, and &6Smart Cables&r."
+				""
+				"Each of these cables carry a different amount of Channels. This means you might run into issues if you run Glass Cables to every single part of your network when you get towards the end game."
+				"{@pagebreak}"
+				"&bGlass Cables&r transfer power, but can also transfer up to &b32 Channels&r with the 4x settings."
+				""
+				"&6Smart Cables&r don't add more channels, but give you a visual of how many channels that are being used with lines on the cable itself."
+				""
+				"&aDense Cables&r can transfer up to &b128 Channels&r, but does not support connecting to Buses or Panels. You can also make Dense Smart Cables!"
+			]
+			icon: "ae2:fluix_smart_cable"
+			id: "46A1341E5E97ABDC"
+			min_width: 300
+			rewards: [{
+				id: "7F02CD13E7D03204"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "101BA566216C32AD"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ae2:fluix_smart_cable"
+							}
+							{
+								Count: 1b
+								id: "ae2:fluix_covered_cable"
+							}
+							{
+								Count: 1b
+								id: "ae2:fluix_glass_cable"
+							}
+						]
+					}
+				}
+				title: "AE Cables"
+				type: "item"
+			}]
+			title: "&bCables &fand &6Channels"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7E4FF5A454039E47"]
+			description: [
+				"To teach your system how to craft items, you'll need to provide it with &aCrafting Patterns&r. These are created inside of a &6Pattern Encoding Terminal&r."
+				""
+				"By providing the terminal with &aBlank Patterns&r, you can use JEI to search for an item you want to make a pattern for, then clicking the &b+&r to add the recipe onto the terminal."
+				""
+				"Once the pattern is on the table, you can click the button below the Blank Pattern to encode the recipe onto the pattern to be used in autocrafting!"
+			]
+			id: "69F87073390131D5"
+			min_width: 300
+			rewards: [
+				{
+					id: "1809AA472B6C12ED"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 8
+					id: "0CD35BED507A882D"
+					item: "ae2:blank_pattern"
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "779A817D32072FE1"
+					item: "ae2:pattern_encoding_terminal"
+					type: "item"
+				}
+				{
+					id: "38CCB8AA500EA96D"
+					item: "ae2:blank_pattern"
+					type: "item"
+				}
+			]
+			title: "&fCreating &6Patterns"
+			x: -2.5d
+			y: 8.0d
+		}
+	]
+	title: "Applied Energistics 2"
 }
