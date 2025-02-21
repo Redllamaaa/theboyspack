@@ -3,6 +3,13 @@
 	default_quest_shape: ""
 	filename: "flexible_weaponary"
 	group: "747F44473FCC1116"
+	icon: {
+		Count: 1
+		id: "iceandfire:dragonsteel_lightning_axe"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "050BA5E070703F08"
 	images: [
 		{
@@ -1785,7 +1792,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["7D2A23DD6D4954CD"]
+			dependencies: ["73AF1B00D192D0FB"]
 			hide_dependency_lines: true
 			id: "6BF93DF0EC59D86C"
 			rewards: [{
@@ -1794,15 +1801,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "1454E612E8A03CD4"
+				id: "121C09B1021B3F55"
 				item: {
 					Count: 1
-					id: "ftbfiltersystem:smart_filter"
+					id: "spartanshields:wooden_basic_shield"
 					tag: {
-						"ftbfiltersystem:filter": "item_tag(spartanweaponry:quarterstaves)"
+						Damage: 0
 					}
 				}
-				title: "Quarterstaffs"
 				type: "item"
 			}]
 			x: -4.0d
@@ -1896,6 +1902,918 @@
 			}]
 			x: 7.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "0893A5052BC31DDD"
+			rewards: [{
+				id: "2EABB03AA58FCE3F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "687BBCCC1BC8D854"
+				item: {
+					Count: 1
+					id: "spartanshields:wooden_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "6DE6204FF049EBA9"
+			rewards: [{
+				id: "388A4B67ED121F71"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2312ED9B6B290FC9"
+				item: {
+					Count: 1
+					id: "spartanshields:stone_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "4475CA8638BDDD22"
+			rewards: [{
+				id: "18CD56161D41D685"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1CF89DF50BFE000C"
+				item: {
+					Count: 1
+					id: "spartanshields:copper_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "4912D071BF0E2335"
+			rewards: [{
+				id: "715C5538AFC2C419"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2B3672CB73C3C268"
+				item: {
+					Count: 1
+					id: "spartanshields:iron_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "70DB20D544842619"
+			rewards: [{
+				id: "3B6594A5B3D7D471"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7D7718B64D2D19B4"
+				item: {
+					Count: 1
+					id: "spartanshields:golden_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "004B9F4DAFD998E9"
+			rewards: [{
+				id: "2D517FA1F4BA84CB"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "77B547D758D37DCE"
+				item: {
+					Count: 1
+					id: "spartanshields:diamond_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "424F877BF8A0DEBC"
+			rewards: [{
+				id: "4BA3F67BC34F5995"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "718FBFE50B166C6D"
+				item: {
+					Count: 1
+					id: "spartanshields:netherite_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "66AC9979DE3A7B79"
+			rewards: [{
+				id: "1907B351A566442D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "666B12AF47ED8B96"
+				item: {
+					Count: 1
+					id: "spartanshields:obsidian_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "11C242D3AC882258"
+			rewards: [{
+				id: "3610DD31D8ECCBB9"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "00CFE1CB8F1D5667"
+				item: {
+					Count: 1
+					id: "spartanshields:tin_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "1C1C2531920BAE8F"
+			rewards: [{
+				id: "3C78D60EF6A0CE72"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "43CED45BB19C00F4"
+				item: {
+					Count: 1
+					id: "spartanshields:bronze_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "7EEFC36228DD93E4"
+			rewards: [{
+				id: "5284B0CCBB1D5C6A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6A1A237E38A6BE42"
+				item: {
+					Count: 1
+					id: "spartanshields:steel_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "1A4FD7B5782A16C4"
+			rewards: [{
+				id: "4A34EB88B539CD1C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "512096B6B32DBBDB"
+				item: {
+					Count: 1
+					id: "spartanshields:silver_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "2D99EB5B3C3710E9"
+			rewards: [{
+				id: "7A46533D38E9796E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4CB5D05129D9A5AD"
+				item: {
+					Count: 1
+					id: "spartanshields:stone_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "1DA5FB1DCA6CA38B"
+			rewards: [{
+				id: "7EF901E58A6D695F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5C74287D1FB658BB"
+				item: {
+					Count: 1
+					id: "spartanshields:copper_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "34A7695464CE2C50"
+			rewards: [{
+				id: "52389039405C36EA"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "25CB3443C4DF86C1"
+				item: {
+					Count: 1
+					id: "spartanshields:iron_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "1E7330C2083C96F5"
+			rewards: [{
+				id: "5F1FD05B9610B97D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "11518C7F0669F307"
+				item: {
+					Count: 1
+					id: "spartanshields:golden_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "78030C969DBCBC63"
+			rewards: [{
+				id: "683B560D5B828AFB"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2A4830A4909FC670"
+				item: {
+					Count: 1
+					id: "spartanshields:diamond_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "486EE2B39EE75F4A"
+			rewards: [{
+				id: "5E563490B921570B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "71DB47AEB59097DE"
+				item: {
+					Count: 1
+					id: "spartanshields:netherite_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "3FC747275EEF1242"
+			rewards: [{
+				id: "4FD1F57F05E12B2D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "751DEA604853F333"
+				item: {
+					Count: 1
+					id: "spartanshields:obsidian_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "0F452C06F0BBD50C"
+			rewards: [{
+				id: "22C4FFAF2BF6B79D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "460E685402AAF11A"
+				item: {
+					Count: 1
+					id: "spartanshields:tin_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "6EEAFAE185004A64"
+			rewards: [{
+				id: "25F0A70B55338C8F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "13B0C99C775611AC"
+				item: {
+					Count: 1
+					id: "spartanshields:bronze_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "005CA99425B84171"
+			rewards: [{
+				id: "24366BAA7352C8A6"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "01ED7F8BB0E2C51E"
+				item: {
+					Count: 1
+					id: "spartanshields:steel_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "32DFCEC6E025125F"
+			rewards: [{
+				id: "3449A2F06F1F3C8B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "09F41DADCBA70B8A"
+				item: {
+					Count: 1
+					id: "spartanshields:silver_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "61C2C30EDE74A0C9"
+			rewards: [{
+				id: "1F48671F9363E29D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "18BE856604116DA9"
+				item: {
+					Count: 1
+					id: "spartanshields:electrum_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "0AEB71AF99D74B0B"
+			rewards: [{
+				id: "01A39DC639BEF53E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1ED408C1FF104A00"
+				item: {
+					Count: 1
+					id: "spartanshields:electrum_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "116999ADB4B786AE"
+			rewards: [{
+				id: "1DE8112AE31D2390"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "010FDB281BC488F7"
+				item: {
+					Count: 1
+					id: "spartanshields:lead_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "475292464412BD45"
+			rewards: [{
+				id: "3B3A0B99D2DE4EAF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "38DEB56DD09AB2C6"
+				item: {
+					Count: 1
+					id: "spartanshields:lead_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "54889A0462D261C2"
+			rewards: [{
+				id: "50119CE3ABEEBD0A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0587BF7070F122E9"
+				item: {
+					Count: 1
+					id: "spartanshields:nickel_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "0B7FB097089F3909"
+			rewards: [{
+				id: "0EAB80F0C17F4F3C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "267AD06EEDA540F1"
+				item: {
+					Count: 1
+					id: "spartanshields:nickel_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "7E1517E67CC1FBA1"
+			rewards: [{
+				id: "3E04F914B2238EA5"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "646D0883CBB02079"
+				item: {
+					Count: 1
+					id: "spartanshields:constantan_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "6F14E3A28184D754"
+			rewards: [{
+				id: "2944920DDE0F74E6"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2FD6E8EC7498C206"
+				item: {
+					Count: 1
+					id: "spartanshields:constantan_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "25559559F20B9EE9"
+			rewards: [{
+				id: "33DCBE322128DE24"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2DCDEBC91D133A7D"
+				item: {
+					Count: 1
+					id: "spartanshields:aluminum_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "7C487847931B7DFC"
+			rewards: [{
+				id: "0C949000C9D9CECF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4FF6F8D20A641411"
+				item: {
+					Count: 1
+					id: "spartanshields:aluminum_tower_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "5C8805C4BB646DD1"
+			rewards: [{
+				id: "4B6D0C63A88C95E8"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7082C7CD44270F45"
+				item: {
+					Count: 1
+					id: "spartanshields:osmium_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "3FFE3B298D69BB0A"
+			rewards: [{
+				id: "6E8A05148685C48D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3CA415A05B54B13B"
+				item: {
+					Count: 1
+					id: "spartanshields:lapis_lazuli_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "34980C60B0F89A38"
+			rewards: [{
+				id: "721805A5BC94456F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6E1FC3980208E99A"
+				item: {
+					Count: 1
+					id: "spartanshields:refined_obsidian_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "794038EE7EA58FC4"
+			rewards: [{
+				id: "4573584D1D2FA619"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7992034E96EA0AA7"
+				item: {
+					Count: 1
+					id: "spartanshields:refined_glowstone_basic_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["73AF1B00D192D0FB"]
+			hide_dependency_lines: true
+			id: "38B651635C6AA9A8"
+			optional: true
+			tasks: [{
+				id: "759BBAF2A4412F15"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "spartanshields:basic_mekanists_basic_shield"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "spartanshields:basic_mekanists_tower_shield"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "spartanshields:advanced_mekanists_basic_shield"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "spartanshields:advanced_mekanists_tower_shield"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "spartanshields:elite_mekanists_basic_shield"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "spartanshields:elite_mekanists_tower_shield"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "spartanshields:ultimate_mekanists_basic_shield"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "spartanshields:ultimate_mekanists_tower_shield"
+								tag: { }
+							}
+						]
+					}
+				}
+				title: "Mekanism Shields"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.25d
 		}
 	]
 	title: "Flexible Weaponary"
