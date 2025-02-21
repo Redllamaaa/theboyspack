@@ -5,7 +5,7 @@
 	group: "00B02FC8BB194427"
 	icon: "create:wrench"
 	id: "393DE4BCF9AFDCFC"
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
