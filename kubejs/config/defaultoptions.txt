@@ -19,3 +19,4 @@ soundCategory_neutral:1.0
 soundCategory_player:1.0
 soundCategory_ambient:0.5
 soundCategory_voice:1.0
+key_key.ftbchunks.map:key.keyboard.keypad.subtract
