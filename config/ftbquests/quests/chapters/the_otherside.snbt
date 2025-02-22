@@ -1,0 +1,141 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_otherside"
+	group: "2987039AB4197A8E"
+	icon: "deeperdarker:heart_of_the_deep"
+	id: "3ED56052AC7BE25D"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7EFDD9AC54DA8B9A"
+			rewards: [{
+				id: "2D73D7D408831412"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Found underground in the &aOverworld&r."
+			tasks: [{
+				advancement: "deeperdarker:main/kill_warden"
+				criterion: ""
+				id: "2431E43349B6FB5E"
+				type: "advancement"
+			}]
+			title: "Defeat a &3Warden"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7EFDD9AC54DA8B9A"]
+			id: "03095BBDA375677A"
+			rewards: [{
+				id: "0AC3ADF232EA2B34"
+				item: "deeperdarker:ancient_vase"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Before lighting the portal, you must first remove all &3Sculk Veins &rfrom the inner frame. After the frame is cleared, you can right click it with the &8Heart of The Deep &rthat you got earlier from killing The Warden."
+			tasks: [{
+				dimension: "deeperdarker:otherside"
+				icon: "minecraft:reinforced_deepslate"
+				id: "0759DDB5244D1EEB"
+				type: "dimension"
+			}]
+			title: "Enter The &8&lOtherside"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7EFDD9AC54DA8B9A"]
+			id: "02A085916134CCB1"
+			rewards: [{
+				id: "0F73A219A5F8B81D"
+				item: "deeperdarker:ancient_vase"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Used to negate the darkness in &8&lThe Otherside."
+			tasks: [{
+				id: "62DF572A38FCA4CD"
+				item: {
+					Count: 1
+					id: "deeperdarker:warden_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Craft a &9Warden Helmet"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["03095BBDA375677A"]
+			id: "3FC31A372248FE04"
+			rewards: [{
+				id: "388308603E858992"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			subtitle: "Rare chance of spawning after breaking an &8Ancient Vase&r."
+			tasks: [{
+				entity: "deeperdarker:stalker"
+				icon: "deeperdarker:soul_crystal"
+				id: "52565B5BAAA8389B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Defeat a &3Stalker"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["03095BBDA375677A"]
+			id: "6915F62FC87AAE53"
+			rewards: [{
+				id: "048E5D55AB7EB49A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			subtitle: "Spawns in &cDeeplands&r and &dEchoing Forests&r"
+			tasks: [{
+				entity: "deeperdarker:shattered"
+				icon: "deeperdarker:soul_dust"
+				id: "7AAF33C1DCD049FE"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Defeat a &3Shattered"
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["03095BBDA375677A"]
+			id: "014019090E54E668"
+			rewards: [{
+				id: "67DF91B729D30E3E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			subtitle: "Rare chance of spawning after breaking an &8Ancient Vase&r."
+			tasks: [{
+				entity: "deeperdarker:shriek_worm"
+				icon: "deeperdarker:sculk_bone"
+				id: "0F81BA83BCC5366A"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Defeat a &7Shriek Worm"
+			x: 2.5d
+			y: 2.0d
+		}
+	]
+	title: "The Otherside"
+}
