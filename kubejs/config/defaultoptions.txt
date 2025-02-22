@@ -8,6 +8,7 @@ guiScale:3
 maxFps:120
 narrator:0
 mipmapLevels:0
+resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","file/xali\u0027s Potions v1.0.zip","file/xali\u0027s Potions Addon v1.0.zip","file/xali\u0027s enchanted books v0.13.0.zip","file/xali\u0027s Enchanted Books Fix v2 1.20.1.zip","file/xali\u0027s Enchanted Books Addon v3 1.20.1.zip","file/xali\u0027s Bushy Leaves v3.5.0.zip","file/xali\u0027s Enhanced Vanilla -1.11.2b-rev.54d51d4.zip"]
 soundCategory_master:0.5
 soundCategory_music:0.25
 soundCategory_record:1.0
