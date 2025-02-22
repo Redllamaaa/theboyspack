@@ -70,5 +70,7 @@ JEIEvents.hideItems(event => {
       // Silent Gear
       'silentgear:iron_rod',
 
+      // Inventory Pets
+      'inventorypets:pet_meta'
     ]);
   });
