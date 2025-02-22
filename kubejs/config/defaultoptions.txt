@@ -6,6 +6,7 @@ simulationDistance:12
 entityDistanceScaling:1.0
 guiScale:3
 maxFps:120
+narrator:0
 mipmapLevels:0
 soundCategory_master:0.5
 soundCategory_music:0.25
