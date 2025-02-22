@@ -2064,23 +2064,6 @@
 			x: 8.5d
 			y: 12.5d
 		}
-		{
-			dependencies: ["479955FA73CB4C7D"]
-			icon_scale: 2.0d
-			id: "38FAD316AB487AD1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0043A64E384EF7BE"
-				type: "loot"
-			}]
-			shape: "circle"
-			tasks: [{
-				id: "2880E82DD75799DE"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 14.5d
-		}
 	]
 	title: "Mekanism"
 }

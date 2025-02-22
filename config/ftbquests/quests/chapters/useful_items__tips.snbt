@@ -53,8 +53,15 @@
 			}]
 			shape: "square"
 			tasks: [{
-				id: "1A129FF9B1F2AD06"
-				item: "artifacts:umbrella"
+				id: "51E312B8B036E6CB"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(artifacts:artifacts)"
+					}
+				}
+				title: "Artifacts"
 				type: "item"
 			}]
 			title: "&bArtifacts&r"
@@ -252,6 +259,186 @@
 			title: "&6Veinmining?"
 			x: 2.5d
 			y: -3.0d
+		}
+		{
+			description: ["You can find and craft Inventory Pets! They give you unique abilities for you to use on your adventures!"]
+			id: "5C45138AFD843627"
+			rewards: [{
+				id: "7E715E07AF5753E8"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "085117888DBEE57E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(inventorypets:all_pets)"
+					}
+				}
+				title: "Inventory Pets"
+				type: "item"
+			}]
+			title: "&bInventory Pets&r"
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			description: ["The &bTrophies&r Mod adds new collectable trophies from mobs! Killing mobs has a small percentage chance to drop the mob as a Trophy Try and collect them all!"]
+			id: "41F3651661318045"
+			rewards: [{
+				id: "29FD836A8D1893CE"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "2424B99C84DD2A3E"
+				item: {
+					Count: 1
+					id: "itemfilters:mod"
+					tag: {
+						value: "obtrophies"
+					}
+				}
+				title: "Trophies!"
+				type: "item"
+			}]
+			title: "&bTrophies&r"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"The mod &bConstruction Wand&r adds helpful building wands that are used during building."
+				""
+				"When right-clicking a face of a block when the wand, it will extend that face out as long as you have the blocks in your inventory."
+			]
+			icon: {
+				Count: 1
+				id: "constructionwand:diamond_wand"
+				tag: {
+					Damage: 0
+					wand_options: { }
+				}
+			}
+			id: "4AF39831C22A22FD"
+			rewards: [{
+				id: "0B6747D49960E13A"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "53F2115E0A0D4EDA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "constructionwand:stone_wand"
+								tag: {
+									Damage: 0
+									wand_options: { }
+								}
+							}
+							{
+								Count: 1b
+								id: "constructionwand:iron_wand"
+								tag: {
+									Damage: 0
+									wand_options: { }
+								}
+							}
+							{
+								Count: 1b
+								id: "constructionwand:diamond_wand"
+								tag: {
+									Damage: 0
+									wand_options: { }
+								}
+							}
+							{
+								Count: 1b
+								id: "constructionwand:infinity_wand"
+								tag: {
+									wand_options: { }
+								}
+							}
+						]
+					}
+				}
+				title: "Construction Wands"
+				type: "item"
+			}]
+			title: "&bBuilding Wands&r"
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"Easy item to automate infinite water."
+				"Need more water? Make another!"
+			]
+			id: "7A50A6A466E2FB32"
+			rewards: [
+				{
+					id: "14BD39E80ADB029D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 8
+					id: "66BF5A536AEFD59C"
+					item: "mekanism:basic_mechanical_pipe"
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "7C290F450B27E740"
+				item: "cookingforblockheads:sink"
+				type: "item"
+			}]
+			title: "&bInfinite Water&r"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Dealing with Villagers has never been easier!"
+				""
+				"Shift-Right Clicking on a villager will allow for it to be picked up into an item. "
+				"Simply right clicking the item on the ground will then place the villager back into the world as an entity."
+			]
+			icon: "easy_villagers:trader"
+			id: "4CDD3935E1396950"
+			rewards: [{
+				id: "52C134DF12810B10"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "720B88A31D9DF450"
+					item: "easy_villagers:villager"
+					title: "Inventory Pets"
+					type: "item"
+				}
+				{
+					id: "17EAD01F042F3CCC"
+					item: "easy_villagers:trader"
+					type: "item"
+				}
+			]
+			title: "&bEasy Villagers&r"
+			x: 7.5d
+			y: 0.0d
 		}
 	]
 	title: "Useful Items \\&\\ Tips"
